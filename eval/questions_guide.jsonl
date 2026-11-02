@@ -1,0 +1,15 @@
+{"id": "g01", "lang": "ko", "type": "guide", "question": "유학생이 아르바이트를 하려면 무엇이 필요한가요?", "expected": ["guide:visa_navigator:p13", "immigration_act:20", "immigration_decree:25"]}
+{"id": "g02", "lang": "ko", "type": "guide", "question": "D-2 유학생이 공장(제조업)에서 아르바이트할 수 있나요?", "expected": ["guide:visa_navigator:p13"]}
+{"id": "g03", "lang": "ko", "type": "guide", "question": "대학원생인데 부모님을 한국에 초청할 수 있나요?", "expected": ["guide:visa_navigator:p13"]}
+{"id": "g04", "lang": "ko", "type": "guide", "question": "새 여권을 받으면 며칠 안에 여권 변경 신고를 해야 하나요?", "expected": ["guide:visa_navigator:p52", "guide:visa_navigator:p57"]}
+{"id": "g05", "lang": "ko", "type": "guide", "question": "체류기간 연장 신청은 만료 몇 개월 전부터 할 수 있나요?", "expected": ["guide:visa_navigator:p48"]}
+{"id": "g06", "lang": "ko", "type": "guide", "question": "체류민원을 신청할 때 방문 예약을 꼭 해야 하나요?", "expected": ["guide:visa_navigator:p48", "immigration_decree:34-2"]}
+{"id": "g07", "lang": "ko", "type": "guide", "question": "외국인 유학생이 허가 없이 식당에서 일하면 어떻게 되나요?", "expected": ["guide:visa_navigator:p57"]}
+{"id": "g08", "lang": "ko", "type": "guide", "question": "출입국 민원을 행정사에게 맡겨서 대신 신청할 수 있나요?", "expected": ["guide:visa_navigator:p43", "guide:visa_navigator:p44", "immigration_act:79-2"]}
+{"id": "g09", "lang": "ko", "type": "guide", "question": "결혼이민(F-6) 비자로 아무 일이나 할 수 있나요?", "expected": ["guide:visa_navigator:p39"]}
+{"id": "g10", "lang": "ko", "type": "guide", "question": "하이코리아 전자민원으로 신청하면 수수료 할인이 있나요?", "expected": ["guide:visa_navigator:p43"]}
+{"id": "g11", "lang": "ko", "type": "guide", "question": "외국에 나가 있는 동안 체류기간 연장을 신청할 수 있나요?", "expected": ["guide:visa_navigator:p50"]}
+{"id": "g12", "lang": "ko", "type": "guide", "question": "영주권자도 체류기간 연장 신청을 해야 하나요?", "expected": ["guide:visa_navigator:p49"]}
+{"id": "g13", "lang": "ko", "type": "guide", "question": "D-10 구직비자로 시간제 취업을 할 수 있나요?", "expected": ["guide:visa_navigator:p22"]}
+{"id": "g14", "lang": "ko", "type": "guide", "question": "회화강사가 학원을 옮기고 신고하지 않으면 어떻게 되나요?", "expected": ["guide:visa_navigator:p58", "immigration_act:21"]}
+{"id": "g15", "lang": "en", "type": "guide", "question": "Can a student on a D-2 visa work part-time?", "expected": ["guide:visa_navigator:p13", "immigration_act:20", "immigration_decree:25"]}

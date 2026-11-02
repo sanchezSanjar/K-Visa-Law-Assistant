@@ -1,0 +1,1421 @@
+{
+  "main": {
+    "Keyword (BM25)": {
+      "all": {
+        "questions": 80,
+        "hit@1": 0.45,
+        "hit@4": 0.738,
+        "hit@10": 0.838,
+        "mrr@10": 0.58
+      },
+      "korean": {
+        "questions": 72,
+        "hit@1": 0.458,
+        "hit@4": 0.764,
+        "hit@10": 0.861,
+        "mrr@10": 0.593
+      },
+      "english": {
+        "questions": 8,
+        "hit@1": 0.375,
+        "hit@4": 0.5,
+        "hit@10": 0.625,
+        "mrr@10": 0.458
+      },
+      "seconds_per_question": 0.001,
+      "misses_top4": [
+        {
+          "id": "ko02",
+          "question": "체류기간이 지났는데 계속 있으면 강제퇴거 되나요?",
+          "expected": [
+            "immigration_act:46"
+          ],
+          "got": [
+            "immigration_act:59",
+            "immigration_rules:9-5#2",
+            "immigration_decree:78"
+          ]
+        },
+        {
+          "id": "ko03",
+          "question": "한국에서 일하려면 어떤 체류자격이 필요한가요?",
+          "expected": [
+            "immigration_act:18",
+            "immigration_decree:23"
+          ],
+          "got": [
+            "immigration_rules:53-5",
+            "immigration_decree:table02#10",
+            "immigration_rules:53-2"
+          ]
+        },
+        {
+          "id": "ko04",
+          "question": "유학생 비자로 아르바이트를 해도 되나요?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_act:19-4",
+            "immigration_decree:24-8",
+            "immigration_rules:table08#22"
+          ]
+        },
+        {
+          "id": "ko05",
+          "question": "다니던 회사를 그만두고 다른 회사로 옮기면 허가를 받아야 하나요?",
+          "expected": [
+            "immigration_act:21",
+            "immigration_decree:26",
+            "immigration_decree:26-2"
+          ],
+          "got": [
+            "immigration_act:24",
+            "immigration_rules:19",
+            "immigration_act:79"
+          ]
+        },
+        {
+          "id": "ko06",
+          "question": "지금 비자에서 다른 종류의 비자로 바꾸고 싶어요.",
+          "expected": [
+            "immigration_act:24",
+            "immigration_decree:30"
+          ],
+          "got": [
+            "immigration_rules:68-6",
+            "foreign_workers_act:14",
+            "foreign_workers_act:18-2"
+          ]
+        },
+        {
+          "id": "ko08",
+          "question": "입국하고 나서 외국인등록은 며칠 안에 해야 하나요?",
+          "expected": [
+            "immigration_act:31",
+            "immigration_decree:40"
+          ],
+          "got": [
+            "immigration_act:37",
+            "immigration_rules:48",
+            "immigration_rules:48-2"
+          ]
+        },
+        {
+          "id": "ko17",
+          "question": "외국인보호소에 얼마나 오래 보호될 수 있나요?",
+          "expected": [
+            "immigration_act:52",
+            "immigration_act:63"
+          ],
+          "got": [
+            "immigration_decree:78",
+            "immigration_decree:80-7",
+            "immigration_decree:80-5"
+          ]
+        },
+        {
+          "id": "ko18",
+          "question": "취업 자격이 없는 외국인을 고용한 사장도 처벌받나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18"
+          ],
+          "got": [
+            "foreign_workers_act:20",
+            "immigration_act:90-2",
+            "immigration_act:19"
+          ]
+        },
+        {
+          "id": "ko19",
+          "question": "외국인 직원이 퇴사하면 회사가 출입국에 신고해야 하나요?",
+          "expected": [
+            "immigration_act:19",
+            "immigration_decree:24"
+          ],
+          "got": [
+            "immigration_decree:24-4",
+            "nationality_decree:table02#2",
+            "immigration_decree:table02#5"
+          ]
+        },
+        {
+          "id": "ko33",
+          "question": "유학(D-2) 체류자격은 어떤 사람에게 주나요?",
+          "expected": [
+            "immigration_decree:table02=D-2"
+          ],
+          "got": [
+            "immigration_rules:37",
+            "immigration_rules:9",
+            "immigration_rules:table08#22"
+          ]
+        },
+        {
+          "id": "ko35",
+          "question": "방문취업(H-2) 비자 대상자는 누구인가요?",
+          "expected": [
+            "immigration_decree:table02=H-2"
+          ],
+          "got": [
+            "immigration_decree:table02#15",
+            "immigration_decree:table02#22",
+            "immigration_rules:17"
+          ]
+        },
+        {
+          "id": "ko39",
+          "question": "어떤 경우에 외국인의 출국이 정지되나요?",
+          "expected": [
+            "immigration_act:29"
+          ],
+          "got": [
+            "immigration_rules:39-4",
+            "immigration_rules:39-6",
+            "immigration_rules:44-2"
+          ]
+        },
+        {
+          "id": "ko48",
+          "question": "한국 국적으로 귀화하려면 어떤 요건이 필요한가요?",
+          "expected": [
+            "nationality_act:5"
+          ],
+          "got": [
+            "nationality_decree:4",
+            "immigration_act:10-3",
+            "foreign_workers_act:7"
+          ]
+        },
+        {
+          "id": "ko49",
+          "question": "한국인과 결혼한 외국인은 몇 년 살면 귀화할 수 있나요?",
+          "expected": [
+            "nationality_act:6"
+          ],
+          "got": [
+            "immigration_rules:table08#19",
+            "immigration_rules:44-2",
+            "immigration_rules:table07#18"
+          ]
+        },
+        {
+          "id": "ko53",
+          "question": "한국 국적을 이탈하려면 어떻게 하나요?",
+          "expected": [
+            "nationality_act:14"
+          ],
+          "got": [
+            "nationality_decree:table02#3",
+            "nationality_decree:18-4",
+            "immigration_rules:table08#17"
+          ]
+        },
+        {
+          "id": "ko54",
+          "question": "부모 중 한 명이 한국인이면 아이가 한국 국적을 갖나요?",
+          "expected": [
+            "nationality_act:2"
+          ],
+          "got": [
+            "immigration_rules:table08#22",
+            "nationality_act:19",
+            "immigration_rules:table03#5"
+          ]
+        },
+        {
+          "id": "ko55",
+          "question": "귀화허가는 어떻게 신청하나요?",
+          "expected": [
+            "nationality_decree:3"
+          ],
+          "got": [
+            "nationality_decree:4-3",
+            "nationality_decree:4",
+            "nationality_decree:4-4"
+          ]
+        },
+        {
+          "id": "en03",
+          "question": "Can an international student work part-time?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "foreigners_framework_act:22",
+            "foreigners_framework_act:21",
+            "immigration_decree:24-8"
+          ]
+        },
+        {
+          "id": "en04",
+          "question": "When do I have to report a change of my address?",
+          "expected": [
+            "immigration_act:36",
+            "immigration_decree:45"
+          ],
+          "got": [
+            "immigration_decree:21",
+            "nationality_decree:25-2",
+            "immigration_decree:88-3"
+          ]
+        },
+        {
+          "id": "en05",
+          "question": "Which foreigners can be deported from Korea?",
+          "expected": [
+            "immigration_act:46"
+          ],
+          "got": [
+            "immigration_act:52",
+            "foreigners_framework_act:1",
+            "foreigners_framework_act:23"
+          ]
+        },
+        {
+          "id": "en08",
+          "question": "How many days after entry must I register as a foreigner?",
+          "expected": [
+            "immigration_act:31",
+            "immigration_decree:40"
+          ],
+          "got": [
+            "refugee_act:6",
+            "refugee_act:20",
+            "refugee_act:5"
+          ]
+        }
+      ]
+    },
+    "Meaning (bge-m3)": {
+      "all": {
+        "questions": 80,
+        "hit@1": 0.85,
+        "hit@4": 0.95,
+        "hit@10": 0.975,
+        "mrr@10": 0.903
+      },
+      "korean": {
+        "questions": 72,
+        "hit@1": 0.847,
+        "hit@4": 0.958,
+        "hit@10": 0.986,
+        "mrr@10": 0.906
+      },
+      "english": {
+        "questions": 8,
+        "hit@1": 0.875,
+        "hit@4": 0.875,
+        "hit@10": 0.875,
+        "mrr@10": 0.875
+      },
+      "seconds_per_question": 0.027,
+      "misses_top4": [
+        {
+          "id": "ko04",
+          "question": "유학생 비자로 아르바이트를 해도 되나요?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_act:18",
+            "foreign_workers_act:12",
+            "immigration_decree:table02#18"
+          ]
+        },
+        {
+          "id": "ko18",
+          "question": "취업 자격이 없는 외국인을 고용한 사장도 처벌받나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18"
+          ],
+          "got": [
+            "foreign_workers_act:12",
+            "immigration_decree:24-4",
+            "foreign_workers_act:29"
+          ]
+        },
+        {
+          "id": "ko68",
+          "question": "재외동포(F-4) 체류자격은 누구에게 주나요?",
+          "expected": [
+            "overseas_koreans_act:5"
+          ],
+          "got": [
+            "immigration_decree:table02#16",
+            "immigration_decree:table02#18",
+            "immigration_decree:table03#3"
+          ]
+        },
+        {
+          "id": "en03",
+          "question": "Can an international student work part-time?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "foreign_workers_act:18",
+            "foreign_workers_act:18-2",
+            "immigration_act:18"
+          ]
+        }
+      ]
+    },
+    "Hybrid (keyword + meaning)": {
+      "all": {
+        "questions": 80,
+        "hit@1": 0.575,
+        "hit@4": 0.95,
+        "hit@10": 0.975,
+        "mrr@10": 0.745
+      },
+      "korean": {
+        "questions": 72,
+        "hit@1": 0.583,
+        "hit@4": 0.958,
+        "hit@10": 0.986,
+        "mrr@10": 0.753
+      },
+      "english": {
+        "questions": 8,
+        "hit@1": 0.5,
+        "hit@4": 0.875,
+        "hit@10": 0.875,
+        "mrr@10": 0.667
+      },
+      "seconds_per_question": 0.024,
+      "misses_top4": [
+        {
+          "id": "ko04",
+          "question": "유학생 비자로 아르바이트를 해도 되나요?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_act:19-4",
+            "immigration_act:18",
+            "immigration_decree:24-8"
+          ]
+        },
+        {
+          "id": "ko18",
+          "question": "취업 자격이 없는 외국인을 고용한 사장도 처벌받나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18"
+          ],
+          "got": [
+            "immigration_act:90-2",
+            "foreign_workers_act:20",
+            "foreign_workers_act:12"
+          ]
+        },
+        {
+          "id": "ko35",
+          "question": "방문취업(H-2) 비자 대상자는 누구인가요?",
+          "expected": [
+            "immigration_decree:table02=H-2"
+          ],
+          "got": [
+            "immigration_decree:table02#15",
+            "immigration_decree:table03#5",
+            "immigration_decree:23"
+          ]
+        },
+        {
+          "id": "en03",
+          "question": "Can an international student work part-time?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "foreigners_framework_act:22",
+            "foreign_workers_act:18",
+            "foreigners_framework_act:21"
+          ]
+        }
+      ]
+    },
+    "Meaning + reranker": {
+      "all": {
+        "questions": 80,
+        "hit@1": 0.8,
+        "hit@4": 0.95,
+        "hit@10": 0.988,
+        "mrr@10": 0.878
+      },
+      "korean": {
+        "questions": 72,
+        "hit@1": 0.792,
+        "hit@4": 0.958,
+        "hit@10": 1.0,
+        "mrr@10": 0.879
+      },
+      "english": {
+        "questions": 8,
+        "hit@1": 0.875,
+        "hit@4": 0.875,
+        "hit@10": 0.875,
+        "mrr@10": 0.875
+      },
+      "seconds_per_question": 0.653,
+      "misses_top4": [
+        {
+          "id": "ko04",
+          "question": "유학생 비자로 아르바이트를 해도 되나요?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_act:18",
+            "immigration_act:79-2",
+            "foreign_workers_act:18"
+          ]
+        },
+        {
+          "id": "ko18",
+          "question": "취업 자격이 없는 외국인을 고용한 사장도 처벌받나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18"
+          ],
+          "got": [
+            "immigration_act:97",
+            "immigration_act:19",
+            "immigration_act:90-2"
+          ]
+        },
+        {
+          "id": "ko33",
+          "question": "유학(D-2) 체류자격은 어떤 사람에게 주나요?",
+          "expected": [
+            "immigration_decree:table02=D-2"
+          ],
+          "got": [
+            "immigration_decree:table02#18",
+            "immigration_rules:37",
+            "immigration_decree:table02#15"
+          ]
+        },
+        {
+          "id": "en03",
+          "question": "Can an international student work part-time?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_act:79-2",
+            "immigration_decree:23",
+            "immigration_act:19-5"
+          ]
+        }
+      ]
+    },
+    "Hybrid + reranker": {
+      "all": {
+        "questions": 80,
+        "hit@1": 0.8,
+        "hit@4": 0.963,
+        "hit@10": 0.975,
+        "mrr@10": 0.879
+      },
+      "korean": {
+        "questions": 72,
+        "hit@1": 0.792,
+        "hit@4": 0.972,
+        "hit@10": 0.986,
+        "mrr@10": 0.879
+      },
+      "english": {
+        "questions": 8,
+        "hit@1": 0.875,
+        "hit@4": 0.875,
+        "hit@10": 0.875,
+        "mrr@10": 0.875
+      },
+      "seconds_per_question": 0.653,
+      "misses_top4": [
+        {
+          "id": "ko04",
+          "question": "유학생 비자로 아르바이트를 해도 되나요?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_act:18",
+            "immigration_act:79-2",
+            "immigration_decree:24-8"
+          ]
+        },
+        {
+          "id": "ko33",
+          "question": "유학(D-2) 체류자격은 어떤 사람에게 주나요?",
+          "expected": [
+            "immigration_decree:table02=D-2"
+          ],
+          "got": [
+            "immigration_decree:table02#18",
+            "immigration_rules:37",
+            "immigration_decree:table02#15"
+          ]
+        },
+        {
+          "id": "en03",
+          "question": "Can an international student work part-time?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_decree:24-8",
+            "immigration_act:79-2",
+            "nationality_decree:4-2"
+          ]
+        }
+      ]
+    }
+  },
+  "held-out": {
+    "Keyword (BM25)": {
+      "all": {
+        "questions": 30,
+        "hit@1": 0.167,
+        "hit@4": 0.333,
+        "hit@10": 0.467,
+        "mrr@10": 0.241
+      },
+      "korean": {
+        "questions": 22,
+        "hit@1": 0.182,
+        "hit@4": 0.318,
+        "hit@10": 0.5,
+        "mrr@10": 0.249
+      },
+      "english": {
+        "questions": 8,
+        "hit@1": 0.125,
+        "hit@4": 0.375,
+        "hit@10": 0.375,
+        "mrr@10": 0.219
+      },
+      "seconds_per_question": 0.001,
+      "misses_top4": [
+        {
+          "id": "h01",
+          "question": "학생 신분으로 편의점에서 일해도 문제 없나요?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_decree:table02#5",
+            "immigration_rules:table07#4",
+            "immigration_rules:6"
+          ]
+        },
+        {
+          "id": "h02",
+          "question": "비자 만료일이 다음 주인데 한국에 더 있고 싶어요.",
+          "expected": [
+            "immigration_act:25",
+            "immigration_decree:31"
+          ],
+          "got": [
+            "immigration_rules:48-2",
+            "immigration_rules:table08#12",
+            "immigration_rules:25"
+          ]
+        },
+        {
+          "id": "h04",
+          "question": "외국인등록을 안 하면 어떻게 되나요?",
+          "expected": [
+            "immigration_act:31",
+            "immigration_act:95",
+            "immigration_decree:table04",
+            "immigration_act:100"
+          ],
+          "got": [
+            "immigration_decree:46",
+            "immigration_rules:45",
+            "immigration_act:37"
+          ]
+        },
+        {
+          "id": "h05",
+          "question": "F-5 비자 조건 알려주세요.",
+          "expected": [
+            "immigration_act:10-3",
+            "immigration_decree:12-2",
+            "immigration_decree:table03"
+          ],
+          "got": [
+            "immigration_decree:17",
+            "immigration_decree:94",
+            "immigration_rules:table08#18"
+          ]
+        },
+        {
+          "id": "h06",
+          "question": "한국 사람과 결혼했는데 국적을 취득하려면 몇 년이 필요해요?",
+          "expected": [
+            "nationality_act:6"
+          ],
+          "got": [
+            "nationality_act:10",
+            "nationality_act:15",
+            "immigration_rules:9-5#2"
+          ]
+        },
+        {
+          "id": "h08",
+          "question": "E-9으로 최대 몇 년 일할 수 있어요?",
+          "expected": [
+            "foreign_workers_act:18",
+            "foreign_workers_act:18-2"
+          ],
+          "got": [
+            "immigration_rules:table11#4",
+            "immigration_rules:12",
+            "immigration_rules:84-2"
+          ]
+        },
+        {
+          "id": "h09",
+          "question": "한국을 떠날 때 등록증을 내고 가야 하나요?",
+          "expected": [
+            "immigration_act:37"
+          ],
+          "got": [
+            "immigration_act:33-3",
+            "immigration_rules:48-2",
+            "immigration_decree:42"
+          ]
+        },
+        {
+          "id": "h10",
+          "question": "난민 신청하고 몇 달 지나면 일할 수 있어요?",
+          "expected": [
+            "refugee_act:40"
+          ],
+          "got": [
+            "foreign_workers_act:18-4",
+            "immigration_rules:6-8",
+            "immigration_act:7"
+          ]
+        },
+        {
+          "id": "h11",
+          "question": "외국인을 몰래 고용하면 처벌이 어떻게 되나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18"
+          ],
+          "got": [
+            "foreign_workers_act:20",
+            "foreign_workers_act:12",
+            "immigration_act:19"
+          ]
+        },
+        {
+          "id": "h12",
+          "question": "체류자격 변경은 어디에 신청하나요?",
+          "expected": [
+            "immigration_act:24",
+            "immigration_decree:30"
+          ],
+          "got": [
+            "immigration_rules:76",
+            "immigration_rules:table08#2",
+            "immigration_rules:table08#17"
+          ]
+        },
+        {
+          "id": "h13",
+          "question": "How long can a foreign worker under the employment permit system work in Korea?",
+          "expected": [
+            "foreign_workers_act:18",
+            "foreign_workers_act:18-2"
+          ],
+          "got": [
+            "immigration_act:19-5",
+            "immigration_decree:24-4",
+            "immigration_decree:23"
+          ]
+        },
+        {
+          "id": "h15",
+          "question": "What should I do if I lose my alien registration card?",
+          "expected": [
+            "immigration_decree:42",
+            "immigration_rules:48"
+          ],
+          "got": [
+            "immigration_act:36",
+            "immigration_act:34",
+            "immigration_act:88"
+          ]
+        },
+        {
+          "id": "h16",
+          "question": "Is there a fee waiver for visa applications?",
+          "expected": [
+            "immigration_rules:74"
+          ],
+          "got": [
+            "immigration_decree:11-2",
+            "immigration_act:87",
+            "immigration_act:89"
+          ]
+        },
+        {
+          "id": "h17",
+          "question": "대학원을 졸업하고 한국에서 일자리를 찾으려면 어떤 비자가 필요해요?",
+          "expected": [
+            "immigration_decree:table02=D-10"
+          ],
+          "got": [
+            "immigration_rules:table03#1",
+            "immigration_rules:table07#4",
+            "immigration_rules:table08#8"
+          ]
+        },
+        {
+          "id": "h18",
+          "question": "회사에서 해고당했는데 회사가 출입국에 알려야 하나요?",
+          "expected": [
+            "immigration_act:19",
+            "immigration_decree:24"
+          ],
+          "got": [
+            "immigration_act:59",
+            "immigration_act:84",
+            "immigration_decree:table02#5"
+          ]
+        },
+        {
+          "id": "h19",
+          "question": "부모님을 한국에 모셔서 같이 살고 싶은데 어떤 체류자격이 있나요?",
+          "expected": [
+            "immigration_decree:table02=F-1"
+          ],
+          "got": [
+            "immigration_rules:table08#22",
+            "immigration_decree:table03#1",
+            "immigration_decree:table02#10"
+          ]
+        },
+        {
+          "id": "h22",
+          "question": "취업비자 없이 일하다가 걸리면 처벌받나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18",
+            "immigration_act:46"
+          ],
+          "got": [
+            "immigration_act:106",
+            "overseas_koreans_act:10",
+            "nationality_act:10"
+          ]
+        },
+        {
+          "id": "h23",
+          "question": "한국에서 아이를 낳았는데 아이 체류자격은 언제까지 신청해야 해요?",
+          "expected": [
+            "immigration_act:23",
+            "immigration_decree:29"
+          ],
+          "got": [
+            "immigration_rules:table08#1",
+            "immigration_rules:14",
+            "immigration_rules:75-2"
+          ]
+        },
+        {
+          "id": "h27",
+          "question": "What visa does the foreign spouse of a Korean citizen get?",
+          "expected": [
+            "immigration_decree:table02=F-6"
+          ],
+          "got": [
+            "nationality_act:15",
+            "immigration_act:54",
+            "immigration_decree:9"
+          ]
+        },
+        {
+          "id": "h28",
+          "question": "What is the maximum period of stay for an overseas Korean (F-4)?",
+          "expected": [
+            "overseas_koreans_act:10"
+          ],
+          "got": [
+            "immigration_decree:23",
+            "immigration_act:10-2",
+            "immigration_decree:15#2"
+          ]
+        }
+      ]
+    },
+    "Meaning (bge-m3)": {
+      "all": {
+        "questions": 30,
+        "hit@1": 0.4,
+        "hit@4": 0.733,
+        "hit@10": 0.867,
+        "mrr@10": 0.549
+      },
+      "korean": {
+        "questions": 22,
+        "hit@1": 0.409,
+        "hit@4": 0.773,
+        "hit@10": 0.909,
+        "mrr@10": 0.569
+      },
+      "english": {
+        "questions": 8,
+        "hit@1": 0.375,
+        "hit@4": 0.625,
+        "hit@10": 0.75,
+        "mrr@10": 0.497
+      },
+      "seconds_per_question": 0.023,
+      "misses_top4": [
+        {
+          "id": "h01",
+          "question": "학생 신분으로 편의점에서 일해도 문제 없나요?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_decree:table02#21",
+            "immigration_rules:27-2",
+            "immigration_decree:table02#18"
+          ]
+        },
+        {
+          "id": "h11",
+          "question": "외국인을 몰래 고용하면 처벌이 어떻게 되나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18"
+          ],
+          "got": [
+            "foreign_workers_act:29",
+            "foreign_workers_act:32",
+            "immigration_act:19"
+          ]
+        },
+        {
+          "id": "h14",
+          "question": "Can a recognized refugee bring their spouse to Korea?",
+          "expected": [
+            "refugee_act:37"
+          ],
+          "got": [
+            "foreigners_framework_act:14",
+            "nationality_act:6",
+            "foreigners_framework_act:12"
+          ]
+        },
+        {
+          "id": "h17",
+          "question": "대학원을 졸업하고 한국에서 일자리를 찾으려면 어떤 비자가 필요해요?",
+          "expected": [
+            "immigration_decree:table02=D-10"
+          ],
+          "got": [
+            "immigration_rules:table08#8",
+            "immigration_decree:table03#4",
+            "immigration_rules:table08#14"
+          ]
+        },
+        {
+          "id": "h19",
+          "question": "부모님을 한국에 모셔서 같이 살고 싶은데 어떤 체류자격이 있나요?",
+          "expected": [
+            "immigration_decree:table02=F-1"
+          ],
+          "got": [
+            "immigration_decree:table02#18",
+            "immigration_decree:table03#2",
+            "immigration_act:10"
+          ]
+        },
+        {
+          "id": "h22",
+          "question": "취업비자 없이 일하다가 걸리면 처벌받나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18",
+            "immigration_act:46"
+          ],
+          "got": [
+            "immigration_act:97",
+            "immigration_rules:table11#4",
+            "immigration_act:95"
+          ]
+        },
+        {
+          "id": "h27",
+          "question": "What visa does the foreign spouse of a Korean citizen get?",
+          "expected": [
+            "immigration_decree:table02=F-6"
+          ],
+          "got": [
+            "nationality_act:6",
+            "foreigners_framework_act:12",
+            "foreigners_framework_act:2"
+          ]
+        },
+        {
+          "id": "h28",
+          "question": "What is the maximum period of stay for an overseas Korean (F-4)?",
+          "expected": [
+            "overseas_koreans_act:10"
+          ],
+          "got": [
+            "immigration_act:10-2",
+            "immigration_decree:36",
+            "immigration_decree:36-2"
+          ]
+        }
+      ]
+    },
+    "Hybrid (keyword + meaning)": {
+      "all": {
+        "questions": 30,
+        "hit@1": 0.333,
+        "hit@4": 0.6,
+        "hit@10": 0.8,
+        "mrr@10": 0.476
+      },
+      "korean": {
+        "questions": 22,
+        "hit@1": 0.409,
+        "hit@4": 0.636,
+        "hit@10": 0.818,
+        "mrr@10": 0.528
+      },
+      "english": {
+        "questions": 8,
+        "hit@1": 0.125,
+        "hit@4": 0.5,
+        "hit@10": 0.75,
+        "mrr@10": 0.332
+      },
+      "seconds_per_question": 0.024,
+      "misses_top4": [
+        {
+          "id": "h01",
+          "question": "학생 신분으로 편의점에서 일해도 문제 없나요?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_decree:table02#5",
+            "immigration_decree:table02#21",
+            "immigration_rules:table07#4"
+          ]
+        },
+        {
+          "id": "h02",
+          "question": "비자 만료일이 다음 주인데 한국에 더 있고 싶어요.",
+          "expected": [
+            "immigration_act:25",
+            "immigration_decree:31"
+          ],
+          "got": [
+            "immigration_rules:39-8",
+            "immigration_rules:48-2",
+            "immigration_act:31"
+          ]
+        },
+        {
+          "id": "h06",
+          "question": "한국 사람과 결혼했는데 국적을 취득하려면 몇 년이 필요해요?",
+          "expected": [
+            "nationality_act:6"
+          ],
+          "got": [
+            "nationality_act:10",
+            "nationality_act:15",
+            "foreigners_framework_act:15"
+          ]
+        },
+        {
+          "id": "h08",
+          "question": "E-9으로 최대 몇 년 일할 수 있어요?",
+          "expected": [
+            "foreign_workers_act:18",
+            "foreign_workers_act:18-2"
+          ],
+          "got": [
+            "immigration_rules:17-3#2",
+            "immigration_rules:table11#4",
+            "immigration_rules:12"
+          ]
+        },
+        {
+          "id": "h11",
+          "question": "외국인을 몰래 고용하면 처벌이 어떻게 되나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18"
+          ],
+          "got": [
+            "foreign_workers_act:12",
+            "immigration_act:19",
+            "foreign_workers_act:20"
+          ]
+        },
+        {
+          "id": "h13",
+          "question": "How long can a foreign worker under the employment permit system work in Korea?",
+          "expected": [
+            "foreign_workers_act:18",
+            "foreign_workers_act:18-2"
+          ],
+          "got": [
+            "immigration_act:18",
+            "immigration_decree:23",
+            "immigration_decree:10"
+          ]
+        },
+        {
+          "id": "h15",
+          "question": "What should I do if I lose my alien registration card?",
+          "expected": [
+            "immigration_decree:42",
+            "immigration_rules:48"
+          ],
+          "got": [
+            "immigration_act:37",
+            "immigration_decree:43",
+            "immigration_act:34"
+          ]
+        },
+        {
+          "id": "h17",
+          "question": "대학원을 졸업하고 한국에서 일자리를 찾으려면 어떤 비자가 필요해요?",
+          "expected": [
+            "immigration_decree:table02=D-10"
+          ],
+          "got": [
+            "immigration_rules:table08#8",
+            "immigration_rules:table03#1",
+            "immigration_rules:table07#4"
+          ]
+        },
+        {
+          "id": "h19",
+          "question": "부모님을 한국에 모셔서 같이 살고 싶은데 어떤 체류자격이 있나요?",
+          "expected": [
+            "immigration_decree:table02=F-1"
+          ],
+          "got": [
+            "immigration_decree:table02#18",
+            "immigration_act:10",
+            "immigration_rules:table08#22"
+          ]
+        },
+        {
+          "id": "h22",
+          "question": "취업비자 없이 일하다가 걸리면 처벌받나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18",
+            "immigration_act:46"
+          ],
+          "got": [
+            "immigration_act:106",
+            "immigration_act:97",
+            "overseas_koreans_act:10"
+          ]
+        },
+        {
+          "id": "h27",
+          "question": "What visa does the foreign spouse of a Korean citizen get?",
+          "expected": [
+            "immigration_decree:table02=F-6"
+          ],
+          "got": [
+            "nationality_act:6",
+            "immigration_decree:8",
+            "nationality_act:5"
+          ]
+        },
+        {
+          "id": "h28",
+          "question": "What is the maximum period of stay for an overseas Korean (F-4)?",
+          "expected": [
+            "overseas_koreans_act:10"
+          ],
+          "got": [
+            "immigration_act:10-2",
+            "immigration_decree:36",
+            "immigration_decree:23"
+          ]
+        }
+      ]
+    },
+    "Meaning + reranker": {
+      "all": {
+        "questions": 30,
+        "hit@1": 0.6,
+        "hit@4": 0.8,
+        "hit@10": 0.867,
+        "mrr@10": 0.695
+      },
+      "korean": {
+        "questions": 22,
+        "hit@1": 0.636,
+        "hit@4": 0.818,
+        "hit@10": 0.909,
+        "mrr@10": 0.728
+      },
+      "english": {
+        "questions": 8,
+        "hit@1": 0.5,
+        "hit@4": 0.75,
+        "hit@10": 0.75,
+        "mrr@10": 0.604
+      },
+      "seconds_per_question": 0.689,
+      "misses_top4": [
+        {
+          "id": "h01",
+          "question": "학생 신분으로 편의점에서 일해도 문제 없나요?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_decree:23",
+            "immigration_decree:table02#18",
+            "immigration_rules:table08#14"
+          ]
+        },
+        {
+          "id": "h08",
+          "question": "E-9으로 최대 몇 년 일할 수 있어요?",
+          "expected": [
+            "foreign_workers_act:18",
+            "foreign_workers_act:18-2"
+          ],
+          "got": [
+            "immigration_rules:table01#1",
+            "immigration_rules:17-3#2",
+            "immigration_decree:table02#12"
+          ]
+        },
+        {
+          "id": "h11",
+          "question": "외국인을 몰래 고용하면 처벌이 어떻게 되나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18"
+          ],
+          "got": [
+            "foreign_workers_act:29",
+            "immigration_act:97",
+            "foreign_workers_act:30"
+          ]
+        },
+        {
+          "id": "h17",
+          "question": "대학원을 졸업하고 한국에서 일자리를 찾으려면 어떤 비자가 필요해요?",
+          "expected": [
+            "immigration_decree:table02=D-10"
+          ],
+          "got": [
+            "immigration_decree:table03#5",
+            "immigration_rules:table08#14",
+            "immigration_decree:table02#10"
+          ]
+        },
+        {
+          "id": "h27",
+          "question": "What visa does the foreign spouse of a Korean citizen get?",
+          "expected": [
+            "immigration_decree:table02=F-6"
+          ],
+          "got": [
+            "nationality_act:6",
+            "nationality_act:15",
+            "immigration_rules:table08#19"
+          ]
+        },
+        {
+          "id": "h28",
+          "question": "What is the maximum period of stay for an overseas Korean (F-4)?",
+          "expected": [
+            "overseas_koreans_act:10"
+          ],
+          "got": [
+            "immigration_decree:table03#3",
+            "immigration_act:10-2",
+            "immigration_decree:15#2"
+          ]
+        }
+      ]
+    },
+    "Hybrid + reranker": {
+      "all": {
+        "questions": 30,
+        "hit@1": 0.467,
+        "hit@4": 0.7,
+        "hit@10": 0.8,
+        "mrr@10": 0.589
+      },
+      "korean": {
+        "questions": 22,
+        "hit@1": 0.455,
+        "hit@4": 0.682,
+        "hit@10": 0.818,
+        "mrr@10": 0.591
+      },
+      "english": {
+        "questions": 8,
+        "hit@1": 0.5,
+        "hit@4": 0.75,
+        "hit@10": 0.75,
+        "mrr@10": 0.583
+      },
+      "seconds_per_question": 0.682,
+      "misses_top4": [
+        {
+          "id": "h01",
+          "question": "학생 신분으로 편의점에서 일해도 문제 없나요?",
+          "expected": [
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "immigration_act:79-2",
+            "immigration_decree:24-8",
+            "immigration_decree:table02#18"
+          ]
+        },
+        {
+          "id": "h06",
+          "question": "한국 사람과 결혼했는데 국적을 취득하려면 몇 년이 필요해요?",
+          "expected": [
+            "nationality_act:6"
+          ],
+          "got": [
+            "foreigners_framework_act:15",
+            "nationality_decree:15",
+            "nationality_act:11"
+          ]
+        },
+        {
+          "id": "h07",
+          "question": "E-9 근로자가 직장을 바꾸려면 어떻게 해야 하나요?",
+          "expected": [
+            "foreign_workers_act:25"
+          ],
+          "got": [
+            "immigration_rules:table08#14",
+            "immigration_rules:table10#1",
+            "immigration_decree:table02#12"
+          ]
+        },
+        {
+          "id": "h08",
+          "question": "E-9으로 최대 몇 년 일할 수 있어요?",
+          "expected": [
+            "foreign_workers_act:18",
+            "foreign_workers_act:18-2"
+          ],
+          "got": [
+            "immigration_rules:table01#1",
+            "immigration_rules:17-3#2",
+            "immigration_rules:9"
+          ]
+        },
+        {
+          "id": "h11",
+          "question": "외국인을 몰래 고용하면 처벌이 어떻게 되나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18"
+          ],
+          "got": [
+            "immigration_act:97",
+            "foreign_workers_act:31",
+            "foreign_workers_act:20"
+          ]
+        },
+        {
+          "id": "h17",
+          "question": "대학원을 졸업하고 한국에서 일자리를 찾으려면 어떤 비자가 필요해요?",
+          "expected": [
+            "immigration_decree:table02=D-10"
+          ],
+          "got": [
+            "immigration_rules:table08#14",
+            "immigration_act:10-3",
+            "immigration_rules:table03#1"
+          ]
+        },
+        {
+          "id": "h22",
+          "question": "취업비자 없이 일하다가 걸리면 처벌받나요?",
+          "expected": [
+            "immigration_act:94",
+            "immigration_act:18",
+            "immigration_act:46"
+          ],
+          "got": [
+            "immigration_act:97",
+            "immigration_act:95",
+            "immigration_decree:23"
+          ]
+        },
+        {
+          "id": "h27",
+          "question": "What visa does the foreign spouse of a Korean citizen get?",
+          "expected": [
+            "immigration_decree:table02=F-6"
+          ],
+          "got": [
+            "nationality_act:6",
+            "nationality_act:15",
+            "immigration_decree:15#2"
+          ]
+        },
+        {
+          "id": "h28",
+          "question": "What is the maximum period of stay for an overseas Korean (F-4)?",
+          "expected": [
+            "overseas_koreans_act:10"
+          ],
+          "got": [
+            "immigration_act:10-2",
+            "immigration_decree:15#2",
+            "immigration_decree:23"
+          ]
+        }
+      ]
+    }
+  },
+  "_setup": {
+    "pieces": 870,
+    "pieces_with_english": 481
+  }
+}

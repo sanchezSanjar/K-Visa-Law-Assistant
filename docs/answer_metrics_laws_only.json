@@ -1,0 +1,2972 @@
+{
+  "main": {
+    "summary": {
+      "law_questions": 80,
+      "expected_article_in_context": 0.95,
+      "answer_cites_expected_article": 0.938,
+      "answered_with_a_citation": 0.975,
+      "wrongly_refused": 0.025,
+      "same_language_as_question": 1.0,
+      "median_seconds": 13.54,
+      "out_of_scope_questions": 4,
+      "out_of_scope_refused": 1.0
+    },
+    "answers": [
+      {
+        "id": "ko01",
+        "type": "law",
+        "lang": "ko",
+        "question": "비자 기간이 끝나기 전에 체류기간을 연장하려면 어떻게 해야 하나요?",
+        "answer": "비자 기간이 끝나기 전에 체류기간을 연장하려면, 체류기간이 만료되기 전에 체류기간 연장허가 신청서에 법무부령으로 정하는 서류를 첨부하여 청장·사무소장 또는 출장소장에게 제출해야 합니다 [2].  \n청장·사무소장은 신청서를 받은 후 지체 없이 법무부장관에게 의견을 보내야 하며, 법무부장관이 허가하면 여권에 체류기간 연장허가인을 찍거나 체류기간 연장 스티커를 붙입니다 [2].  \n체류 연장이 필요한 사유가 있는 경우, 그 사유를 소명하는 자료를 함께 제출해야 하며, 출국을 위한 일시 체류나 출국 불가 등에 해당할 경우 체류기간 연장이 가능합니다 [3].  \n체류기간 연장에 대한 수수료는 없으며, 체류연장기간이 30일을 초과하는 경우 법무부장관의 승인이 필요합니다 [3].",
+        "sources": [
+          "immigration_act:25",
+          "immigration_decree:31",
+          "immigration_rules:32",
+          "immigration_act:25-2"
+        ],
+        "top_score": 0.9252,
+        "cited": [
+          "immigration_decree:31",
+          "immigration_rules:32"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 20.21
+      },
+      {
+        "id": "ko02",
+        "type": "law",
+        "lang": "ko",
+        "question": "체류기간이 지났는데 계속 있으면 강제퇴거 되나요?",
+        "answer": "예, 체류기간이 지났는데 계속 체류하면 강제퇴거될 수 있습니다.  \n이 경우 외국인은 제25조에 따라 체류기간을 초과하는 것은 불법이며, 이에 해당하는 사람은 제11조제1항 각 호의 어느 하나에 해당하는 입국금지 사유로 간주됩니다.  \n따라서 지방출입국ㆍ외국인관서의 장은 해당 사유를 발견한 경우 강제퇴거를 할 수 있습니다 [1].  \n강제퇴거명령을 받은 경우, 송환할 수 없는 상황에서는 보호시설에 보호할 수 있으며, 보호기간은 최대 20개월까지 가능합니다 [2].  \n그러나 난민신청 중인 경우나 이의신청 중인 경우는 송환을 제한할 수 있습니다 [3].",
+        "sources": [
+          "immigration_act:46",
+          "immigration_act:63",
+          "immigration_act:62",
+          "immigration_act:25"
+        ],
+        "top_score": 0.3925,
+        "cited": [
+          "immigration_act:46",
+          "immigration_act:63",
+          "immigration_act:62"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 16.54
+      },
+      {
+        "id": "ko03",
+        "type": "law",
+        "lang": "ko",
+        "question": "한국에서 일하려면 어떤 체류자격이 필요한가요?",
+        "answer": "한국에서 일하려면 대통령령으로 정하는 바에 따라 취업활동을 할 수 있는 체류자격을 가져야 합니다 [1].  \n이 체류자격은 일반체류자격 중에서 '전문직업(E-5)'이나 '기술지도(E-4)' 등으로 구분되며, 특정 전문 분야에 해당하는 외국인에게 부여됩니다 [4].  \n단기체류자격(예: 관광, 방문)은 취업활동을 할 수 없습니다 [2].  \n외국인 고용을 알선하거나 권유하는 행위는 제한되어 있으며, 체류자격을 가진 외국인만 지정된 근무처에서 근무할 수 있습니다 [1].  \n체류자격을 가진 외국인은 지정된 근무처에서만 근무할 수 있으므로, 고용은 반드시 해당 체류자격을 갖춘 사람에 한해 가능합니다 [1].",
+        "sources": [
+          "immigration_act:18",
+          "immigration_act:10-2",
+          "immigration_act:10",
+          "immigration_decree:table02#10"
+        ],
+        "top_score": 0.9378,
+        "cited": [
+          "immigration_act:18",
+          "immigration_act:10-2",
+          "immigration_decree:table02#10"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 16.65
+      },
+      {
+        "id": "ko04",
+        "type": "law",
+        "lang": "ko",
+        "question": "유학생 비자로 아르바이트를 해도 되나요?",
+        "answer": "제공된 법령에서 유학생 비자로 아르바이트를 해도 되는지 여부에 대한 명시적인 규정은 없습니다.  \n유학생 비자는 체류자격 중 하나이며, 취업활동을 할 수 있는지 여부는 제18조에 따라 입국한 날부터 3년 동안 취업활동을 할 수 있다는 점을 알려주지만, 이는 일반적인 외국인 고용에 대한 제한을 말하는 것이며, 유학생의 구체적인 경우에 대한 규정은 포함되어 있지 않습니다.  \n따라서 유학생이 아르바이트를 할 수 있는지 여부는 법령에서 명확히 규정되지 않았습니다.  \n\n제공된 법령에서 이 질문에 대한 내용을 찾을 수 없습니다.",
+        "sources": [
+          "immigration_act:18",
+          "immigration_act:79-2",
+          "foreign_workers_act:18",
+          "immigration_act:97"
+        ],
+        "top_score": 0.0774,
+        "cited": [],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": true,
+        "language_ok": true,
+        "seconds": 14.19
+      },
+      {
+        "id": "ko05",
+        "type": "law",
+        "lang": "ko",
+        "question": "다니던 회사를 그만두고 다른 회사로 옮기면 허가를 받아야 하나요?",
+        "answer": "네, 다니던 회사를 그만두고 다른 회사로 옮기면 허가를 받아야 합니다.  \n이 경우는 '근무처의 변경'에 해당되며, 출입국관리법 제21조에 따라 법무부장관의 허가를 받아야 합니다.  \n허가를 받기 위해서는 근무처 변경 허가 신청서를 제출하고, 청장 또는 출장소장이 법무부장관에게 의견을 전달해야 합니다.  \n청장 또는 출장소장은 허가를 받은 경우 여권에 변경된 근무처와 체류기간을 기재하거나 스티커를 붙여야 합니다.  \n이 과정은 외국인근로자가 근무처를 변경할 때 반드시 따라야 하는 법적 절차입니다 [1][2].",
+        "sources": [
+          "immigration_act:21",
+          "immigration_decree:26",
+          "foreign_workers_act:25",
+          "foreign_workers_act:18-4"
+        ],
+        "top_score": 0.1509,
+        "cited": [
+          "immigration_act:21",
+          "immigration_decree:26"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 16.68
+      },
+      {
+        "id": "ko06",
+        "type": "law",
+        "lang": "ko",
+        "question": "지금 비자에서 다른 종류의 비자로 바꾸고 싶어요.",
+        "answer": "체류자격을 변경하고 싶다면, 체류자격 변경허가를 받아야 합니다.  \n이를 위해 체류자격 변경허가 신청서와 법무부령에서 정하는 서류를 첨부하여 청장 또는 출장소장에게 제출해야 합니다.  \n청장 또는 출장소장은 신청서를 받은 후 즉시 법무부장관에게 의견을 전달해야 하며, 법무부장관이 허가를 내릴 경우 여권에 체류자격 변경허가 인장을 찍거나 스티커를 붙입니다.  \n체류자격 변경허가를 받기 위해서는 체류자격이 다른 활동을 하려는 경우에 해당하며, 신분이 변경된 날로부터 30일 이내에 신청해야 합니다.  \n허가 심사 기준은 법무부령으로 정해져 있습니다 [1], [2], [3].",
+        "sources": [
+          "immigration_act:89",
+          "immigration_decree:30",
+          "immigration_act:24",
+          "immigration_act:36"
+        ],
+        "top_score": 0.0068,
+        "cited": [
+          "immigration_act:89",
+          "immigration_decree:30",
+          "immigration_act:24"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 17.52
+      },
+      {
+        "id": "ko07",
+        "type": "law",
+        "lang": "ko",
+        "question": "한국에서 태어난 외국인 아기는 체류자격을 어떻게 받나요?",
+        "answer": "한국에서 태어난 외국인 아기는 출생한 날부터 90일 이내에 체류자격을 받을 수 있습니다. 이는 출입국관리법 제23조 제1항 1호에 따라 적용되는 사례입니다.  \n이 체류자격은 출생 후 90일 이내에 체류하게 되는 경우에만 부여되며, 그 이후에는 다른 체류자격을 신청해야 합니다.  \n체류자격 부여의 심사는 법무부령으로 정해진 기준에 따라 이루어집니다 [1].  \n체류자격을 받는 시점에서 90일을 초과하여 체류하게 되면 외국인등록도 함께 진행해야 합니다 [2].",
+        "sources": [
+          "immigration_act:23",
+          "immigration_act:31",
+          "immigration_decree:table02#14",
+          "immigration_decree:table03#2"
+        ],
+        "top_score": 0.7171,
+        "cited": [
+          "immigration_act:23",
+          "immigration_act:31"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 14.74
+      },
+      {
+        "id": "ko08",
+        "type": "law",
+        "lang": "ko",
+        "question": "입국하고 나서 외국인등록은 며칠 안에 해야 하나요?",
+        "answer": "입국한 날부터 90일을 초과하여 대한민국에 체류하려면, 입국한 날부터 90일 이내에 외국인등록을 해야 합니다 [1]. 다만, 주한 외국공관 직원, 외교관 또는 협정에 따른 특권을 가진 사람 등은 예외입니다 [1].  \n체류 기간이 90일을 초과하는 경우, 체류자격을 받은 사람에게는 체류자격을 받을 당시에 등록을 해야 합니다 [1].  \n등록은 체류지 관할 지방출입국·외국인관서의 장에게 하여야 하며, 등록 후에는 개인별로 외국인등록번호를 부여받습니다 [1].",
+        "sources": [
+          "immigration_act:31",
+          "immigration_act:35",
+          "immigration_act:37",
+          "immigration_act:33"
+        ],
+        "top_score": 0.9832,
+        "cited": [
+          "immigration_act:31"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.9
+      },
+      {
+        "id": "ko09",
+        "type": "law",
+        "lang": "ko",
+        "question": "이사를 하면 체류지 변경 신고는 언제까지 해야 하나요?",
+        "answer": "이사를 하면 체류지 변경 신고는 전입한 날부터 15일 이내에 해야 합니다 [1].  \n이 신고는 새로운 체류지의 시·군·구 또는 읍·면·동의 장이나 그 체류지를 관할하는 지방출입국·외국인관서의 장에게 하여야 합니다 [1].  \n신고를 위한 서류는 체류지 변경신고서에 법무부령으로 정하는 서류를 첨부하여 제출해야 하며, 이는 임대차계약서, 매매계약서 등이 포함됩니다 [4].  \n신고는 전입일로부터 15일 이내에 완료되어야 하며, 지연 시 법적 책임이 발생할 수 있습니다 [1].  \n체류지 변경 신고는 외국인등록증을 제출하고, 변경사항을 외국인등록증에 기재한 후 돌려받는 방식으로 이루어집니다 [1].",
+        "sources": [
+          "immigration_act:36",
+          "immigration_act:35",
+          "immigration_decree:45",
+          "immigration_rules:49-3"
+        ],
+        "top_score": 0.8909,
+        "cited": [
+          "immigration_act:36",
+          "immigration_rules:49-3"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 18.61
+      },
+      {
+        "id": "ko10",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인등록증을 잃어버렸는데 재발급 받을 수 있나요?",
+        "answer": "예, 외국인등록증을 잃어버렸다면 재발급 받을 수 있습니다.  \n이 사유는 출입국관리법 시행령 제42조 제1항 제1호에 명시되어 있으며, 외국인등록증을 분실한 경우 재발급이 가능하다고 규정하고 있습니다.  \n재발급을 원하는 사람은 외국인등록증 재발급 신청서에 사진 1장을 첨부하여 체류지 관할 청장 또는 출장소장에게 제출해야 합니다.  \n재발급 시 원래의 외국인등록증을 첨부해야 하며, 발급 대장에 사유를 기재하고 기존 증명서는 파기합니다.  \n[1]",
+        "sources": [
+          "immigration_decree:42",
+          "immigration_rules:48",
+          "immigration_rules:48-2",
+          "immigration_act:33"
+        ],
+        "top_score": 0.9975,
+        "cited": [
+          "immigration_decree:42"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.36
+      },
+      {
+        "id": "ko11",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인은 여권을 항상 가지고 다녀야 하나요?",
+        "answer": "예, 외국인은 대한민국에 체류할 때마다 여권을 항상 지니고 있어야 합니다. 이는 출입국관리법 제27조에 따라 규정되어 있으며, 체류하는 외국인은 여권, 선원신분증명서, 외국인입국허가서, 외국인등록증, 모바일외국인등록증 또는 상륙허가서를 지니고 있어야 하며, 17세 미만인 경우에는 예외입니다 [1]. 또한 출국 시에는 유효한 여권을 가지고 출국관리공무원의 출국심사를 받아야 하며, 이 과정에서도 여권 제시가 필요합니다 [2]. 따라서 여권을 항상 지니고 있어야 하는 것이 법적으로 요구됩니다.",
+        "sources": [
+          "immigration_act:27",
+          "immigration_act:28",
+          "immigration_act:7",
+          "immigration_decree:15#1"
+        ],
+        "top_score": 0.9953,
+        "cited": [
+          "immigration_act:27",
+          "immigration_act:28"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 17.16
+      },
+      {
+        "id": "ko12",
+        "type": "law",
+        "lang": "ko",
+        "question": "잠깐 고향에 다녀오려면 재입국허가를 받아야 하나요?",
+        "answer": "예, 잠깐 고향에 다녀오려면 재입국허가를 받아야 합니다.  \n재입국허가를 받기 위해서는 체류기간 내에 출국한 후 다시 국내로 돌아오는 경우에 해당하며, 이는 법무부장관이 재입국을 허가할 수 있도록 규정하고 있습니다 [1].  \n재입국허가는 한 차례뿐인 단수재입국허가와 2회 이상 가능한 복수재입국허가로 구분됩니다 [1].  \n재입국허가를 받기 위해선 재입국허가신청서에 사유를 소명하는 서류를 첨부하여 신청해야 하며, 청장 또는 출장소장이 법무부장관에게 송부해야 합니다 [3].  \n재입국허가기간은 허가받은 체류기간을 초과하지 않도록 정합니다 [3].",
+        "sources": [
+          "immigration_act:30",
+          "immigration_decree:38",
+          "immigration_rules:39-7",
+          "immigration_rules:43"
+        ],
+        "top_score": 0.5292,
+        "cited": [
+          "immigration_act:30",
+          "immigration_rules:39-7"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 16.28
+      },
+      {
+        "id": "ko13",
+        "type": "law",
+        "lang": "ko",
+        "question": "영주권(F-5)을 받으려면 어떤 요건이 필요한가요?",
+        "answer": "영주권(F-5)을 받기 위해서는 다음의 조건 중 하나를 충족해야 합니다.  \n1. 국외에서 특정 분야의 박사 학위를 취득한 사람이며, 국내 기업에 고용되고 있는 경우 [2].  \n2. 국내 대학원에서 정규과정을 마치고 박사학위를 취득한 경우 [2].  \n3. 법무부장관이 정하는 분야에서 학사 학위 이상의 학위 또는 기술자격증을 보유하고 있으며, 국내 체류 기간이 3년 이상이고, 국내 기업에 고용되어 법무부장관이 정한 임금 이상을 받는 경우 [2].  \n4. 과학, 경영, 교육, 문화예술, 체육 등 특정 분야에서 탁월한 능력을 보유한 경우 [2].  \n5. 외국인투자기업 등록증명서와 법인등기사항전부증명서 또는 사업자등록증, 소득입증서류를 제출하는 경우 [3].  \n6. 결혼이민(F-6)을 위한 배우자로서 대한민국에 2년 이상 체류하고 있는 경우 [3].  \n7. 외국인투자기업에 투자하고 5명 이상의 국민을 고용한 경우 [4].  \n\n각 경우에 따라 필요한 서류는 별도로 요구됩니다 [1], [2], [3], [4].",
+        "sources": [
+          "immigration_rules:table08#17",
+          "immigration_decree:table03#4",
+          "immigration_rules:table07#18",
+          "immigration_decree:table03#2"
+        ],
+        "top_score": 0.859,
+        "cited": [
+          "immigration_rules:table08#17",
+          "immigration_decree:table03#4",
+          "immigration_rules:table07#18",
+          "immigration_decree:table03#2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 25.58
+      },
+      {
+        "id": "ko14",
+        "type": "law",
+        "lang": "ko",
+        "question": "사회통합프로그램을 이수하면 어떤 혜택이 있나요?",
+        "answer": "사회통합프로그램을 이수하면, 법무부장관은 사증 발급이나 체류 관련 허가 등에서 이를 우대할 수 있습니다 [1].  \n이 프로그램은 한국어 교육, 한국사회 이해, 직무능력 개발 등 다양한 교육을 포함하며, 외국인의 사회적응을 지원합니다 [2].  \n법무부장관은 이수 여부를 평가하여 사회통합 프로그램 참여자의 성과를 확인하고, 이에 따라 관련 허가 절차에서 우대를 적용할 수 있습니다 [2].  \n프로그램 운영기관은 전문 인력과 시설을 확보하고, 사회통합을 위한 교육 및 상담을 수행합니다 [4].  \n이수 후 사회적응 능력이 평가되며, 이에 따라 정부의 허가 절차에서 유리한 조건을 제공받을 수 있습니다 [2].",
+        "sources": [
+          "immigration_act:40",
+          "immigration_decree:48",
+          "immigration_act:39",
+          "immigration_decree:49"
+        ],
+        "top_score": 0.9573,
+        "cited": [
+          "immigration_act:40",
+          "immigration_decree:48",
+          "immigration_decree:49"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.23
+      },
+      {
+        "id": "ko15",
+        "type": "law",
+        "lang": "ko",
+        "question": "출국명령을 받으면 어떻게 되나요?",
+        "answer": "출국명령을 받으면 지정된 기한 내에 출국해야 하며, 기한 내에 출국하지 않거나 조건을 위반하면 강제퇴거명령서가 발급되어 강제로 출국하게 됩니다 [2]. 출국명령서는 발급일로부터 30일 이내에 출국기한을 정해야 합니다 [4]. 출국명령을 받은 사람이 출국하지 않거나 조건을 위반하면 예치된 이행보증금의 일부 또는 전부가 국고에 귀속됩니다 [2].",
+        "sources": [
+          "immigration_decree:93",
+          "immigration_act:68",
+          "immigration_act:64",
+          "immigration_rules:65"
+        ],
+        "top_score": 0.8826,
+        "cited": [
+          "immigration_act:68",
+          "immigration_rules:65"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 9.28
+      },
+      {
+        "id": "ko16",
+        "type": "law",
+        "lang": "ko",
+        "question": "강제퇴거명령에 대해 이의신청을 할 수 있나요?",
+        "answer": "예, 강제퇴거명령에 대해 이의신청을 할 수 있습니다.  \n용의자는 강제퇴거명령서를 받은 날부터 7일 이내에 지방출입국ㆍ외국인관서의 장을 거쳐 법무부장관에게 이의신청서를 제출해야 합니다 [2].  \n이의신청은 강제퇴거명령의 합법성이나 정당성을 검토하기 위한 절차이며, 법무부장관이 이를 심사하고 결과를 관할기관에 통보합니다 [2].  \n심사 결과 이의신청이 이유 있다고 판단되면 용의자의 보호가 해제되거나 강제퇴거가 중단됩니다 [2].  \n이의신청은 강제퇴거명령을 받은 용의자만이 할 수 있으며, 그 절차는 법령에서 명확히 규정되어 있습니다 [2].",
+        "sources": [
+          "immigration_decree:74",
+          "immigration_act:60",
+          "immigration_act:59",
+          "immigration_act:62"
+        ],
+        "top_score": 0.9986,
+        "cited": [
+          "immigration_act:60"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.01
+      },
+      {
+        "id": "ko17",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인보호소에 얼마나 오래 보호될 수 있나요?",
+        "answer": "외국인보호소에 보호되는 기간은 법령에 따라 달라집니다.  \n\n강제퇴거명령을 받은 외국인이 송환할 수 없는 경우, 보호기간은 최대 20개월까지 가능하며, 이는 송환 절차가 지연되는 특정 사유(예: 난민 신청, 범죄 관련 사유 등)가 있는 경우에 해당합니다. 보호기간은 매 3개월 단위로 연장되며, 총 보호기간은 9개월을 넘을 수 없지만, 특별한 사유가 있으면 20개월을 넘을 수 있습니다 [3].  \n\n일시보호의 경우, 보호기간은 48시간을 초과하지 않으며, 부득이한 사유가 있으면 48시간을 초과하지 않는 범위에서 한 차례만 연장할 수 있습니다 [2].  \n\n보호시설은 외국인보호실, 외국인보호소 또는 법무부장관이 지정한 장소로, 보호기간에 따라 달라질 수 있습니다 [1].  \n\n따라서 보호 기간은 상황에 따라 2개월에서 최대 20개월까지 가능합니다.",
+        "sources": [
+          "immigration_act:52",
+          "immigration_act:56",
+          "immigration_act:63",
+          "immigration_decree:70"
+        ],
+        "top_score": 0.9293,
+        "cited": [
+          "immigration_act:52",
+          "immigration_act:56",
+          "immigration_act:63"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 18.54
+      },
+      {
+        "id": "ko18",
+        "type": "law",
+        "lang": "ko",
+        "question": "취업 자격이 없는 외국인을 고용한 사장도 처벌받나요?",
+        "answer": "예, 취업 자격이 없는 외국인을 고용한 사장은 처벌받습니다.  \n이 경우는 출입국관리법 제97조 제1항에 해당하며, 취업활동을 할 수 있는 체류자격을 가지지 않은 외국인을 고용하는 행위를 알선하거나 권유한 사람에게 500만 원 이하의 벌금이 부과됩니다.  \n이 법령은 사장이 직접 고용을 알선하거나 권유한 경우를 포함하여 처벌 대상으로 규정하고 있습니다.  \n또한, 이와 관련해 외국인근로자의 고용을 제한하는 조항도 적용될 수 있으며, 고용허가를 받지 않은 경우 3년간 고용을 제한받을 수 있습니다.  \n따라서 취업 자격이 없는 외국인을 고용한 사장은 법 위반으로 간주되어 벌금 또는 고용 제한에 처할 수 있습니다 [1][2].",
+        "sources": [
+          "immigration_act:97",
+          "foreign_workers_act:20",
+          "immigration_decree:24",
+          "immigration_act:19"
+        ],
+        "top_score": 0.6367,
+        "cited": [
+          "immigration_act:97",
+          "foreign_workers_act:20"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.04
+      },
+      {
+        "id": "ko19",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인 직원이 퇴사하면 회사가 출입국에 신고해야 하나요?",
+        "answer": "예, 외국인 직원이 퇴사하면 회사는 출입국에 신고해야 합니다.  \n이 경우는 '외국인을 해고하거나 외국인이 퇴직 또는 사망한 경우'에 해당하므로, 제19조제1항제1호에 따라 15일 이내에 지방출입국ㆍ외국인관서의 장에게 신고해야 합니다 [1].  \n신고는 외국인 퇴사일로부터 15일 이내에 이루어져야 하며, 신고서를 제출해야 합니다 [2].  \n이 신고는 외국인근로자의 고용관리와 연계되어 직업안정기관에도 통보될 수 있습니다 [3].",
+        "sources": [
+          "immigration_act:19",
+          "immigration_decree:24",
+          "foreign_workers_act:17",
+          "immigration_rules:28"
+        ],
+        "top_score": 0.9804,
+        "cited": [
+          "immigration_act:19",
+          "immigration_decree:24",
+          "foreign_workers_act:17"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.09
+      },
+      {
+        "id": "ko20",
+        "type": "law",
+        "lang": "ko",
+        "question": "체류기간 연장 신청 수수료는 얼마인가요?",
+        "answer": "체류기간 연장 허가에 대한 수수료는 6만원입니다. 다만, 체류자격이 영 별표 1의2 중 27. 결혼이민(F-6)인 경우 3만원으로 감면됩니다.  \n또한, 체류기간 연장을 허가받기 위해 출국을 위한 사유가 있는 경우, 수수료를 받지 않습니다.  \n이에 따라 수수료는 상황에 따라 달라질 수 있습니다.  \n[1]  \n[2]  \n[3]",
+        "sources": [
+          "immigration_rules:72",
+          "immigration_rules:32",
+          "immigration_rules:74",
+          "immigration_decree:31"
+        ],
+        "top_score": 0.8911,
+        "cited": [
+          "immigration_rules:72",
+          "immigration_rules:32",
+          "immigration_rules:74"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 10.76
+      },
+      {
+        "id": "ko21",
+        "type": "law",
+        "lang": "ko",
+        "question": "비자 수수료를 면제받을 수 있는 경우가 있나요?",
+        "answer": "네, 비자 수수료를 면제받을 수 있는 경우가 있습니다.  \n특히 국제협력사업 등을 수행하는 대한민국 기관이나 정부출연연구기관이 초청한 외국인으로서, 문화예술, 유학, 일반연수 등 체류 활동을 하기 위해 체류자격 변경이나 연장을 신청하는 경우 수수료를 면제받을 수 있습니다 [1].  \n또한 외교, 협정, 기업투자 등 특정 체류자격을 가진 외국인도 수수료 면제 대상입니다 [1].  \n국가이익이나 인도적 사유 등으로 법무부장관이 인정하는 경우에도 면제가 가능합니다 [1].  \n이에 따라 비자 수수료 면제는 구체적인 사유와 법무부장관의 인정을 기반으로 합니다 [1].",
+        "sources": [
+          "immigration_rules:74",
+          "immigration_act:87",
+          "nationality_act:24",
+          "immigration_act:100"
+        ],
+        "top_score": 0.2187,
+        "cited": [
+          "immigration_rules:74"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.65
+      },
+      {
+        "id": "ko22",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인등록을 늦게 하면 과태료가 얼마인가요?",
+        "answer": "외국인등록을 늦게 하면 과태료가 부과될 수 있습니다. 그러나 법에서 명시된 과태료는 외국인등록을 하지 않은 경우에 한해 적용되며, 그에 대한 과태료는 제100조에 따라 200만원 이하로 부과됩니다. 다만, 실제로 부과되는 금액은 위반 기간이나 횟수에 따라 별표 2에 따라 달라집니다. 예를 들어, 3개월 미만이라면 10만원, 6개월 이상 12개월 미만이라면 50만원 등으로 구분됩니다. [1][2]",
+        "sources": [
+          "immigration_act:100",
+          "immigration_decree:table04#2",
+          "immigration_act:31",
+          "immigration_decree:table04#3"
+        ],
+        "top_score": 0.8102,
+        "cited": [
+          "immigration_act:100",
+          "immigration_decree:table04#2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 11.23
+      },
+      {
+        "id": "ko23",
+        "type": "law",
+        "lang": "ko",
+        "question": "결혼이민자인데 가정폭력 재판 중이면 체류기간을 연장할 수 있나요?",
+        "answer": "예, 결혼이민자이고 가정폭력 재판 중이면 체류기간을 연장할 수 있습니다.  \n이 경우는 「가정폭력범죄의 처벌 등에 관한 특례법」 제2조제1호의 가정폭력을 이유로 법원의 재판이 진행 중인 대한민국 국민의 배우자인 외국인에 해당하므로, 법무부장관이 체류기간 연장을 허가할 수 있습니다.  \n이 조건은 체류기간 연장허가를 신청하는 외국인의 상황에 따라 적용되며, 권리구제 절차가 종료될 때까지 체류 연장을 허가할 수 있습니다 [1].  \n체류기간 연장 신청은 체류기간이 끝나기 전에 청장 또는 출장소장에게 제출해야 하며, 관련 서류를 함께 제출해야 합니다 [2].",
+        "sources": [
+          "immigration_act:25-2",
+          "immigration_decree:31",
+          "immigration_act:25",
+          "immigration_act:25-5"
+        ],
+        "top_score": 0.9978,
+        "cited": [
+          "immigration_act:25-2",
+          "immigration_decree:31"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 14.0
+      },
+      {
+        "id": "ko24",
+        "type": "law",
+        "lang": "ko",
+        "question": "사증발급인정서는 무엇이고 누가 신청하나요?",
+        "answer": "사증발급인정서는 외국인을 초청하는 자가 법무부장관에게 사증발급을 신청하기 위해 제출하는 서류로, 입국을 위한 사증 발급을 위한 조건을 확인하는 데 사용됩니다 [2].  \n이 서류는 초청하는 자(예: 외국인근로자 또는 방문객)가 직접 신청할 수 있으며, 필요 시 외국인근로자와 근로계약을 체결한 사용자도 대리하여 신청할 수 있습니다 [3].  \n사증발급인정서는 법무부장관이 심사 후 발급하며, 발급 대상은 미수교국가 국민이나 특정 체류자격(예: 문화예술, 결혼이민 등)에 해당하는 외국인을 포함합니다 [2].  \n신청은 초청자 또는 그 대리자가 주소지 관할 청장 또는 출장소장에게 제출하여 심사 절차를 거쳐 발급됩니다 [2].  \n사증발급인정서는 사증 발급을 위한 공식적인 인증서로서, 사증 발급 여부를 결정하는 데 중요한 역할을 합니다 [1].",
+        "sources": [
+          "immigration_rules:17-2",
+          "immigration_rules:17",
+          "foreign_workers_act:10",
+          "immigration_act:9"
+        ],
+        "top_score": 0.9881,
+        "cited": [
+          "immigration_rules:17-2",
+          "immigration_rules:17",
+          "foreign_workers_act:10"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 17.51
+      },
+      {
+        "id": "ko25",
+        "type": "law",
+        "lang": "ko",
+        "question": "어떤 외국인이 입국을 금지당하나요?",
+        "answer": "감염병환자, 마약류 중독자, 공중위생상 위해를 끼칠 염려가 있다고 인정되는 사람은 입국을 금지당합니다 [1].  \n대한민국의 이익이나 공공의 안전을 해치는 행동을 할 염려가 있다고 인정할 만한 사람은 입국을 금지당합니다 [1].  \n경제질서 또는 사회질서를 해치거나 선량한 풍속을 해치는 행동을 할 염려가 있다고 인정할 만한 사람은 입국을 금지당합니다 [1].  \n정신장애인으로서 사리분별력이 없고 국내에서 체류활동을 보조할 사람이 없는 경우, 국내체류비용을 부담할 능력이 없는 경우, 구호가 필요한 경우 입국을 금지당합니다 [1].  \n강제퇴거명령을 받고 출국한 후 5년이 지나지 않은 사람은 입국을 금지당합니다 [1].  \n1910년 8월 29일부터 1945년 8월 15일 사이에 일본 정부나 동맹관계 정부, 일본 정부의 우월한 힘이 미치던 정부의 지시를 받거나 인종·민족·종교·국적·정치적 견해 등을 이유로 학살·학대에 관여한 사람은 입국을 금지당합니다 [1].",
+        "sources": [
+          "immigration_act:11",
+          "immigration_act:7-2",
+          "immigration_rules:44-2",
+          "immigration_decree:14"
+        ],
+        "top_score": 0.9731,
+        "cited": [
+          "immigration_act:11"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 20.66
+      },
+      {
+        "id": "ko26",
+        "type": "law",
+        "lang": "ko",
+        "question": "입국할 때 지문과 얼굴 정보를 꼭 제공해야 하나요?",
+        "answer": "입국할 때 지문과 얼굴 정보를 반드시 제공해야 하는 경우가 있습니다. 외국인이 입국심사를 받을 때, 출입국관리공무원이 지정한 정보화기기를 통해 양쪽 집게손가락의 지문과 얼굴에 관한 정보를 제공해야 합니다 [1]. 그러나 지문이 훼손되거나 다른 사유로 집게손가락을 제공할 수 없는 경우, 엄지손가락, 가운데손가락, 약손가락, 새끼손가락의 순서에 따라 지문을 제공해야 합니다 [1].\n\n또한, 법 제38조제1항에 해당하는 외국인(예: 외국인등록 또는 국내거소신고를 하는 경우)은 지문 및 얼굴 정보를 제공해야 합니다 [2]. 다만, 특정 조건을 충족하면 지문 및 얼굴 정보 제공 의무를 면제받을 수 있습니다. 예를 들어, 대통령령으로 정하는 사람(예: 국가 원수, 고위 공직자, 저명한 인물 등)이나, 대한민국의 이익을 고려하여 법무부장관이 인정하는 경우에 면제될 수 있습니다 [3].\n\n따라서 모든 외국인이 반드시 지문과 얼굴 정보를 제공해야 하는 것은 아닙니다. 제공 여부는 입국 시점, 외국인의 상태, 그리고 법무부장관의 인정 여부에 따라 달라집니다 [1][2][3].",
+        "sources": [
+          "immigration_rules:19-3",
+          "immigration_rules:50",
+          "immigration_decree:15-2",
+          "immigration_decree:15#1"
+        ],
+        "top_score": 0.9983,
+        "cited": [
+          "immigration_rules:19-3",
+          "immigration_rules:50",
+          "immigration_decree:15-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 23.56
+      },
+      {
+        "id": "ko27",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인 유학생을 받은 대학이 출입국에 알려야 하는 것이 있나요?",
+        "answer": "예, 외국인 유학생을 받은 대학은 출입국관리법에 따라 특정 사유가 발생할 때 지방출입국·외국인관서의 장에게 신고해야 합니다.  \n이 신고는 다음과 같은 경우에 이루어집니다: 학기 등록기한까지 등록을 하지 않거나 휴학한 경우, 제적 또는 연수 중단, 행방불명 등의 사유가 발생했을 때입니다.  \n신고는 해당 사유가 발생한 날로부터 15일 이내에 해야 하며, 정보통신망을 통해 신고할 수 있습니다.  \n학교장은 이를 위해 관리 담당 직원을 지정하고, 해당 사항을 출입국관서에 보고해야 합니다.  \n이 모든 내용은 출입국관리법 제19조의4 및 시행령 제24조의8에 근거합니다 [1][2].",
+        "sources": [
+          "immigration_act:19-4",
+          "immigration_decree:24-8",
+          "immigration_act:79-2",
+          "immigration_rules:47"
+        ],
+        "top_score": 0.9809,
+        "cited": [
+          "immigration_act:19-4",
+          "immigration_decree:24-8"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.88
+      },
+      {
+        "id": "ko28",
+        "type": "law",
+        "lang": "ko",
+        "question": "계절근로 프로그램은 무엇인가요?",
+        "answer": "계절근로 프로그램은 법무부장관이 계절적 특성이 있는 농업·어업 분야에서 취업을 하려는 외국인의 도입과 체류를 관리 및 지원하기 위해 시행하는 프로그램입니다 [1].  \n이 프로그램을 효과적으로 운영하기 위해 계절근로 정책협의회를 구성하고, 전문기관을 지정하여 외국인의 선발, 입국, 교육, 통역, 체류, 출국 등 업무를 지원합니다 [1].  \n전문기관은 공공기관, 농업협동조합, 비영리법인 등이 지정될 수 있으며, 전문인력과 사무실을 갖추고 계절근로자의 업무를 수행해야 합니다 [2].  \n이 프로그램은 농작물 재배, 수확, 수산물 원시가공 등 특정 업종에서 외국인을 도입하는 데 사용되며, 법무부장관이 관계 중앙행정기관과 협의하여 정합니다 [4].",
+        "sources": [
+          "immigration_act:19-5",
+          "immigration_rules:28-3",
+          "immigration_rules:28-2",
+          "immigration_decree:table02#11"
+        ],
+        "top_score": 0.9765,
+        "cited": [
+          "immigration_act:19-5",
+          "immigration_rules:28-3",
+          "immigration_decree:table02#11"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 17.21
+      },
+      {
+        "id": "ko29",
+        "type": "law",
+        "lang": "ko",
+        "question": "출국할 때 외국인등록증을 반납해야 하나요?",
+        "answer": "출국할 때 외국인등록증을 반납해야 하는 경우가 있습니다. 그러나 재입국허가를 받고 일시 출국하거나, 복수사증 소지자나 재입국허가 면제대상 국가의 국민이며, 허가된 체류기간 내에 다시 입국하려는 경우는 반납하지 않아도 됩니다. 또한, 국민이 되거나 사망한 경우에도 반납이 필요합니다. 반납 여부는 상황에 따라 다르며, 출입국관리공무원에게 직접 문의하는 것이 가장 정확합니다 [1].",
+        "sources": [
+          "immigration_act:37",
+          "immigration_decree:46",
+          "immigration_decree:47",
+          "immigration_act:37-2"
+        ],
+        "top_score": 0.9997,
+        "cited": [
+          "immigration_act:37"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 10.77
+      },
+      {
+        "id": "ko30",
+        "type": "law",
+        "lang": "ko",
+        "question": "체류자격 외 활동허가를 신청할 때 어떤 서류가 필요한가요?",
+        "answer": "체류자격 외 활동허가를 신청할 때 필요한 서류는 신청자의 상황(예: 본인, 피부양가족, 공무, 관광, 유학 등)에 따라 달라집니다. 일반적으로는 여권, 외국인등록증, 재학증명서 등을 공통으로 제출해야 하며, 부득이한 경우 원본을 제출하지 못할 시 심사관이 원본을 확인한 후 사본에 원본대조필 도장을 찍습니다.  \n\n본인의 경우 파견·재직을 증명하는 서류나 자국 소속 부처의 협조공문, 초청계약서, 재직증명서 등을 제출해야 합니다. 피부양가족의 경우는 출생증명서와 가족관계 증명서, 부양자의 신분증을 제출해야 하며, 부양자가 공무수행을 증명하는 서류도 필요합니다.  \n\n특정 활동(예: 문화예술, 전문직업, 관광, 취업 등)에 따라 별도의 서류(예: 활동계획서, 연수일정표, 고용계약서, 기술도입계약서 등)를 제출해야 합니다.  \n\n모든 경우에 원본 제출이 필수이며, 영 전자민원창구를 통해 신청할 경우 원본대조서명으로 대체 가능합니다.  \n[1][2][3][4]",
+        "sources": [
+          "immigration_rules:table08#2",
+          "immigration_rules:table08#3",
+          "immigration_rules:table08#22",
+          "immigration_rules:table08#10"
+        ],
+        "top_score": 0.9997,
+        "cited": [
+          "immigration_rules:table08#2",
+          "immigration_rules:table08#3",
+          "immigration_rules:table08#22",
+          "immigration_rules:table08#10"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 30.57
+      },
+      {
+        "id": "ko31",
+        "type": "law",
+        "lang": "ko",
+        "question": "비자 발급을 신청할 때 첨부해야 하는 서류는 무엇인가요?",
+        "answer": "비자 발급을 신청할 때 첨부해야 하는 서류는 사증발급 신청서에 따라 법무부령으로 정하는 서류를 포함하며, 초청사유에 따라 달라질 수 있습니다. 예를 들어 가족 또는 친족을 방문하는 경우 가족관계 증명서와 신원보증서를 첨부해야 하며, 학생의 경우 입학허가서와 재학증명서 등을 제출해야 합니다. 국가유공자나 재외동포의 경우 국가보훈등록증이나 국적국의 공적 서류를 제출해야 합니다. 또한 법무부장관이 필요하다고 인정하는 서류도 첨부될 수 있습니다. 재외공관은 필요하다고 인정되는 경우 첨부서류를 추가하거나 삭제할 수 있습니다 [1][2][3][4].",
+        "sources": [
+          "immigration_decree:7",
+          "immigration_rules:table07#13",
+          "immigration_rules:table07#20",
+          "immigration_rules:table07#1"
+        ],
+        "top_score": 0.7092,
+        "cited": [
+          "immigration_decree:7",
+          "immigration_rules:table07#13",
+          "immigration_rules:table07#20",
+          "immigration_rules:table07#1"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 12.69
+      },
+      {
+        "id": "ko32",
+        "type": "law",
+        "lang": "ko",
+        "question": "유학(D-2) 비자는 최대 몇 년까지 체류기간을 받을 수 있나요?",
+        "answer": "유학(D-2) 비자의 체류기간 상한은 2년입니다. 이는 출입국관리법 시행규칙 별표 1에 명시된 내용입니다 [2].  \n그러나, 유학(D-2) 비자로 체류하는 사람의 부모나 배우자에게 방문취업(H-2) 자격이 부여될 경우, 그들의 체류기간은 유학(D-2) 자격으로 체류 중인 사람의 체류기간을 초과하지 않아야 하며, 이는 체류기간 상한을 초과할 수 없습니다 [1].  \n따라서 유학(D-2) 비자로 체류할 수 있는 최대 기간은 2년이며, 부모나 배우자와 관련된 경우에도 이 기한을 초과할 수 없습니다 [1][2].",
+        "sources": [
+          "immigration_rules:37",
+          "immigration_rules:table01#1",
+          "immigration_decree:table02#18",
+          "immigration_decree:table02#15"
+        ],
+        "top_score": 0.9745,
+        "cited": [
+          "immigration_rules:37",
+          "immigration_rules:table01#1"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.11
+      },
+      {
+        "id": "ko33",
+        "type": "law",
+        "lang": "ko",
+        "question": "유학(D-2) 체류자격은 어떤 사람에게 주나요?",
+        "answer": "유학(D-2) 체류자격은 18세 이상이고, 출생 당시에 대한민국 국민이었으며, 가족관계등록부, 폐쇄등록부 또는 제적부에 등재되어 있는 사람 또는 그 직계비속에게 주어진다[1]. 또한, 국내에 주소를 둔 대한민국 국민 또는 별표 1의3 영주(F-5) 제5호에 해당하는 사람의 8촌 이내의 혈족 또는 4촌 이내의 인척으로부터 초청을 받은 사람도 해당된다[1]. 유학(D-2) 체류자격을 가진 사람이 부모나 배우자라면, 그들이 방문취업(H-2) 체류자격을 가질 수 있으며, 이 경우 체류기간은 유학(D-2) 체류 중인 사람의 체류기간을 초과하지 않아야 한다[2].",
+        "sources": [
+          "immigration_decree:table02#18",
+          "immigration_rules:37",
+          "immigration_decree:table02#15",
+          "immigration_rules:table07#20"
+        ],
+        "top_score": 0.9518,
+        "cited": [
+          "immigration_decree:table02#18",
+          "immigration_rules:37"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.45
+      },
+      {
+        "id": "ko34",
+        "type": "law",
+        "lang": "ko",
+        "question": "단기방문(C-3) 비자는 어떤 사람이 받을 수 있나요?",
+        "answer": "단기방문(C-3) 비자는 시장조사, 업무 연락, 상담, 계약 등의 상용 활동과 관광, 통과, 요양, 친지 방문, 친선경기, 각종 행사나 회의 참가 또는 참관, 문화예술, 일반연수, 강습, 종교의식 참석, 학술자료 수집 등 90일을 넘지 않는 기간 동안 체류하려는 사람에게 받을 수 있습니다.  \n이 비자에 해당하는 사람은 영리를 목적으로 하는 경우를 제외하고, 단기 체류를 목적으로 합니다.  \n이 비자의 체류 기간은 90일을 넘지 않아야 하며, 이는 출입국관리법 시행령 별표 1에 명시된 내용입니다 [2].",
+        "sources": [
+          "immigration_rules:14",
+          "immigration_decree:table01#2",
+          "immigration_rules:9",
+          "immigration_decree:11"
+        ],
+        "top_score": 0.7599,
+        "cited": [
+          "immigration_decree:table01#2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 12.99
+      },
+      {
+        "id": "ko35",
+        "type": "law",
+        "lang": "ko",
+        "question": "방문취업(H-2) 비자 대상자는 누구인가요?",
+        "answer": "방문취업(H-2) 비자 대상자는 다음의 조건을 충족하는 18세 이상의 사람입니다.  \n1. 출생 당시 대한민국 국민이었으며, 가족관계등록부 등에 등재된 사람 또는 그 직계비속[1]  \n2. 국내에 주소를 둔 대한민국 국민 또는 별표 1의3 영주(F-5) 제5호에 해당하는 사람의 8촌 이내 혈족 또는 4촌 이내 인척에게 초청받은 사람[2]  \n3. 국가유공자 또는 독립유공자와 그 유족 등에 해당하는 사람[2]  \n4. 대한민국에 특별한 공로가 있거나 국익에 기여한 사람[2]  \n5. 유학(D-2) 체류자격으로 1학기 이상 재학 중인 사람의 부모 및 배우자[2]  \n6. 국내 외국인의 체류질서를 위해 법무부장관이 정한 기준에 따라 자진 출국한 사람[2]  \n7. 위 조건에 해당하지 않지만, 법무부장관이 인정하여 방문취업 활동을 위한 체류를 승인하는 사람[2]  \n\n이들 대상자는 나목의 활동범위 내에서 방문, 친척 동거, 관광, 요양, 문화예술 활동, 학술 자료 수집, 시장 조사 등 상업적 용무 등을 할 수 있습니다[2].",
+        "sources": [
+          "immigration_decree:table02#15",
+          "immigration_decree:table02#18",
+          "immigration_decree:23",
+          "immigration_decree:table03#5"
+        ],
+        "top_score": 0.8022,
+        "cited": [
+          "immigration_decree:table02#15",
+          "immigration_decree:table02#18"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 27.95
+      },
+      {
+        "id": "ko36",
+        "type": "law",
+        "lang": "ko",
+        "question": "여권을 새로 발급받으면 외국인등록사항 변경신고를 해야 하나요?",
+        "answer": "아니요, 여권을 새로 발급받았다고 해도 외국인등록사항 변경신고를 해야 합니다.  \n여권 번호, 발급일자 및 유효기간이 변경되는 경우에만 외국인등록사항 변경신고를 해야 하며, 여권이 새로 발급되는 것은 제35조 제2호에 해당하는 사항입니다.  \n따라서 여권 번호 등이 변경되었음을 알게 되면 15일 이내에 체류지 관할 지방출입국ㆍ외국인관서의 장에게 변경신고를 해야 합니다.  \n[1]  \n\n여권 발급일자나 유효기간이 변경되면, 외국인등록사항 변경신고를 해야 하며, 이는 제35조 제2호에 명시된 사항입니다.  \n[1]",
+        "sources": [
+          "immigration_act:35",
+          "immigration_decree:44",
+          "immigration_rules:48",
+          "immigration_decree:42"
+        ],
+        "top_score": 0.9921,
+        "cited": [
+          "immigration_act:35"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.23
+      },
+      {
+        "id": "ko37",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인의 신원보증인은 어떤 책임을 지나요?",
+        "answer": "외국인의 신원보증인은 피보증외국인의 체류, 보호 및 출국에 드는 비용의 전부 또는 일부를 부담해야 합니다 [1]. 신원보증인은 보증책임을 이행하지 않으면 국고에 부담이 되게 되므로 구상권을 행사받을 수 있습니다 [1]. 또한, 보증책임을 이행하지 않을 가능성이 있거나 보증만으로는 목적을 달성할 수 없다고 인정되면 피보증외국인 1인당 300만원 이하의 보증금을 예치하게 됩니다 [1]. 보증기간은 최장 4년으로 합니다 [2]. 신원보증인은 보증책임을 이행하지 못했을 경우 예치된 보증금을 그 비용으로 충당받습니다 [3].",
+        "sources": [
+          "immigration_act:90",
+          "immigration_rules:77",
+          "immigration_decree:95",
+          "immigration_decree:89"
+        ],
+        "top_score": 0.9289,
+        "cited": [
+          "immigration_act:90",
+          "immigration_rules:77",
+          "immigration_decree:95"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.57
+      },
+      {
+        "id": "ko38",
+        "type": "law",
+        "lang": "ko",
+        "question": "영주자격이 취소될 수 있나요?",
+        "answer": "네, 영주자격이 취소될 수 있습니다.  \n법무부장관은 특정 조건을 충족했을 때 영주자격을 취소할 수 있습니다. 예를 들어, 거짓으로 영주자격을 취득한 경우나 2년 이상의 징역 또는 금고형을 선고받은 경우 등에 해당합니다 [1].  \n또한, 투자 조건을 위반하거나 국가안보에 해를 끼친 경우도 영주자격 취소 대상이 됩니다 [1].  \n취소된 경우에도, 체류 필요성이 인정되고 일반체류자격 요건을 갖춘 경우 일반체류자격을 부여할 수 있습니다 [1].",
+        "sources": [
+          "immigration_act:89-2",
+          "immigration_decree:94-4",
+          "immigration_act:33-2",
+          "immigration_act:10-3"
+        ],
+        "top_score": 0.9967,
+        "cited": [
+          "immigration_act:89-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 11.78
+      },
+      {
+        "id": "ko39",
+        "type": "law",
+        "lang": "ko",
+        "question": "어떤 경우에 외국인의 출국이 정지되나요?",
+        "answer": "외국인의 출국이 정지되는 경우는 다음과 같습니다.  \n첫째, 2억원 이상의 국세를 포탈한 혐의로 세무조사를 받고 있는 경우[3]1.  \n둘째, 20억원 이상의 허위 세금계산서를 발행한 혐의로 세무조사를 받고 있는 경우[3]2.  \n셋째, 공중보건에 현저한 위해를 끼칠 염려가 있다고 법무부장관이 인정하는 경우[3]3.  \n넷째, 위치추적 전자장치가 부착된 경우[3]4.  \n다섯째, 출국 시 국가안보 또는 외교관계를 현저하게 해칠 우려가 있다고 법무부장관이 인정하는 경우[3]5.  \n또한, 사형, 무기, 장기 3년 이상의 징역 또는 금고에 해당하는 범죄 혐의로 수사를 받거나 그 소재를 알 수 없어서 기소중지 또는 수사중지(피의자중지로 한정)가 된 경우[3]6.  \n출국정지는 이러한 사유에 해당하는 외국인에 대해 법무부장관이 결정합니다[1].",
+        "sources": [
+          "immigration_act:29",
+          "immigration_act:29-2",
+          "immigration_rules:39-3",
+          "immigration_rules:39-4"
+        ],
+        "top_score": 0.9938,
+        "cited": [
+          "immigration_act:29",
+          "immigration_rules:39-3"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 18.44
+      },
+      {
+        "id": "ko40",
+        "type": "law",
+        "lang": "ko",
+        "question": "결혼비자(결혼동거 목적 사증)를 받으려면 어떤 기준이 있나요?",
+        "answer": "결혼동거 목적의 사증을 받기 위해서는 혼인의 진정성과 정상적인 결혼 생활의 가능성을 판단하기 위해 여러 기준을 심사합니다.  \n이 중 포함되는 요건은 교제경위, 혼인의 성립 여부, 초청인이 최근 5년 내에 다른 배우자를 초청했는지, 소득 요건 충족 여부, 건강상태 및 범죄경력 정보의 상호 제공, 한국어 구사 능력, 정상적인 주거 공간 확보 여부 등입니다.  \n초청인이 가정폭력 또는 성범죄 전력이 있는 경우에도 해당 기간이 경과했는지 확인됩니다.  \n초청인이 국제결혼 안내프로그램을 이수한 증명서를 첨부하거나 이수번호를 기재해야 합니다.  \n사증 발급이 거부된 경우, 허가되지 않은 날로부터 6개월이 경과한 후 다시 신청할 수 있습니다. [1][2][4]",
+        "sources": [
+          "immigration_rules:9-5#2",
+          "immigration_rules:9-4",
+          "immigration_rules:9-5#1",
+          "immigration_rules:9-5#3"
+        ],
+        "top_score": 0.9865,
+        "cited": [
+          "immigration_rules:9-5#2",
+          "immigration_rules:9-4",
+          "immigration_rules:9-5#3"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.67
+      },
+      {
+        "id": "ko41",
+        "type": "law",
+        "lang": "ko",
+        "question": "난민 신청은 어떻게 하나요?",
+        "answer": "난민 신청은 대한민국에 있는 외국인으로서 법무부장관에게 신청할 수 있으며, 이를 위해 난민인정신청서를 지방출입국·외국인관서의 장에게 제출해야 합니다 [1].  \n신청 시에는 여권 또는 외국인등록증, 그리고 난민인정 심사에 참고할 수 있는 자료를 제시해야 하며, 글을 쓸 수 없는 경우 공무원이 서류를 작성하고 함께 서명하거나 기명날인해야 합니다 [1].  \n출입국항에서 난민신청을 하려면 출입국항을 관할하는 지방출입국·외국인관서의 장에게 신청서를 제출하고, 7일 이내에 출입국항에 머무르게 할 수 있습니다 [2].  \n법무부장관은 난민인정 신청을 받은 후 즉시 접수증을 교부하며, 난민인정 여부가 확정될 때까지 체류할 수 있습니다 [1].  \n난민인정 여부는 난민인정신청서 접수일로부터 6개월 이내에 결정되어야 하며, 부득이한 경우 기간을 연장할 수 있습니다 [3].",
+        "sources": [
+          "refugee_act:5",
+          "refugee_act:6",
+          "refugee_act:18",
+          "refugee_act:21"
+        ],
+        "top_score": 0.9581,
+        "cited": [
+          "refugee_act:5",
+          "refugee_act:6",
+          "refugee_act:18"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 20.81
+      },
+      {
+        "id": "ko42",
+        "type": "law",
+        "lang": "ko",
+        "question": "난민으로 인정되면 어떤 처우를 받나요?",
+        "answer": "난민으로 인정되면 난민협약에 따른 처우를 받습니다.  \n이들은 대한민국 국민과 같은 수준의 사회보장을 받습니다.  \n또한 기초생활보장의 대상이 되며, 본인의 신청에 따라 관련 법에 따른 보호를 받을 수 있습니다.  \n이에 따라 난민인정자는 다른 법률에 따라 제한받지 않고 난민협약에 따라 보호받습니다.  \n국가와 지방자치단체는 이러한 처우를 위한 정책을 수립하고 시행해야 합니다 [1][2][3].",
+        "sources": [
+          "refugee_act:30",
+          "refugee_act:31",
+          "refugee_act:32",
+          "refugee_act:2"
+        ],
+        "top_score": 0.9842,
+        "cited": [
+          "refugee_act:30",
+          "refugee_act:31",
+          "refugee_act:32"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 9.22
+      },
+      {
+        "id": "ko43",
+        "type": "law",
+        "lang": "ko",
+        "question": "인도적체류자는 일을 할 수 있나요?",
+        "answer": "네, 인도적체류자는 일을 할 수 있습니다. 법무부장관은 인도적체류자에 대해 취업활동 허가를 할 수 있습니다 [1].  \n이에 따라 인도적체류자는 체류자격이 부여된 외국인으로서 취업활동을 할 수 있으며, 관련 규정에 따라 체류자격과 체류기간을 명시적으로 통보받아야 합니다 [2].  \n그러나 구체적인 취업 활동 범위는 체류자격에 따라 달라지며, 법령에서 정한 취업활동 허가 조건에 따라 제한될 수 있습니다 [3].",
+        "sources": [
+          "refugee_act:39",
+          "immigration_decree:88-10",
+          "immigration_decree:23",
+          "immigration_act:18"
+        ],
+        "top_score": 0.9772,
+        "cited": [
+          "refugee_act:39",
+          "immigration_decree:88-10",
+          "immigration_decree:23"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 11.37
+      },
+      {
+        "id": "ko44",
+        "type": "law",
+        "lang": "ko",
+        "question": "난민 불인정 결정에 이의신청할 수 있나요?",
+        "answer": "예, 난민 불인정 결정에 이의신청할 수 있습니다.  \n이의신청은 난민불인정결정을 받은 날부터 30일 이내에 법무부장관에게 할 수 있으며, 이의신청서에는 이의의 사유를 소명하는 자료를 첨부하여 지방출입국ㆍ외국인관서의 장에게 제출해야 합니다 [1].  \n이의신청을 한 경우, 행정심판을 청구할 수 없습니다 [1].  \n법무부장관은 이의신청서를 접수한 날부터 6개월 이내에 결정을 내려야 하며, 부득이한 사정이 있을 경우 기간을 연장할 수 있습니다 [1].",
+        "sources": [
+          "refugee_act:21",
+          "refugee_act:18",
+          "refugee_act:22",
+          "immigration_act:76-7"
+        ],
+        "top_score": 0.9982,
+        "cited": [
+          "refugee_act:21"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 11.19
+      },
+      {
+        "id": "ko45",
+        "type": "law",
+        "lang": "ko",
+        "question": "난민신청자는 생계비 지원이나 취업 허가를 받을 수 있나요?",
+        "answer": "네, 난민신청자는 생계비 지원이나 취업 허가를 받을 수 있습니다.  \n생계비 지원은 법무부장관이 대통령령으로 정하는 바에 따라 난민신청자에게 제공할 수 있습니다 [1].  \n취업 허가는 난민인정 신청일로부터 6개월이 지난 후에 법무부장관이 대통령령으로 정하는 바에 따라 난민신청자에게 취업을 허가할 수 있습니다 [1].  \n또한 인도적체류자에 대해서는 법무부장관이 취업활동 허가를 할 수 있습니다 [2].  \n그러나 생계비 지원이나 취업 허가를 받기 위한 구체적인 조건이나 기준은 대통령령에서 정합니다.",
+        "sources": [
+          "refugee_act:40",
+          "refugee_act:39",
+          "refugee_act:8",
+          "refugee_act:5"
+        ],
+        "top_score": 0.9975,
+        "cited": [
+          "refugee_act:40",
+          "refugee_act:39"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 11.59
+      },
+      {
+        "id": "ko46",
+        "type": "law",
+        "lang": "ko",
+        "question": "난민을 박해받을 나라로 강제로 돌려보낼 수 있나요?",
+        "answer": "아니요, 난민인정자나 인도적체류자는 본인의 의사에 반하여 강제로 송환될 수 없습니다. 이는 난민법 제3조에 따라 난민협약 제33조와 관련된 규정에 따라 보장되는 권리입니다 [1]. 또한, 강제퇴거명령서를 집행할 때에도 난민신청자나 난민인정자가 해당 조건에 맞추면 송환되어서는 아니 됩니다 [2]. 따라서 난민은 박해를 받을 나라로 강제로 돌려보낼 수 없습니다.",
+        "sources": [
+          "refugee_act:3",
+          "immigration_act:62",
+          "refugee_act:2",
+          "refugee_act:22"
+        ],
+        "top_score": 0.888,
+        "cited": [
+          "refugee_act:3",
+          "immigration_act:62"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 9.46
+      },
+      {
+        "id": "ko47",
+        "type": "law",
+        "lang": "ko",
+        "question": "공항에서 바로 난민 신청을 할 수 있나요?",
+        "answer": "네, 공항에서 바로 난민 신청을 할 수 있습니다. 외국인이 입국심사를 받는 때에 난민인정 신청을 하려면 출입국항을 관할하는 지방출입국ㆍ외국인관서의 장에게 난민인정신청서를 제출해야 하며, 이는 공항에서 이루어질 수 있습니다 [1].  \n그리고 선박에 타고 있는 외국인이 생명·신체를 침해받을 공포가 있을 때는 지방출입국ㆍ외국인관서의 장이 법무부장관의 승인을 받아 90일 이내에 난민 임시상륙허가를 할 수 있으며, 이는 공항 또는 항구에서의 상황에서도 적용됩니다 [2].  \n따라서 공항에서 난민 신청을 하기 위한 절차는 법령상 명확히 규정되어 있습니다.",
+        "sources": [
+          "refugee_act:6",
+          "immigration_act:16-2",
+          "refugee_act:5",
+          "immigration_decree:20-2"
+        ],
+        "top_score": 0.2568,
+        "cited": [
+          "refugee_act:6",
+          "immigration_act:16-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.83
+      },
+      {
+        "id": "ko48",
+        "type": "law",
+        "lang": "ko",
+        "question": "한국 국적으로 귀화하려면 어떤 요건이 필요한가요?",
+        "answer": "한국 국적으로 귀화하려면 일반적으로 5년 이상 계속하여 대한민국에 주소가 있어야 하며, 대한민국에서 영주할 수 있는 체류자격을 갖고 있어야 합니다. 또한 대한민국의 민법상 성년이 되어야 하며, 법적으로 정한 품행 요건을 충족해야 합니다. 생계를 유지할 수 있는 능력과 국어 능력, 대한민국의 풍습에 대한 이해 등 기본 소양을 갖추고 있어야 하며, 귀화가 국가안전이나 공공복리에 해를 끼치지 않도록 법무부장관이 인정해야 합니다 [1].  \n\n그러나 부모가 대한민국 국민이거나, 대한민국에서 출생한 경우, 또는 배우자가 대한민국 국민인 경우 등 특별한 경우는 5년 주소 요건을 충족하지 않아도 귀화 가능합니다 [2], [4].",
+        "sources": [
+          "nationality_act:5",
+          "nationality_act:7",
+          "nationality_act:4",
+          "nationality_act:6"
+        ],
+        "top_score": 0.993,
+        "cited": [
+          "nationality_act:5",
+          "nationality_act:7",
+          "nationality_act:6"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 14.29
+      },
+      {
+        "id": "ko49",
+        "type": "law",
+        "lang": "ko",
+        "question": "한국인과 결혼한 외국인은 몇 년 살면 귀화할 수 있나요?",
+        "answer": "한국인과 결혼한 외국인은 다음과 같은 조건을 충족하면 귀화할 수 있습니다.  \n첫째, 한국에 2년 이상 주소를 두고 있는 경우[1].  \n둘째, 혼인 후 3년이 지나고 1년 이상 주소를 두고 있는 경우[1].  \n셋째, 혼인 생활을 할 수 없었던 사유(사망, 실종 등)로 인해 기간을 채우지 못했지만, 잔여 기간을 채우고 법무부장관이 상당하다고 인정받은 경우[1].  \n또한, 혼인으로 인해 출생한 미성년 자를 양육하고 있는 경우[1].  \n\n따라서 2년 또는 3년 이상 주소를 두는 조건을 충족하면 귀화를 신청할 수 있습니다. [1]",
+        "sources": [
+          "nationality_act:6",
+          "nationality_act:5",
+          "nationality_act:7",
+          "nationality_act:10"
+        ],
+        "top_score": 0.9325,
+        "cited": [
+          "nationality_act:6"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.44
+      },
+      {
+        "id": "ko50",
+        "type": "law",
+        "lang": "ko",
+        "question": "특별귀화는 어떤 사람이 할 수 있나요?",
+        "answer": "특별귀화를 할 수 있는 사람은 다음과 같습니다.  \n첫째, 부 또는 모가 대한민국의 국민인 경우입니다. 다만, 양자로서 성년이 되고 입양된 경우에는 제외됩니다 [1].  \n둘째, 대한민국에 특별한 공로가 있는 경우입니다 [1].  \n셋째, 과학, 경제, 문화, 체육 등 특정 분야에서 매우 우수한 능력을 보유하고 있으며, 대한민국의 국익에 기여할 것으로 인정되는 경우입니다 [1].  \n\n이러한 공로를 인정받기 위해선 법무부장관이 심의하거나, 대통령령에 따라 정하는 기준에 따라 평가됩니다 [2].  \n특히 제3호에 해당하는 사람은 국적심의위원회의 심의를 거쳐야 하며, 법무부장관이 정하는 기관이나 개인이 추천하는 경우가 포함됩니다 [2].",
+        "sources": [
+          "nationality_act:7",
+          "nationality_decree:6",
+          "nationality_decree:28",
+          "nationality_act:4"
+        ],
+        "top_score": 0.9112,
+        "cited": [
+          "nationality_act:7",
+          "nationality_decree:6"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.54
+      },
+      {
+        "id": "ko51",
+        "type": "law",
+        "lang": "ko",
+        "question": "귀화하면 원래 국적을 포기해야 하나요?",
+        "answer": "귀화하면 원래 국적을 포기해야 합니다. 대한민국 국적을 취득한 외국인은 국적을 취득한 날부터 1년 내에 그 외국 국적을 포기해야 합니다. 그러나 특정 사유가 있는 경우, 예를 들어 입양이나 영주권 상황 등은 외국 국적을 포기하지 않아도 되며 법무부장관이 서약을 요구할 수 있습니다. 이는 국적법 제10조에 명시되어 있습니다.[1]",
+        "sources": [
+          "nationality_act:10",
+          "nationality_act:4",
+          "nationality_decree:27",
+          "nationality_decree:17"
+        ],
+        "top_score": 0.9474,
+        "cited": [
+          "nationality_act:10"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 10.54
+      },
+      {
+        "id": "ko52",
+        "type": "law",
+        "lang": "ko",
+        "question": "복수국적자는 언제까지 국적을 선택해야 하나요?",
+        "answer": "복수국적자는 만 20세가 되기 전에 복수국적자가 된 경우, 만 22세가 되기 전까지 국적을 선택해야 하며, 만 20세 이후에 복수국적자가 된 경우는 그 때부터 2년 내에 국적을 선택해야 한다[1].  \n병역준비역에 편입된 경우는 편입된 때부터 3개월 이내에 국적을 선택해야 하며, 병역면제나 복무 종료 등 특정 경우는 제3항에 따라 2년 이내에 선택해야 한다[1].  \n국적을 선택하지 않으면 법무부장관이 1년 내에 선택하도록 명령할 수 있으며, 명령을 받은 후에도 선택하지 않으면 대한민국 국적을 상실한다[2].",
+        "sources": [
+          "nationality_act:12",
+          "nationality_act:14-3",
+          "nationality_act:13",
+          "nationality_decree:17"
+        ],
+        "top_score": 0.9984,
+        "cited": [
+          "nationality_act:12",
+          "nationality_act:14-3"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 12.83
+      },
+      {
+        "id": "ko53",
+        "type": "law",
+        "lang": "ko",
+        "question": "한국 국적을 이탈하려면 어떻게 하나요?",
+        "answer": "한국 국적을 이탈하려면 복수국적자로서 외국에 주소가 있는 경우, 주소지 관할 재외공관의 장을 통해 국적이탈 신고서를 제출해야 합니다. 재외공관의 장은 이를 법무부장관에게 즉시 송부해야 하며, 법무부장관이 신고를 수리하면 즉시 대한민국 국적을 상실합니다.  \n이 신고 절차는 국적법 시행령 제18조에 따라 정해져 있으며, 신고 후 법무부장관은 관련 기관과 통보하고 관보에 고시해야 합니다.  \n특히 병역준비역에 편입된 경우나 아동이 외국으로 이주한 경우 등 정당한 사유가 있는 경우에는 법무부장관에게 국적 이탈 허가를 신청할 수 있습니다.  \n이 경우 허가를 받은 후에 국적을 상실하게 됩니다. [1][2][3][4]",
+        "sources": [
+          "nationality_act:14",
+          "nationality_decree:18",
+          "nationality_decree:18-3",
+          "nationality_act:14-2"
+        ],
+        "top_score": 0.9865,
+        "cited": [
+          "nationality_act:14",
+          "nationality_decree:18",
+          "nationality_decree:18-3",
+          "nationality_act:14-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.19
+      },
+      {
+        "id": "ko54",
+        "type": "law",
+        "lang": "ko",
+        "question": "부모 중 한 명이 한국인이면 아이가 한국 국적을 갖나요?",
+        "answer": "네, 부모 중 한 명이 대한민국의 국민이면 출생 당시에 아이는 대한민국 국적을 취득합니다. 이는 국적법 제2조 제1호에 따라 적용됩니다 [1].  \n이 경우 출생과 동시에 국적을 취득하며, 부 또는 모 중 한 명이 국민이면 충족됩니다 [1].  \n국적 취득은 출생 당시에 부 또는 모가 국민이었기 때문에 자동으로 발생합니다 [1].",
+        "sources": [
+          "nationality_act:2",
+          "nationality_act:8",
+          "nationality_act:3",
+          "nationality_act:7"
+        ],
+        "top_score": 0.7547,
+        "cited": [
+          "nationality_act:2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 7.34
+      },
+      {
+        "id": "ko55",
+        "type": "law",
+        "lang": "ko",
+        "question": "귀화허가는 어떻게 신청하나요?",
+        "answer": "귀화허가를 신청하려면, 귀화 요건을 갖추었음을 증명하는 서류를 첨부하여 출입국·외국인청장, 출입국·외국인사무소장, 출입국·외국인청 출장소장 또는 출입국·외국인사무소 출장소장에게 제출해야 합니다 [1].  \n신청서와 함께 법무부령에서 정하는 서류를 제출해야 하며, 청장등은 이를 받은 후 조회·조사·확인 등의 절차를 거쳐 법무부장관에게 결과를 송부해야 합니다 [1].  \n귀화 요건을 심사하기 위해 법무부장관은 신청자에게 출석을 요구하거나 현지 조사를 진행할 수 있습니다 [2].  \n또한 종합평가나 면접심사가 필요할 수 있으며, 법무부장관이 정한 기준에 따라 심사합니다 [3].  \n신청자는 귀화허가 신청일로부터 1년 이내에 종합평가에 응시해야 하며, 특정 조건에서는 면제될 수 있습니다 [3].",
+        "sources": [
+          "nationality_decree:3",
+          "nationality_decree:4",
+          "nationality_decree:4-2",
+          "nationality_act:4"
+        ],
+        "top_score": 0.9886,
+        "cited": [
+          "nationality_decree:3",
+          "nationality_decree:4",
+          "nationality_decree:4-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 17.03
+      },
+      {
+        "id": "ko56",
+        "type": "law",
+        "lang": "ko",
+        "question": "귀화 시험(종합평가)과 면접심사가 있나요?",
+        "answer": "네, 귀화 시험으로서 종합평가와 면접심사가 있습니다.  \n법무부장관은 귀화허가 신청자에 대해 종합평가와 면접심사를 실시합니다.  \n그러나 귀화허가 신청자의 연령 등에 따라 종합평가나 면접심사를 면제할 수 있습니다.  \n또한 귀화 요건을 갖추지 못한 경우, 종합평가나 면접심사는 실시되지 않습니다.  \n종합평가에서 60점 미만 또는 면접심사에서 부적합 평가를 받은 경우 귀화가 제한됩니다.  \n[1]",
+        "sources": [
+          "nationality_decree:4-2",
+          "nationality_decree:4-3",
+          "nationality_decree:3",
+          "nationality_act:4"
+        ],
+        "top_score": 0.9798,
+        "cited": [
+          "nationality_decree:4-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 10.27
+      },
+      {
+        "id": "ko57",
+        "type": "law",
+        "lang": "ko",
+        "question": "귀화허가를 받으면 국민선서를 해야 하나요?",
+        "answer": "귀화허가를 받은 사람은 국민선서를 해야 합니다. 국민선서를 받고 귀화증서를 수여하는 것이 국적 취득의 절차 중 하나입니다. 다만, 연령이나 신체적·정신적 장애 등으로 선서를 이해하거나 표현할 수 없다고 인정되는 경우는 국민선서를 면제할 수 있습니다. 법무부장관이 이를 인정할 수 있으며, 관련 사유는 시행령에서 명시되어 있습니다 [2][1].",
+        "sources": [
+          "nationality_decree:4-4",
+          "nationality_act:4",
+          "nationality_decree:4-5",
+          "nationality_decree:4-6"
+        ],
+        "top_score": 0.9899,
+        "cited": [
+          "nationality_decree:4-4",
+          "nationality_act:4"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 7.86
+      },
+      {
+        "id": "ko58",
+        "type": "law",
+        "lang": "ko",
+        "question": "한국 국적을 잃었던 사람이 다시 국적을 회복할 수 있나요?",
+        "answer": "네, 한국 국적을 잃었던 사람이 다시 국적을 회복할 수 있습니다.  \n국적을 상실한 사람이 1년 내에 외국 국적을 포기하고 법무부장관에게 신고하면 국적을 재취득할 수 있습니다 [1].  \n또한, 대한민국의 국민이었던 외국인은 법무부장관의 국적회복허가를 받아 국적을 회복할 수 있습니다 [2].  \n그러나 국적회복을 허가하지 않는 경우는 국가나 사회에 위해를 끼칠 가능성이 있거나, 병역 기피를 위한 목적이라 판단될 경우입니다 [2].  \n국적회복 시에는 국민선서를 하거나 면제받을 수 있으며, 그 절차는 대통령령으로 정합니다 [2].",
+        "sources": [
+          "nationality_act:11",
+          "nationality_act:9",
+          "nationality_act:18",
+          "nationality_act:16"
+        ],
+        "top_score": 0.9876,
+        "cited": [
+          "nationality_act:11",
+          "nationality_act:9"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 12.01
+      },
+      {
+        "id": "ko59",
+        "type": "law",
+        "lang": "ko",
+        "question": "고용허가제로 온 외국인근로자는 몇 년 동안 일할 수 있나요?",
+        "answer": "고용허가를 받은 외국인근로자는 입국한 날부터 3년 동안 취업활동을 할 수 있습니다.  \n이 기간이 만료되면 일반적으로 출국해야 하지만, 특정 조건을 충족하면 2년 미만의 기간을 추가로 연장받을 수 있습니다.  \n또한 감염병 확산, 천재지변 등 사유로 입국이나 출국이 어려운 경우 1년간 기간을 연장할 수 있습니다.  \n이 모든 규정은 외국인근로자의 고용 등에 관한 법률 제18조 및 제18조의2에 근거합니다 [2][1].",
+        "sources": [
+          "foreign_workers_act:18-2",
+          "foreign_workers_act:18",
+          "foreign_workers_act:20",
+          "foreign_workers_act:18-4"
+        ],
+        "top_score": 0.9758,
+        "cited": [
+          "foreign_workers_act:18-2",
+          "foreign_workers_act:18"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 11.62
+      },
+      {
+        "id": "ko60",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인근로자가 사업장을 바꿀 수 있는 경우는?",
+        "answer": "외국인근로자가 사업장을 바꿀 수 있는 경우는 다음과 같습니다.  \n1. 사용자가 정당한 사유로 근로계약을 해지하거나 근로계약이 만료된 후 갱신을 거절하는 경우 [1].  \n2. 휴업, 폐업, 고용허가 취소, 근로조건 위반 등 외국인근로자의 책임이 아닌 사유로 인해 근로를 계속할 수 없는 경우 [1].  \n3. 대통령령으로 정하는 사유가 발생한 경우 [1].  \n\n사업장 변경을 신청한 후 3개월 이내에 근무처 변경 허가를 받지 못하거나, 근로계약이 종료된 후 1개월 이내에 변경 신청을 하지 않으면 출국해야 합니다 [1]. 또한, 사업장 변경은 일반적으로 3회를 초과할 수 없으며, 제2호 사유는 제외됩니다 [1].",
+        "sources": [
+          "foreign_workers_act:25",
+          "foreign_workers_act:18-4",
+          "foreign_workers_act:27-2",
+          "immigration_decree:24"
+        ],
+        "top_score": 0.9985,
+        "cited": [
+          "foreign_workers_act:25"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 14.66
+      },
+      {
+        "id": "ko61",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인근로자 출국만기보험은 무엇인가요?",
+        "answer": "외국인근로자 출국만기보험은 외국인근로자의 출국 등에 따른 퇴직금을 지급하기 위해 사용자가 가입해야 하는 보험 또는 신탁입니다. 이 보험은 퇴직금 지급을 위해 매월 보험료나 신탁금을 납부하거나 위탁해야 하며, 출국 후 14일 이내에 퇴직금을 지급해야 합니다 [1]. 출국만기보험 가입은 외국인근로자의 퇴직금을 보장하는 데 중요한 역할을 하며, 이에 따라 근로자퇴직급여 보장법 제8조 제1항에 따른 퇴직금제도를 설정하게 됩니다 [1].",
+        "sources": [
+          "foreign_workers_act:13",
+          "foreign_workers_act:30",
+          "foreign_workers_act:15",
+          "foreign_workers_act:23"
+        ],
+        "top_score": 0.9965,
+        "cited": [
+          "foreign_workers_act:13"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 11.4
+      },
+      {
+        "id": "ko62",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인근로자라는 이유로 차별해도 되나요?",
+        "answer": "아니요, 외국인근로자라는 이유로 차별해서는 안 됩니다.  \n이는 외국인근로자의 고용 등에 관한 법률 제22조에 명시되어 있습니다.  \n사용자는 외국인근로자라는 이유로 부당하게 차별하여 처우해서는 안 됩니다.  \n따라서 외국인근로자에 대해 성별, 나이, 국적 등과 관련된 차별은 금지됩니다.  \n[1]",
+        "sources": [
+          "foreign_workers_act:22",
+          "foreign_workers_act:2",
+          "foreign_workers_act:25",
+          "immigration_decree:24"
+        ],
+        "top_score": 0.9982,
+        "cited": [
+          "foreign_workers_act:22"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 7.78
+      },
+      {
+        "id": "ko63",
+        "type": "law",
+        "lang": "ko",
+        "question": "회사가 외국인근로자에게 기숙사를 제공할 때 지켜야 할 것은?",
+        "answer": "회사가 외국인근로자에게 기숙사를 제공할 때는 기숙사의 구조와 설비, 설치 장소, 주거 환경, 면적 및 기숙사 설치·운영에 필요한 사항을 외국인근로자에게 사전에 제공해야 합니다. 또한, 이러한 기준은 건강과 안전을 지키기 위해 근로기준법에서 정한 기준을 준수해야 합니다. 기숙사 정보 제공의 구체적인 기준은 대통령령으로 정합니다 [1][3].",
+        "sources": [
+          "foreign_workers_act:22-2",
+          "foreign_workers_act:25",
+          "immigration_decree:24",
+          "immigration_act:81-3"
+        ],
+        "top_score": 0.999,
+        "cited": [
+          "foreign_workers_act:22-2",
+          "immigration_decree:24"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 8.74
+      },
+      {
+        "id": "ko64",
+        "type": "law",
+        "lang": "ko",
+        "question": "성실하게 일한 외국인근로자는 출국 후 다시 들어와서 일할 수 있나요?",
+        "answer": "성실하게 일한 외국인근로자는 출국 후 다시 들어와서 일할 수 있지만, 일반적으로 출국한 날로부터 6개월이 지나야 재입국 취업이 가능합니다.  \n그러나 고용노동부장관이 특정 조건을 충족하는 경우(예: 사업 변경 없이 근무한 경우, 재입국 후 1년 이상 근로계약 체결 등)에는 1개월 후에 재입국 취업이 가능합니다.  \n이 특례는 재입국 후 고용허가를 신청하는 사용자와의 근로계약 기간이 1년 이상이거나, 정책위원회가 내국인 고용이 어려운 업종에서 근무하는 경우에 해당됩니다.  \n재입국 취업은 한 차례만 허용되며, 근로계약 체결과 관련된 규정은 제9조를 준용합니다.  \n제18조의3에 따라 일반적으로 6개월 기간이 지나야 하지만, 제18조의4에 따라 특별한 조건을 충족하면 1개월 후에 재입국 취업이 가능합니다 [1][2].",
+        "sources": [
+          "foreign_workers_act:18-3",
+          "foreign_workers_act:18-4",
+          "foreign_workers_act:18-2",
+          "foreign_workers_act:18"
+        ],
+        "top_score": 0.987,
+        "cited": [
+          "foreign_workers_act:18-3",
+          "foreign_workers_act:18-4"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 17.41
+      },
+      {
+        "id": "ko65",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인근로자도 건강보험에 가입해야 하나요?",
+        "answer": "예, 외국인근로자도 건강보험에 가입해야 합니다.  \n사용자와 외국인근로자 모두가 국민건강보험법의 적용을 받으며, 사용자는 사용자로, 외국인근로자는 직장가입자로 본다[2].  \n따라서 외국인근로자는 건강보험에 가입됩니다.  \n이 규정은 외국인근로자의 고용 등에 관한 법률 제14조에 근거합니다[2].",
+        "sources": [
+          "foreign_workers_act:23",
+          "foreign_workers_act:14",
+          "foreign_workers_act:15",
+          "foreign_workers_act:13"
+        ],
+        "top_score": 0.9534,
+        "cited": [
+          "foreign_workers_act:14"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 7.48
+      },
+      {
+        "id": "ko66",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인근로자 귀국비용보험이 무엇인가요?",
+        "answer": "외국인근로자 귀국비용보험이란 외국인근로자가 귀국할 때 필요한 비용을 충당하기 위해 가입해야 하는 보험 또는 신탁입니다.  \n이 보험 또는 신탁의 가입 방식, 내용, 관리 등은 대통령령으로 정합니다.  \n귀국비용보험이 가입되는 목적은 귀국 시 발생할 수 있는 비용을 보장하는 것입니다 [1].",
+        "sources": [
+          "foreign_workers_act:15",
+          "foreign_workers_act:13",
+          "foreign_workers_act:30",
+          "foreign_workers_act:16"
+        ],
+        "top_score": 0.9844,
+        "cited": [
+          "foreign_workers_act:15"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 6.86
+      },
+      {
+        "id": "ko67",
+        "type": "law",
+        "lang": "ko",
+        "question": "사업주가 외국인근로자를 고용하려면 고용허가를 어떻게 받나요?",
+        "answer": "사업주는 내국인 구인 신청을 하면서 인력을 채용하지 못한 경우, 고용노동부령으로 정하는 바에 따라 직업안정기관의 장에게 외국인근로자 고용허가를 신청해야 합니다. 고용허가 신청의 유효기간은 3개월이며, 일시적인 경영악화 등으로 인해 채용이 어려운 경우 1회에 한정해 효력을 연장할 수 있습니다. 직업안정기관의 장은 신청을 받은 후, 고용허가를 받을 만한 업종 및 규모를 갖춘 사용자에게 제7조에 따른 외국인구직자 명부에서 적격자를 추천합니다. 추천된 적격자를 선정한 사용자에게는 지체 없이 고용허가를 하고, 성명 등을 기재한 고용허가서를 발급합니다. [1]",
+        "sources": [
+          "foreign_workers_act:8",
+          "foreign_workers_act:9",
+          "foreign_workers_act:11-2",
+          "foreign_workers_act:27-2"
+        ],
+        "top_score": 0.9915,
+        "cited": [
+          "foreign_workers_act:8"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 17.01
+      },
+      {
+        "id": "ko68",
+        "type": "law",
+        "lang": "ko",
+        "question": "재외동포(F-4) 체류자격은 누구에게 주나요?",
+        "answer": "재외동포(F-4) 체류자격은 대한민국에 2년 이상 계속 체류하고 있으며, 법무부장관이 그가 대한민국에 계속 거주할 필요가 있다고 인정받는 사람에게 주어집니다 [1]. 또한, 재외동포의 출입국과 법적 지위에 관한 법률 제2조제2호에 해당하는 외국국적 동포에게 주어집니다 [1]. 이 체류자격은 국적 취득 요건을 갖춘 재외동포에게 부여될 수 있습니다 [1].",
+        "sources": [
+          "immigration_decree:table03#3",
+          "immigration_decree:table02#16",
+          "immigration_decree:table02#15",
+          "overseas_koreans_act:5"
+        ],
+        "top_score": 0.9602,
+        "cited": [
+          "immigration_decree:table03#3"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 8.83
+      },
+      {
+        "id": "ko69",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국국적동포의 국내거소신고는 무엇인가요?",
+        "answer": "외국국적동포는 대한민국 안에 거소를 정하고 그 사실을 지방출입국·외국인관서의 장에게 국내거소신고를 할 수 있습니다. 신고 후 거소를 이전한 경우 14일 이내에 신거소를 관할하는 관서의 장에게 거소이전을 신고해야 합니다. 신고를 받은 관서는 관련 장에게 통보합니다. 국내거소신고를 한 후에는 국내거소신고증을 발급받을 수 있으며, 이 증명서는 거소를 확인하는 데 사용됩니다 [1][2].",
+        "sources": [
+          "overseas_koreans_act:6",
+          "overseas_koreans_act:7",
+          "overseas_koreans_act:3-2",
+          "overseas_koreans_act:8"
+        ],
+        "top_score": 0.999,
+        "cited": [
+          "overseas_koreans_act:6",
+          "overseas_koreans_act:7"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 9.51
+      },
+      {
+        "id": "ko70",
+        "type": "law",
+        "lang": "ko",
+        "question": "재외동포 체류기간은 최장 몇 년인가요?",
+        "answer": "재외동포 체류기간은 최장 3년까지입니다. [1]",
+        "sources": [
+          "overseas_koreans_act:10",
+          "immigration_decree:table03#3",
+          "immigration_rules:table01#1",
+          "immigration_rules:41"
+        ],
+        "top_score": 0.9994,
+        "cited": [
+          "overseas_koreans_act:10"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 2.4
+      },
+      {
+        "id": "ko71",
+        "type": "law",
+        "lang": "ko",
+        "question": "결혼이민자와 자녀에게 국가가 어떤 지원을 하나요?",
+        "answer": "결혼이민자 및 그 자녀에게는 국어교육, 대한민국의 제도와 문화에 대한 교육, 보육 및 교육 지원, 의료 지원 등을 통해 사회적 적응을 돕는 지원이 가능합니다 [1]. 또한, 건강검진을 실시할 수 있습니다 [1]. 이 지원은 결혼이민자뿐만 아니라, 대한민국 국민과 사실혼 관계에서 출생한 자녀를 양육하고 있는 재한외국인에게도 적용됩니다 [1].",
+        "sources": [
+          "foreigners_framework_act:12",
+          "immigration_act:25-2",
+          "refugee_act:33",
+          "foreigners_framework_act:14-2"
+        ],
+        "top_score": 0.9924,
+        "cited": [
+          "foreigners_framework_act:12"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 7.78
+      },
+      {
+        "id": "ko72",
+        "type": "law",
+        "lang": "ko",
+        "question": "세계인의 날은 언제인가요?",
+        "answer": "세계인의 날은 매년 5월 20일입니다. [1]",
+        "sources": [
+          "foreigners_framework_act:19",
+          "nationality_decree:6",
+          "nationality_decree:30",
+          "immigration_decree:15-2"
+        ],
+        "top_score": 0.9891,
+        "cited": [
+          "foreigners_framework_act:19"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 2.73
+      },
+      {
+        "id": "en01",
+        "type": "law",
+        "lang": "en",
+        "question": "How do I extend my period of stay before it expires?",
+        "answer": "To extend your period of stay before it expires, you must apply for permission to extend your stay from the Minister of Justice prior to the expiration of your current period of stay, as required by Article 25 of the Immigration Act [1].  \n\nYou need to submit an application for extension of stay along with documents prescribed by the Ministry of Justice's decree to the head of an immigration office, office head, or branch office head [2].  \n\nAfter receiving your application, the office head must immediately forward it to the Minister of Justice together with their opinion [2].  \n\nIf the Minister of Justice approves your extension, the office head will affix a stay extension stamp or sticker on your passport, or record the extended period in your alien registration certificate if you have already completed alien registration [2].  \n\nFor certain cases such as spouses of Korean citizens involved in domestic violence or human trafficking, special provisions allow stay extension until the legal remedy process ends [3].  \n\nIf you are extending your stay for travel or due to unavoidable circumstances preventing departure, you may receive a temporary extension without fee, provided the extension does not exceed 30 days [4].",
+        "sources": [
+          "immigration_act:25",
+          "immigration_decree:31",
+          "immigration_act:25-2",
+          "immigration_rules:32"
+        ],
+        "top_score": 0.9544,
+        "cited": [
+          "immigration_act:25",
+          "immigration_decree:31",
+          "immigration_act:25-2",
+          "immigration_rules:32"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 14.88
+      },
+      {
+        "id": "en02",
+        "type": "law",
+        "lang": "en",
+        "question": "What are the requirements for general naturalization in Korea?",
+        "answer": "To obtain general naturalization in Korea, an alien must meet the following requirements:  \n1. Have lived continuously in South Korea for at least five years. [1]  \n2. Be an adult under the Korean Civil Code. [1]  \n3. Demonstrate good conduct as defined by Ministry of Justice regulations. [1]  \n4. Have the ability to support oneself through personal assets, skills, or family support. [1]  \n5. Possess basic knowledge of the Korean language and customs as a citizen of Korea. [1]  \n6. Be recognized by the Minister of Justice as not threatening national security, public order, or public welfare. [1]  \n\nThese requirements are outlined in Article 5 of the Nationality Act. [1]",
+        "sources": [
+          "nationality_act:5",
+          "nationality_act:6",
+          "nationality_act:4",
+          "nationality_act:7"
+        ],
+        "top_score": 0.9853,
+        "cited": [
+          "nationality_act:5"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 12.19
+      },
+      {
+        "id": "en03",
+        "type": "law",
+        "lang": "en",
+        "question": "Can an international student work part-time?",
+        "answer": "I could not find this in the provided laws.",
+        "sources": [
+          "immigration_act:79-2",
+          "immigration_act:19-5",
+          "immigration_act:18",
+          "foreign_workers_act:18"
+        ],
+        "top_score": 0.0235,
+        "cited": [],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": true,
+        "language_ok": true,
+        "seconds": 3.04
+      },
+      {
+        "id": "en04",
+        "type": "law",
+        "lang": "en",
+        "question": "When do I have to report a change of my address?",
+        "answer": "You must report a change of your address within 15 days from the date you move to a new residence. [1]  \nYou need to submit the change of address report to the head of the local government (Si/Gun/Gu or Eup/Myeon/Dong) or the regional immigration office that oversees your new residence. [1]  \nIf you have a mobile foreigner registration certificate, you can update your address directly on that certificate instead of submitting a physical form. [8]  \nThe local authorities will then notify the previous residence office and transfer your registration records accordingly. [1]",
+        "sources": [
+          "immigration_act:36",
+          "immigration_decree:45",
+          "immigration_act:35",
+          "nationality_decree:25"
+        ],
+        "top_score": 0.2976,
+        "cited": [
+          "immigration_act:36"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 9.12
+      },
+      {
+        "id": "en05",
+        "type": "law",
+        "lang": "en",
+        "question": "Which foreigners can be deported from Korea?",
+        "answer": "Foreigners who violate specific provisions of the Entry and Stay Control Act can be forcibly deported from Korea. These include those who violate entry rules, commit false entry through fraudulent applications, or are found to have grounds for entry prohibition after arrival. Other cases include violations of work permits, residence conditions, or immigration regulations, such as changing employment without permission or failing to comply with residence restrictions. Additionally, individuals who have committed crimes like terrorism or acts endangering public safety, or those who have been previously deported within five years, may also be subject to deportation. Permanent residents are exempt from deportation unless they commit serious offenses such as treason or crimes against public order. [1]",
+        "sources": [
+          "immigration_act:46",
+          "immigration_act:68",
+          "immigration_act:11",
+          "immigration_act:67"
+        ],
+        "top_score": 0.8613,
+        "cited": [
+          "immigration_act:46"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.63
+      },
+      {
+        "id": "en06",
+        "type": "law",
+        "lang": "en",
+        "question": "How do I apply for refugee status?",
+        "answer": "To apply for refugee status, you must submit a written application to the head of a local immigration or foreigner-related office [1]. If you cannot write due to disability or other reasons, a public official can prepare the application form and sign it with you [1]. You should also provide your passport or foreigner registration certificate, and if available, any supporting documents related to your claim [1].  \n\nIf you are entering Korea, you can submit your application at the port of entry or departure, and the local office may allow you to stay at a designated location for up to seven days [2]. The Ministry of Justice must decide whether to refer your case for review within seven days; if not, your entry will be permitted [2].  \n\nAfter submission, the local office will conduct an interview and fact-checking, and report the results to the Minister of Justice [3]. The final decision on refugee status must be made within six months of receiving the application, with possible extension under unavoidable circumstances [4].",
+        "sources": [
+          "refugee_act:5",
+          "refugee_act:6",
+          "refugee_act:8",
+          "refugee_act:18"
+        ],
+        "top_score": 0.9904,
+        "cited": [
+          "refugee_act:5",
+          "refugee_act:6",
+          "refugee_act:8",
+          "refugee_act:18"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.83
+      },
+      {
+        "id": "en07",
+        "type": "law",
+        "lang": "en",
+        "question": "Do I have to carry my passport at all times?",
+        "answer": "Yes, you have to carry your passport at all times if you are a foreigner staying in South Korea. However, this rule does not apply to foreigners under 17 years of age [1]. If you are 17 years or older, you must always carry your passport, seafarers’ identity document, alien entry permit, alien registration certificate, mobile alien registration certificate, or landing permit [1]. You are required to present these documents when requested by immigration officers [1]. Failure to do so may result in a fine of up to 1 million won [2].",
+        "sources": [
+          "immigration_act:27",
+          "immigration_act:98",
+          "immigration_decree:1",
+          "immigration_decree:1-2"
+        ],
+        "top_score": 0.7078,
+        "cited": [
+          "immigration_act:27",
+          "immigration_act:98"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 8.75
+      },
+      {
+        "id": "en08",
+        "type": "law",
+        "lang": "en",
+        "question": "How many days after entry must I register as a foreigner?",
+        "answer": "You must register as a foreigner within 90 days of entry if you intend to stay in South Korea for more than 90 days. [1]",
+        "sources": [
+          "immigration_act:31",
+          "immigration_act:35",
+          "immigration_act:37",
+          "immigration_rules:50"
+        ],
+        "top_score": 0.9355,
+        "cited": [
+          "immigration_act:31"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 3.69
+      },
+      {
+        "id": "out01",
+        "type": "out_of_scope",
+        "lang": "ko",
+        "question": "서울출입국·외국인청 주소와 운영시간을 알려주세요.",
+        "answer": "제공된 법령에서 서울출입국·외국인청의 주소와 운영시간에 관한 내용을 찾을 수 없습니다.",
+        "sources": [
+          "immigration_decree:34-2",
+          "immigration_decree:15#1",
+          "immigration_act:78",
+          "immigration_rules:75"
+        ],
+        "top_score": 0.1039,
+        "cited": [],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": true,
+        "language_ok": true,
+        "seconds": 7.9
+      },
+      {
+        "id": "out02",
+        "type": "out_of_scope",
+        "lang": "ko",
+        "question": "하이코리아에서 방문 예약은 어떻게 하나요?",
+        "answer": "제공된 법령에서 하이코리아에서의 방문 예약에 관한 내용을 찾을 수 없습니다.",
+        "sources": [
+          "immigration_decree:34-2",
+          "immigration_decree:34",
+          "immigration_decree:18-3",
+          "immigration_act:73-2"
+        ],
+        "top_score": 0.0158,
+        "cited": [],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": true,
+        "language_ok": true,
+        "seconds": 3.82
+      },
+      {
+        "id": "out03",
+        "type": "out_of_scope",
+        "lang": "ko",
+        "question": "D-2 유학생은 학기 중에 주당 몇 시간까지 아르바이트할 수 있나요?",
+        "answer": "제공된 법령에서 D-2 유학생이 주당 몇 시간까지 아르바이트할 수 있는 내용은 없습니다.  \n[1], [2], [3], [4] 자료에는 유학생의 아르바이트 시간에 관한 규정이 포함되어 있지 않습니다.  \n\n따라서 질문에 대한 정보를 제공할 수 없습니다.",
+        "sources": [
+          "immigration_rules:37",
+          "immigration_decree:table02#18",
+          "immigration_decree:table02#15",
+          "immigration_rules:table01#1"
+        ],
+        "top_score": 0.0228,
+        "cited": [
+          "immigration_rules:37",
+          "immigration_decree:table02#18",
+          "immigration_decree:table02#15",
+          "immigration_rules:table01#1"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": true,
+        "language_ok": true,
+        "seconds": 6.85
+      },
+      {
+        "id": "out04",
+        "type": "out_of_scope",
+        "lang": "ko",
+        "question": "외국인등록증 발급까지 보통 며칠 걸리나요?",
+        "answer": "제공된 법령에서 외국인등록증 발급까지 걸리는 기간에 대한 내용을 찾을 수 없습니다.",
+        "sources": [
+          "immigration_act:33",
+          "immigration_act:31",
+          "immigration_decree:46",
+          "immigration_act:37"
+        ],
+        "top_score": 0.8765,
+        "cited": [],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": true,
+        "language_ok": true,
+        "seconds": 3.43
+      }
+    ]
+  },
+  "held-out": {
+    "summary": {
+      "law_questions": 30,
+      "expected_article_in_context": 0.8,
+      "answer_cites_expected_article": 0.767,
+      "answered_with_a_citation": 0.967,
+      "wrongly_refused": 0.067,
+      "same_language_as_question": 1.0,
+      "median_seconds": 12.93
+    },
+    "answers": [
+      {
+        "id": "h01",
+        "type": "law",
+        "lang": "ko",
+        "question": "학생 신분으로 편의점에서 일해도 문제 없나요?",
+        "answer": "학생 신분으로 편의점에서 일하는 것은 문제 없습니다.  \n이에 대한 근거는 제1항에서 '외국인의 취업활동'을 할 수 있는 체류자격이 있으며, 이 중 '교수(E-1)'부터 '선원취업(E-10)'까지 포함되지만, 학생 신분으로 일하는 것이 제한되는지는 명시되어 있지 않습니다.  \n또한, 제24조의4에 따르면 기술연수생 모집에 관한 사항이 정해져 있지만, 학생이 편의점에서 일하는 경우에 해당하는지 여부는 별도로 명시되지 않았습니다.  \n따라서 학생 신분으로 편의점에서 일하는 것은 법적으로 제한되지 않는 것으로 간주됩니다.  \n[1]",
+        "sources": [
+          "immigration_decree:23",
+          "immigration_decree:24-4",
+          "immigration_decree:table02#18",
+          "immigration_rules:table08#14"
+        ],
+        "top_score": 0.0065,
+        "cited": [
+          "immigration_decree:23"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 16.81
+      },
+      {
+        "id": "h02",
+        "type": "law",
+        "lang": "ko",
+        "question": "비자 만료일이 다음 주인데 한국에 더 있고 싶어요.",
+        "answer": "비자 만료일이 다음 주인데 한국에 더 있고 싶다면, 체류기간을 연장받기 위해 법무부장관의 체류기간 연장허가를 신청해야 합니다.  \n체류기간 연장은 체류기간 만료 전에 신청 가능하며, 출국할 수 없는 부득이한 사유나 국내여행을 목적으로 일시 체류하는 경우에 해당합니다.  \n신청 시 체류기간 연장허가신청서에 사유를 소명하는 자료를 첨부해야 하며, 연장 기간이 30일을 초과하는 경우 법무부장관의 승인이 필요합니다.  \n체류기간 연장은 수수료를 받지 않습니다.  \n[1], [2]",
+        "sources": [
+          "immigration_act:25",
+          "immigration_rules:32",
+          "immigration_act:31",
+          "immigration_decree:34"
+        ],
+        "top_score": 0.0438,
+        "cited": [
+          "immigration_act:25",
+          "immigration_rules:32"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.56
+      },
+      {
+        "id": "h03",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인도 전입신고를 해야 하나요?",
+        "answer": "예, 외국인도 체류지를 변경했을 때 전입신고를 해야 합니다.  \n체류지를 변경한 외국인은 전입한 날부터 15일 이내에 새로운 체류지의 시·군·구 또는 읍·면·동의 장이나 그 지역을 관할하는 지방출입국·외국인관서의 장에게 전입신고를 해야 하며, 이때 외국인등록증을 제출해야 합니다 [1].  \n신고를 받은 관서는 체류지 변경 사실을 즉시 종전 체류지 관할 장에게 통보하고, 등록표를 이송하여 관리를 수행합니다 [1].  \n모바일외국인등록증을 사용하는 경우, 전입신고를 외국인등록증에 기재하는 것으로 대체할 수 있습니다 [1].  \n따라서 외국인은 체류지 변경 시 반드시 전입신고를 해야 합니다.",
+        "sources": [
+          "immigration_act:36",
+          "immigration_decree:45",
+          "immigration_act:35",
+          "immigration_decree:15#1"
+        ],
+        "top_score": 0.934,
+        "cited": [
+          "immigration_act:36"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 19.66
+      },
+      {
+        "id": "h04",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인등록을 안 하면 어떻게 되나요?",
+        "answer": "외국인등록을 하지 않으면, 입국한 날부터 90일을 초과하여 대한민국에 체류하게 되면 법적으로 불법체류로 간주되며, 이는 체류자격을 받는 사람에게는 제23조, 제24조에 따라 체류자격을 받는 때에 등록을 하도록 규정하고 있습니다 [1].  \n또한, 외국인등록을 하지 않은 경우, 출입국관리공무원이 체류 기간을 확인하거나 다른 사유로 말소 사유를 발견하면 등록사항이 말소될 수 있으며, 이는 등록을 하지 않은 것으로 간주됩니다 [4].  \n따라서 등록을 하지 않으면 체류 기간이 90일을 초과하면 불법체류로 간주되고, 관련 법적 조치가 이루어질 수 있습니다 [1].  \n\n(참고: 자료에 따르면 등록을 하지 않는 경우에 대한 구체적인 벌금이나 처벌은 언급되지 않았으며, 법적 책임은 등록 의무 위반으로 간주되지만, 직접적인 제재는 제시되지 않았습니다.)",
+        "sources": [
+          "immigration_act:31",
+          "immigration_decree:47",
+          "immigration_act:33",
+          "immigration_act:37-2"
+        ],
+        "top_score": 0.6358,
+        "cited": [
+          "immigration_act:31",
+          "immigration_act:37-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 17.53
+      },
+      {
+        "id": "h05",
+        "type": "law",
+        "lang": "ko",
+        "question": "F-5 비자 조건 알려주세요.",
+        "answer": "F-5 영주체류자격을 받기 위해서는 다음의 조건 중 하나에 해당해야 합니다.\n\n1. 대한민국에서 출생했으며, 부 또는 모가 영주(F-5) 체류자격을 가지고 있는 경우: 가족관계 증명서, 출생증명서, 국적국의 신분 증명서를 제출해야 합니다 [1].  \n2. 외국인투자기업에 50만 달러 이상을 투자하고, 5명 이상의 대한민국 국민을 고용한 경우: 외국인투자기업 등록증명서, 법인등기사항전부증명서 또는 사업자등록증, 근로소득 증명서 등을 제출해야 합니다 [1].  \n3. 특정 분야(예: 과학, 경영 등)에서 경력이나 연구실적을 입증한 경우: 수상경력, SCI 논문 인용, 연구실적 증명서 등 법무부장관이 인정하는 서류를 제출해야 합니다 [1].\n\n또한, F-5 체류자격에 부합하지 않는 사람으로서 5년 이상 거주(F-2) 체류를 하였다면, 영주자격에 부합하지 않는 것으로 간주됩니다 [4].",
+        "sources": [
+          "immigration_rules:table08#17",
+          "immigration_decree:table03#2",
+          "immigration_decree:table02#13",
+          "immigration_decree:table03#1"
+        ],
+        "top_score": 0.3968,
+        "cited": [
+          "immigration_rules:table08#17",
+          "immigration_decree:table03#1"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 18.82
+      },
+      {
+        "id": "h06",
+        "type": "law",
+        "lang": "ko",
+        "question": "한국 사람과 결혼했는데 국적을 취득하려면 몇 년이 필요해요?",
+        "answer": "한국 사람과 결혼한 외국인은 대한민국에 2년 이상 주소를 두고 있으면 귀화를 신청할 수 있습니다. 또한, 혼인 후 3년이 지나고 1년 이상 주소를 두고 있으면 귀화를 받을 수 있습니다. 이 경우, 혼인 생활을 할 수 없었던 사유가 있거나, 미성년 자녀를 양육하고 있는 경우에도 조건을 충족할 수 있습니다 [1].",
+        "sources": [
+          "nationality_act:6",
+          "foreigners_framework_act:15",
+          "nationality_decree:15",
+          "nationality_act:11"
+        ],
+        "top_score": 0.4003,
+        "cited": [
+          "nationality_act:6"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 7.69
+      },
+      {
+        "id": "h07",
+        "type": "law",
+        "lang": "ko",
+        "question": "E-9 근로자가 직장을 바꾸려면 어떻게 해야 하나요?",
+        "answer": "E-9 근로자는「외국인근로자의 고용 등에 관한 법률」에 따른 국내 취업요건을 갖춘 경우이며, 근무처를 변경하고자 할 때는 고용노동부령으로 정하는 바에 따라 직업안정기관의 장에게 사업 또는 사업장 변경 신청을 해야 합니다 [3].  \n신청 사유는 사용자가 정당한 사유로 근로계약을 해지하거나, 휴업, 폐업, 고용허가 취소 등 외국인근로자의 책임이 아닌 사유로 근무를 계속할 수 없게 되었을 경우입니다 [3].  \n변경 신청 후 3개월 이내에 근무처 변경허가를 받지 못하거나, 근로계약이 종료된 후 1개월 이내에 변경 신청을 하지 않으면 출국해야 합니다 [3].  \n또한, 사업 또는 사업장 변경은 원칙적으로 3회를 초과할 수 없으며, 제2호 사유(예: 폐업 등)는 제외됩니다 [3].",
+        "sources": [
+          "immigration_decree:26-2",
+          "immigration_decree:table02#12",
+          "foreign_workers_act:25",
+          "immigration_decree:26"
+        ],
+        "top_score": 0.0232,
+        "cited": [
+          "foreign_workers_act:25"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 19.12
+      },
+      {
+        "id": "h08",
+        "type": "law",
+        "lang": "ko",
+        "question": "E-9으로 최대 몇 년 일할 수 있어요?",
+        "answer": "E-9(비전문취업) 체류자격으로는 최대 3년까지 체류할 수 있습니다.  \n이 체류기간 상한은 출입국관리법 시행규칙 별표 1(체류자격별 체류기간의 상한)에 명시되어 있으며, E-9는 3년으로 기재되어 있습니다 [1].  \n그러나 법무부장관이 필요하다고 인정하는 경우, 체류기간을 초과하여 체류할 수 있도록 허가할 수 있습니다 [1].  \n또한, E-9 체류자격으로 국내에 5년 이상 체류한 사실이 있거나, 체류 기간을 합산해 5년 이상인 경우 사증발급인정서를 발급받을 수 없습니다 [2].  \n따라서 E-9 체류자격은 3년을 초과할 수 없으며, 예외적 사례는 법무부장관의 판단에 따라 가능합니다 [1].",
+        "sources": [
+          "immigration_rules:table01#1",
+          "immigration_rules:17-3#2",
+          "immigration_decree:table02#12",
+          "immigration_decree:23"
+        ],
+        "top_score": 0.5815,
+        "cited": [
+          "immigration_rules:table01#1",
+          "immigration_rules:17-3#2"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.25
+      },
+      {
+        "id": "h09",
+        "type": "law",
+        "lang": "ko",
+        "question": "한국을 떠날 때 등록증을 내고 가야 하나요?",
+        "answer": "한국을 떠날 때 외국인등록증을 반납해야 하는 경우가 있습니다. 그러나 재입국허가를 받고 일시 출국하거나, 복수사증 소지자나 재입국허가 면제대상 국가의 국민이며 허가 기간 내에 다시 입국할 계획이면 반납하지 않아도 됩니다. 또한 국민이 되거나 사망한 경우에도 반납해야 합니다 [1].",
+        "sources": [
+          "immigration_act:37",
+          "immigration_decree:1-2",
+          "immigration_act:27",
+          "immigration_act:88"
+        ],
+        "top_score": 0.3784,
+        "cited": [
+          "immigration_act:37"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 7.47
+      },
+      {
+        "id": "h10",
+        "type": "law",
+        "lang": "ko",
+        "question": "난민 신청하고 몇 달 지나면 일할 수 있어요?",
+        "answer": "난민 인정 신청일로부터 6개월이 지나면 일할 수 있습니다.  \n이 조건은 난민법 제40조 ②에 명시되어 있습니다.  \n법무부장관은 난민인정 신청일로부터 6개월이 지난 경우에 취업을 허가할 수 있다고 규정하고 있습니다.  \n따라서 난민신청자가 난민을 인정받은 후 6개월이 지나면 일할 수 있습니다.  \n이 기간은 난민인정 결정을 받은 날부터 시작됩니다.  \n[1]",
+        "sources": [
+          "refugee_act:40",
+          "refugee_act:18",
+          "foreign_workers_act:18-3",
+          "refugee_act:21"
+        ],
+        "top_score": 0.8568,
+        "cited": [
+          "refugee_act:40"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 9.07
+      },
+      {
+        "id": "h11",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인을 몰래 고용하면 처벌이 어떻게 되나요?",
+        "answer": "외국인을 몰래 고용하는 행위는 외국인근로자의 고용 등에 관한 법률 제8조제6항을 위반한 것으로, 해당자는 1년 이하의 징역 또는 1천만원 이하의 벌금에 처해집니다 [1]. 또한, 출입국관리법 제18조제4항에 따라 취업활동을 할 수 있는 체류자격을 가지지 않은 외국인을 고용하는 행위는 500만원 이하의 벌금에 처할 수 있습니다 [2]. 이러한 처벌은 고용을 알선하거나 권유한 경우에 적용됩니다.",
+        "sources": [
+          "foreign_workers_act:29",
+          "immigration_act:97",
+          "foreign_workers_act:30",
+          "foreign_workers_act:20"
+        ],
+        "top_score": 0.8716,
+        "cited": [
+          "foreign_workers_act:29",
+          "immigration_act:97"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 9.8
+      },
+      {
+        "id": "h12",
+        "type": "law",
+        "lang": "ko",
+        "question": "체류자격 변경은 어디에 신청하나요?",
+        "answer": "체류자격 변경은 청장, 사무소장, 또는 출장소장에게 신청합니다.  \n신청 시 체류자격 변경허가 신청서와 법무부령으로 정하는 서류를 첨부하여 제출해야 합니다.  \n청장이나 사무소장은 신청서를 받은 후 지체 없이 법무부장관에게 의견을 전달해야 합니다.  \n법무부장관이 허가를 내린 경우, 여권에 체류자격 변경허가인을 찍거나 스티커를 붙입니다.  \n이에 따라 신청은 출입국·외국인청 또는 그 소속의 사무소, 출장소에서 이루어집니다. [1][2][3]",
+        "sources": [
+          "immigration_decree:30",
+          "immigration_act:24",
+          "immigration_decree:34-2",
+          "immigration_rules:table08#2"
+        ],
+        "top_score": 0.9878,
+        "cited": [
+          "immigration_decree:30",
+          "immigration_act:24",
+          "immigration_decree:34-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 12.93
+      },
+      {
+        "id": "h13",
+        "type": "law",
+        "lang": "en",
+        "question": "How long can a foreign worker under the employment permit system work in Korea?",
+        "answer": "A foreign worker under the employment permit system can work in Korea for up to 3 years from the date of entry. However, in certain cases, such as when a employer requests re-employment permission before the 3-year period ends, the working period may be extended by up to 2 years once. Additionally, in cases of public health emergencies or natural disasters, the government may extend the working period by up to 1 year. [1][2]",
+        "sources": [
+          "foreign_workers_act:18",
+          "foreign_workers_act:18-2",
+          "foreign_workers_act:20",
+          "immigration_act:10-2"
+        ],
+        "top_score": 0.6776,
+        "cited": [
+          "foreign_workers_act:18",
+          "foreign_workers_act:18-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 6.72
+      },
+      {
+        "id": "h14",
+        "type": "law",
+        "lang": "en",
+        "question": "Can a recognized refugee bring their spouse to Korea?",
+        "answer": "Yes, a recognized refugee can bring their spouse to Korea. According to Article 37, Paragraph 1 of the Refugee Act, if a spouse of a recognized refugee applies for entry, the Minister of Justice must grant entry unless it falls under Article 11 of the Immigration Act. The scope of the spouse is determined by the Civil Act. [1]",
+        "sources": [
+          "refugee_act:37",
+          "refugee_act:2",
+          "foreigners_framework_act:14",
+          "refugee_act:31"
+        ],
+        "top_score": 0.6682,
+        "cited": [
+          "refugee_act:37"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 5.46
+      },
+      {
+        "id": "h15",
+        "type": "law",
+        "lang": "en",
+        "question": "What should I do if I lose my alien registration card?",
+        "answer": "If you lose your alien registration card, you can apply for a reissue of the card. To do so, you need to submit a reissuance application form along with a photograph to the head of the immigration office, office, or branch office that oversees your place of residence. [1]",
+        "sources": [
+          "immigration_decree:42",
+          "immigration_act:37",
+          "immigration_decree:43",
+          "immigration_decree:46"
+        ],
+        "top_score": 0.8413,
+        "cited": [
+          "immigration_decree:42"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 11.3
+      },
+      {
+        "id": "h16",
+        "type": "law",
+        "lang": "en",
+        "question": "Is there a fee waiver for visa applications?",
+        "answer": "Yes, there is a fee waiver for visa applications under the Immigration Control Act. The Ministry of Justice may exempt the fee if it is necessary for international cooperation, humanitarian reasons, or based on specific categories such as cultural exchange, student visits, or research activities where domestic living expenses are covered [1]. Additionally, certain individuals, including veterans, public servants, and those with special status, are eligible for fee exemption under specific legal provisions [2].",
+        "sources": [
+          "immigration_act:87",
+          "immigration_rules:74",
+          "immigration_act:90",
+          "immigration_act:100"
+        ],
+        "top_score": 0.0577,
+        "cited": [
+          "immigration_act:87",
+          "immigration_rules:74"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 7.19
+      },
+      {
+        "id": "h17",
+        "type": "law",
+        "lang": "ko",
+        "question": "대학원을 졸업하고 한국에서 일자리를 찾으려면 어떤 비자가 필요해요?",
+        "answer": "국내 대학원에서 정규과정을 마치고 박사학위를 취득한 사람은 영주자격(F-5) 신청 시 국내 기업에 고용되어 있거나, 법무부장관이 정하는 분야의 학위나 기술자격증을 보유하고 국내 체류 기간이 3년 이상이며 임금이 법무부장관이 정하는 금액 이상을 받는 경우에 해당할 수 있습니다. 그러나 이는 영주자격 신청 조건이며, 대학원 졸업 후 한국에서 일자리를 찾기 위한 직접적인 체류 비자는 명시되지 않았습니다.  \n따라서 대학원을 졸업하고 한국에서 일자리를 찾기 위한 체류 비자는 현재 제공된 자료에서는 명확히 규정되지 않았습니다.  \n[4]",
+        "sources": [
+          "immigration_decree:table03#5",
+          "immigration_rules:table08#14",
+          "immigration_decree:table02#10",
+          "immigration_decree:table03#4"
+        ],
+        "top_score": 0.0039,
+        "cited": [
+          "immigration_decree:table03#4"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 14.63
+      },
+      {
+        "id": "h18",
+        "type": "law",
+        "lang": "ko",
+        "question": "회사에서 해고당했는데 회사가 출입국에 알려야 하나요?",
+        "answer": "네, 회사에서 외국인을 해고했을 경우 출입국에 신고해야 합니다.  \n해고 사유는 '외국인을 해고하거나 퇴직 또는 사망한 경우'에 해당하므로, 제19조제1항제1호에 해당합니다.  \n이에 따라 15일 이내에 지방출입국ㆍ외국인관서의 장에게 신고해야 하며, 신고는 해고된 날부터 시작됩니다.  \n신고를 위한 서류는 고용ㆍ연수 외국인 변동사유 발생신고서를 제출해야 합니다.  \n[1], [3]",
+        "sources": [
+          "immigration_act:19",
+          "immigration_act:84",
+          "immigration_decree:24",
+          "foreign_workers_act:17"
+        ],
+        "top_score": 0.3355,
+        "cited": [
+          "immigration_act:19",
+          "immigration_decree:24"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 10.0
+      },
+      {
+        "id": "h19",
+        "type": "law",
+        "lang": "ko",
+        "question": "부모님을 한국에 모셔서 같이 살고 싶은데 어떤 체류자격이 있나요?",
+        "answer": "부모님을 한국에 모셔서 같이 살고 싶으시다면, '가사보조인'으로서의 체류자격이 해당됩니다. 이는 친척 방문, 가족 동거, 피부양 등 목적에 해당하며, 법무부장관이 인정하는 경우에 적용됩니다. 또한, 부모님이 한국에 장기간 체류할 필요가 있다고 법무부장관이 인정할 경우, 장기체류자격(제12조 관련)에 해당하는 사람으로 간주될 수 있습니다 [1].  \n\n이에 따라 부모님과 함께 살기 위해 필요한 서류는 초청사유서와 부모님의 신원보증서, 그리고 재외동포임을 증명하는 국적국의 공적 서류 등이 포함됩니다 [2].  \n\n이러한 체류자격은 가족 동거를 위한 목적에 맞춰 법무부장관이 인정하는 경우에만 적용되며, 구체적인 승인 여부는 법무부의 판단에 따라 결정됩니다.",
+        "sources": [
+          "immigration_decree:table02#13",
+          "immigration_rules:table07#20",
+          "immigration_decree:table03#2",
+          "immigration_decree:table03#6"
+        ],
+        "top_score": 0.3887,
+        "cited": [
+          "immigration_decree:table02#13",
+          "immigration_rules:table07#20"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 14.86
+      },
+      {
+        "id": "h20",
+        "type": "law",
+        "lang": "ko",
+        "question": "여권 유효기간이 끝나서 새 여권을 받았어요. 따로 신고해야 하나요?",
+        "answer": "예, 여권 유효기간이 끝나고 새 여권을 받은 경우, 여권의 번호, 발급일자 및 유효기간이 변경되었으므로 제35조에 따라 외국인등록사항 변경신고를 해야 합니다.  \n이 사항은 제35조 제2호에 해당하며, 여권의 발급일자 및 유효기간이 변경되었을 때 15일 이내에 체류지 관할 지방출입국ㆍ외국인관서의 장에게 변경신고를 해야 합니다.  \n신고를 위해 외국인등록사항 변경신고서를 작성하고, 외국인등록증과 여권을 함께 제출해야 합니다.  \n이에 따라 여권이 갱신되는 경우에도 반드시 변경신고를 해야 합니다.  \n[1]",
+        "sources": [
+          "immigration_act:35",
+          "immigration_decree:15#1",
+          "immigration_decree:44",
+          "immigration_rules:2"
+        ],
+        "top_score": 0.0969,
+        "cited": [
+          "immigration_act:35"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.08
+      },
+      {
+        "id": "h21",
+        "type": "law",
+        "lang": "ko",
+        "question": "외국인등록증을 휴대폰으로 발급받을 수 있나요?",
+        "answer": "예, 외국인등록증을 휴대폰으로 발급받을 수 있습니다.  \n이를 모바일외국인등록증이라고 하며, 이동통신단말장치에 암호화된 형태로 설치되어 외국인등록증과 동일한 효력을 가집니다 [1].  \n모바일외국인등록증은 외국인 본인이 사용하고 있는 휴대폰 1대에만 발급받을 수 있으며, 외국인등록증과 동일한 내용의 정보를 담고 있습니다 [2].  \n발급을 위해서는 체류지를 관할하는 지방출입국ㆍ외국인관서의 장에게 신청서를 제출하고 여권 또는 외국인등록증을 제시해야 합니다 [2].  \n또한, IC 칩이 내장된 외국인등록증을 소지한 경우, 휴대폰을 통해 직접 신청할 수도 있습니다 [2].",
+        "sources": [
+          "immigration_act:33",
+          "immigration_rules:48-2",
+          "immigration_act:88",
+          "immigration_act:88-2"
+        ],
+        "top_score": 0.9719,
+        "cited": [
+          "immigration_act:33",
+          "immigration_rules:48-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 18.32
+      },
+      {
+        "id": "h22",
+        "type": "law",
+        "lang": "ko",
+        "question": "취업비자 없이 일하다가 걸리면 처벌받나요?",
+        "answer": "예, 취업비자 없이 일하면 처벌받습니다.  \n이 경우는 제18조제4항을 위반한 것으로, 취업활동을 할 수 있는 체류자격을 가지지 않은 외국인을 고용한 행위에 해당합니다.  \n이에 대한 벌칙은 제94조제9호에 따라 3년 이하의 징역 또는 3천만원 이하의 벌금이 부과됩니다.  \n또한 고용인원과 위반 기간에 따라 별표 8에 따라 범칙금이 결정되며, 고용 인원이 많을수록 벌금이 증가합니다.  \n이러한 처벌은 외국인의 취업 활동이 법적으로 허가되지 않았다는 점에서 체류자격과 취업 활동의 분리 원칙을 지키기 위한 것입니다.  \n[1]",
+        "sources": [
+          "immigration_act:94",
+          "immigration_act:97",
+          "immigration_act:95",
+          "immigration_rules:table12#1"
+        ],
+        "top_score": 0.0865,
+        "cited": [
+          "immigration_act:94"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.86
+      },
+      {
+        "id": "h23",
+        "type": "law",
+        "lang": "ko",
+        "question": "한국에서 아이를 낳았는데 아이 체류자격은 언제까지 신청해야 해요?",
+        "answer": "한국에서 아이를 낳은 경우, 아이는 출생 당시 그의 부모가 영주자격(F-5)을 가지고 있으며 대한민국에 체류하고 있는 경우, 출생한 날부터 90일 이내에 체류자격을 신청해야 합니다. 이는 출입국관리법 제23조 제1호에 따라 적용되는 내용입니다 [2].  \n또한, 출생한 날부터 90일을 초과하여 체류하게 되는 경우, 체류자격을 받는 시점에서 외국인등록을 해야 하며, 이는 체류자격 부여를 위한 조건 중 하나입니다 [3].  \n따라서 아이의 체류자격은 출생 후 90일 이내에 신청해야 하며, 그 이후에는 체류자격을 받는 시점에서 등록을 해야 합니다 [2][3].",
+        "sources": [
+          "immigration_decree:table03#2",
+          "immigration_act:23",
+          "immigration_act:31",
+          "immigration_decree:table03#6"
+        ],
+        "top_score": 0.3604,
+        "cited": [
+          "immigration_act:23",
+          "immigration_act:31"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.42
+      },
+      {
+        "id": "h24",
+        "type": "law",
+        "lang": "ko",
+        "question": "영주권자인데 1년 동안 외국에 있다가 돌아와도 재입국허가가 필요한가요?",
+        "answer": "영주권자인 경우 출국 후 2년 이내에 재입국하려는 경우 재입국허가를 면제받을 수 있습니다. 따라서 1년 동안 외국에 있어도 재입국허가가 필요하지 않습니다. [1]  \n이에 따라 영주권자로서 출국한 날부터 2년 이내에 재입국하는 경우 재입국허가를 면제받을 수 있습니다. [2]  \n재입국허가 면제 기준은 법무부령으로 정해져 있으며, 영주권자의 경우 해당 조건에 해당합니다. [2]",
+        "sources": [
+          "immigration_act:30",
+          "immigration_rules:44-2",
+          "immigration_rules:41",
+          "immigration_rules:39-7"
+        ],
+        "top_score": 0.8161,
+        "cited": [
+          "immigration_act:30",
+          "immigration_rules:44-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 9.64
+      },
+      {
+        "id": "h25",
+        "type": "law",
+        "lang": "ko",
+        "question": "사장님이 퇴직금 때문에 보험을 들어야 한다고 하던데 무슨 보험이에요?",
+        "answer": "사장님이 퇴직금 때문에 들어야 하는 보험은 ‘출국만기보험’입니다.  \n이 보험은 외국인근로자의 출국 시 퇴직금을 지급하기 위해 사용자가 반드시 가입해야 하는 보험입니다.  \n이 보험에 가입하면, 근로자가 출국한 후 14일 이내에 퇴직금이 지급됩니다.  \n이 보험은 ‘퇴직금제도’를 설정한 것으로 간주되며, 보험료는 매월 납부하거나 위탁되어야 합니다 [1].",
+        "sources": [
+          "foreign_workers_act:13",
+          "foreign_workers_act:23",
+          "immigration_decree:87",
+          "foreign_workers_act:15"
+        ],
+        "top_score": 0.0042,
+        "cited": [
+          "foreign_workers_act:13"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 11.1
+      },
+      {
+        "id": "h26",
+        "type": "law",
+        "lang": "ko",
+        "question": "남편의 폭력 때문에 이혼 소송 중인데 비자가 곧 끝나요.",
+        "answer": "남편의 폭력 때문에 이혼 소송 중인 경우, 법무부장관은 가정폭력의 피해를 이유로 체류기간 연장을 허가할 수 있습니다. 이는 '가정폭력범죄의 처벌 등에 관한 특례법' 제2조제1호에 해당하며, 법원의 재판이나 수사기관의 수사가 진행 중인 경우에 적용됩니다 [1].  \n체류기간 연장은 재판이나 수사 절차가 종료될 때까지 가능하며, 피해 회복을 위해 필요하다고 인정되는 경우에도 추가 연장이 가능합니다 [1].  \n이에 따라 현재 이혼 소송이 진행 중이라면, 비자 연장 신청이 가능하며, 소송 종료 전까지 체류 연장이 이루어질 수 있습니다.",
+        "sources": [
+          "immigration_act:25-2",
+          "immigration_act:89-2",
+          "immigration_rules:9-5#2",
+          "immigration_act:78"
+        ],
+        "top_score": 0.0376,
+        "cited": [
+          "immigration_act:25-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 15.25
+      },
+      {
+        "id": "h27",
+        "type": "law",
+        "lang": "en",
+        "question": "What visa does the foreign spouse of a Korean citizen get?",
+        "answer": "The foreign spouse of a Korean citizen does not automatically receive a specific visa under the provided laws. Instead, they may be eligible for a residence permit based on marriage, such as the F-6 (marriage-based immigration) visa, which requires submission of documents like proof of marriage, income verification, and health certificates [3]. However, the exact type of visa or permit is not explicitly defined in the provided legal materials. Therefore, based solely on the given information, I could not find this in the provided laws.",
+        "sources": [
+          "nationality_act:6",
+          "nationality_act:15",
+          "immigration_rules:table08#19",
+          "immigration_decree:18-3"
+        ],
+        "top_score": 0.1245,
+        "cited": [
+          "immigration_rules:table08#19"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": true,
+        "language_ok": true,
+        "seconds": 8.41
+      },
+      {
+        "id": "h28",
+        "type": "law",
+        "lang": "en",
+        "question": "What is the maximum period of stay for an overseas Korean (F-4)?",
+        "answer": "The maximum period of stay for an overseas Korean (F-4) is not explicitly stated in the provided materials. While the document mentions that individuals with F-4 status may be recognized as needing to continue residing in South Korea, it does not specify the duration of their stay or the maximum period allowed under this category. Therefore, I could not find this in the provided laws.",
+        "sources": [
+          "immigration_decree:table03#3",
+          "immigration_act:10-2",
+          "immigration_decree:10",
+          "immigration_decree:23"
+        ],
+        "top_score": 0.4699,
+        "cited": [],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": true,
+        "language_ok": true,
+        "seconds": 6.48
+      },
+      {
+        "id": "h29",
+        "type": "law",
+        "lang": "en",
+        "question": "I received a departure order. What does that mean?",
+        "answer": "A departure order means that a local immigration office has decided you must leave South Korea. You will receive a written departure order with a specific deadline to leave the country. If you do not leave by the deadline or violate any conditions attached to the order, the immigration office can issue a forced removal order and may confiscate your performance guarantee deposit. [1]",
+        "sources": [
+          "immigration_act:68",
+          "immigration_decree:67",
+          "immigration_decree:93",
+          "immigration_act:67"
+        ],
+        "top_score": 0.5532,
+        "cited": [
+          "immigration_act:68"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 5.76
+      },
+      {
+        "id": "h30",
+        "type": "law",
+        "lang": "en",
+        "question": "Can immigration officers detain me, and for how long?",
+        "answer": "Yes, immigration officers can detain you, but only under specific conditions and for a limited period.  \nIf you are suspected of falling under certain categories (e.g., unauthorized entry or flight risk), officers may detain you for up to 48 hours [1].  \nIn some cases, such as due to illness or lack of transportation, detention can be extended by up to 48 hours with approval from the head of a regional immigration office [1].  \nHowever, if your identity is confirmed or if there is no valid reason for detention, the protection must be lifted immediately [2].  \nDetention cannot exceed 48 hours without proper authorization or extension [1].  \nThe exact duration depends on the circumstances and whether an extension is approved [1].",
+        "sources": [
+          "immigration_act:56",
+          "refugee_act:20",
+          "immigration_act:51",
+          "immigration_act:54"
+        ],
+        "top_score": 0.963,
+        "cited": [
+          "immigration_act:56",
+          "refugee_act:20"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 10.5
+      }
+    ]
+  },
+  "guide": {
+    "summary": {
+      "answerable_questions": 15,
+      "expected_article_in_context": 0.133,
+      "answer_cites_expected_article": 0.133,
+      "answered_with_a_citation": 0.933,
+      "wrongly_refused": 0.133,
+      "same_language_as_question": 1.0,
+      "median_seconds": 17.98
+    },
+    "answers": [
+      {
+        "id": "g01",
+        "type": "guide",
+        "lang": "ko",
+        "question": "유학생이 아르바이트를 하려면 무엇이 필요한가요?",
+        "answer": "유학생이 아르바이트를 하려면 체류자격을 가지고 있어야 하며, 그 체류자격을 통해 취업 활동을 할 수 있는지 확인해야 합니다. 아르바이트는 체류자격 외 활동허가를 받는 경우에 해당되며, 이 경우에 필요한 서류는 고용계약서, 사업자등록증(법인인 경우 법인등기사항전부증명서), 원 근무처 장의 동의서(근무처가 휴폐업 또는 계약 만료일까지 근무한 경우 제외), 신원보증서(신고가 제한되는 직종의 경우) 등이 포함됩니다 [1][3]. 다만, 아르바이트 활동은 체류자격을 가진 외국인만 가능하며, 체류자격이 없는 사람은 고용할 수 없습니다 [1].",
+        "sources": [
+          "immigration_act:18",
+          "immigration_act:79-2",
+          "immigration_rules:table08#14",
+          "immigration_rules:table08#8"
+        ],
+        "top_score": 0.0611,
+        "cited": [
+          "immigration_act:18",
+          "immigration_rules:table08#14"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 17.98
+      },
+      {
+        "id": "g02",
+        "type": "guide",
+        "lang": "ko",
+        "question": "D-2 유학생이 공장(제조업)에서 아르바이트할 수 있나요?",
+        "answer": "아니요, D-2 유학생은 공장(제조업)에서 아르바이트할 수 없습니다.  \nD-2 유학생은 유학을 위한 체류자격으로, 이 체류자격은 학업을 위한 목적에 한해 적용되며, 제12조 관련 장기체류자격에서는 유학(D-2) 체류자격에 해당하는 사람은 기술연수(D-3)나 일반연수(D-4)와 같은 연수 활동에 포함되지 않으며, 체류기간 내에 학업을 수행하는 것이 전제입니다.  \n또한, 제79조의2에 따르면, 외국인의 체류 관련 활동허가를 신청하는 것은 법무부장관이 정한 조건에 따라 이루어져야 하며, 아르바이트는 근무 활동으로, 이는 외국인의 근무허가를 받아야 하며, D-2 체류자격은 근무 활동을 허가하지 않습니다.  \n따라서 D-2 유학생은 공장에서 아르바이트를 하기 위해 근무허가를 받아야 하며, 이는 체류자격이 아닌 별도의 활동허가를 요구합니다.  \n제공된 법령에서 이 질문에 대한 내용을 찾을 수 없습니다.",
+        "sources": [
+          "immigration_decree:table02#3",
+          "immigration_decree:table02#18",
+          "immigration_rules:table08#4",
+          "immigration_act:79-2"
+        ],
+        "top_score": 0.0774,
+        "cited": [],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": true,
+        "language_ok": true,
+        "seconds": 31.36
+      },
+      {
+        "id": "g03",
+        "type": "guide",
+        "lang": "ko",
+        "question": "대학원생인데 부모님을 한국에 초청할 수 있나요?",
+        "answer": "네, 대학원생인 경우 부모님을 한국에 초청할 수 있습니다.  \n이에 대한 근거는 출입국관리법 시행규칙 별표 1의2(장기체류자격)에서, 유학(D-2) 체류자격으로 1학기 이상 재학 중인 사람의 부모 및 배우자에 해당하는 경우를 명시하고 있으며, 이는 부모를 초청하는 데 적용됩니다 [2].  \n\n또한, 부모님을 초청하기 위해 필요한 서류는 재학증명서와 부모와의 관계를 증명할 수 있는 서류, 그리고 동포임을 증명하는 국적국의 공적 서류 등 법무부장관이 인정하는 서류입니다 [1].  \n\n따라서 대학원생이 1학기 이상 재학 중이라면 부모님을 한국에 초청할 수 있습니다.",
+        "sources": [
+          "immigration_rules:table07#20",
+          "immigration_decree:table02#18",
+          "immigration_rules:74",
+          "immigration_rules:9-5#2"
+        ],
+        "top_score": 0.0119,
+        "cited": [
+          "immigration_rules:table07#20",
+          "immigration_decree:table02#18"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 29.08
+      },
+      {
+        "id": "g04",
+        "type": "guide",
+        "lang": "ko",
+        "question": "새 여권을 받으면 며칠 안에 여권 변경 신고를 해야 하나요?",
+        "answer": "새 여권을 받은 경우, 여권 번호, 발급일자 및 유효기간이 변경된 것으로 간주되므로, 법 제35조 및 시행령 제44조에 따라 **15일 이내**에 체류지 관할 지방출입국·외국인관서의 장에게 외국인등록사항 변경신고를 해야 합니다 [1][2].  \n이 신고는 외국인등록사항 변경신고서에 외국인등록증과 새 여권을 함께 제출하여 하며, 변경 사항이 등록외국인기록표에 반영되고 외국인등록증이 재발급됩니다 [2].",
+        "sources": [
+          "immigration_act:35",
+          "immigration_decree:44",
+          "immigration_act:36",
+          "immigration_decree:15#1"
+        ],
+        "top_score": 0.547,
+        "cited": [
+          "immigration_act:35",
+          "immigration_decree:44"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 17.32
+      },
+      {
+        "id": "g05",
+        "type": "guide",
+        "lang": "ko",
+        "question": "체류기간 연장 신청은 만료 몇 개월 전부터 할 수 있나요?",
+        "answer": "제공된 법령에서 체류기간 연장 신청이 만료 몇 개월 전부터 할 수 있는지에 대한 내용을 찾을 수 없습니다. [1], [2], [3], [4] 자료에는 신청 시점이나 만료 전 기간에 관한 명시적인 기준이 없습니다. 따라서 체류기간 연장 신청 가능한 시점에 대한 정보는 제공되지 않았습니다.",
+        "sources": [
+          "immigration_decree:31",
+          "immigration_rules:32",
+          "immigration_act:25-2",
+          "immigration_act:25"
+        ],
+        "top_score": 0.8621,
+        "cited": [
+          "immigration_decree:31",
+          "immigration_rules:32",
+          "immigration_act:25-2",
+          "immigration_act:25"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": true,
+        "language_ok": true,
+        "seconds": 8.01
+      },
+      {
+        "id": "g06",
+        "type": "guide",
+        "lang": "ko",
+        "question": "체류민원을 신청할 때 방문 예약을 꼭 해야 하나요?",
+        "answer": "체류민원을 신청할 때 방문 예약을 꼭 해야 하는 것은 아닙니다. 임산부 및 법무부장관이 정하는 장애인 등은 온라인 방문 예약을 하지 않아도 됩니다. 다른 경우에는 체류자격 외 활동허가 신청 등에 대해 출입국·외국인청 등 방문을 하려면 온라인 방문 예약을 미리 진행해야 합니다 [1].",
+        "sources": [
+          "immigration_decree:34-2",
+          "immigration_decree:34",
+          "immigration_rules:table08#2",
+          "immigration_decree:88-10"
+        ],
+        "top_score": 0.9631,
+        "cited": [
+          "immigration_decree:34-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.09
+      },
+      {
+        "id": "g07",
+        "type": "guide",
+        "lang": "ko",
+        "question": "외국인 유학생이 허가 없이 식당에서 일하면 어떻게 되나요?",
+        "answer": "외국인 유학생이 허가 없이 식당에서 일하는 경우, 그 체류자격에 따른 활동이 아닌 '체류자격 외 활동'을 수행하고 있다는 점에서 법에 위배됩니다. 이는 제25조에 따라 체류자격 외 활동허가를 받아야 하며, 허가를 받지 않은 상태에서 일하는 것은 법적으로 불법입니다. 따라서 외국인 유학생이 허가 없이 식당에서 일하면, 체류자격 외 활동허가를 받지 않은 상태에서 근무를 하므로 법 위반에 해당하며, 관련 법령에 따라 벌금 처분이 가능합니다 [1]. 다만, 이는 제19조의4에 따른 유학생 관리와 직접적인 관련은 없으며, 유학생이 허가 없이 일하는 경우는 제25조에 따라 체류자격 외 활동허가를 받아야 함을 의미합니다.",
+        "sources": [
+          "immigration_act:97",
+          "immigration_act:19-4",
+          "immigration_decree:25",
+          "immigration_act:46"
+        ],
+        "top_score": 0.07,
+        "cited": [
+          "immigration_act:97"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 21.68
+      },
+      {
+        "id": "g08",
+        "type": "guide",
+        "lang": "ko",
+        "question": "출입국 민원을 행정사에게 맡겨서 대신 신청할 수 있나요?",
+        "answer": "출입국 민원을 행정사에게 맡겨서 대신 신청할 수 있습니다.  \n법무부장관이 정하는 업무 중 외국인의 체류 관련 신고·신청·서류 수령 등은 외국인 등이 대행기관에게 대행을 요청할 수 있으며, 이 대행기관은 변호사 또는 행정사 자격을 갖춘 자로서 등록되어야 합니다 [2].  \n그러나 이 대행은 법무부령으로 정하는 업무에 한해 가능하며, 모든 업무에 대해 대행이 허용되는 것은 아닙니다 [2].  \n대행기관은 법무부령으로 정하는 표준절차를 준수해야 하며, 대행업무에 필요한 교육이수도 요구됩니다 [2].  \n따라서 행정사가 대행기관으로 등록되어 있고, 법령에서 명시된 업무에 해당한다면 대행할 수 있습니다 [2].  \n\n※ 참고: 제79조의2에 따라 대행 가능한 업무는 체류자격 신청, 근무처 변경, 체류기간 연장 등이 포함되며, 이는 행정사가 대행할 수 있는 범위입니다 [2].",
+        "sources": [
+          "immigration_rules:34",
+          "immigration_act:79-2",
+          "immigration_act:56-8",
+          "immigration_decree:96"
+        ],
+        "top_score": 0.4463,
+        "cited": [
+          "immigration_act:79-2"
+        ],
+        "cites_expected": true,
+        "retrieved_expected": true,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 25.23
+      },
+      {
+        "id": "g09",
+        "type": "guide",
+        "lang": "ko",
+        "question": "결혼이민(F-6) 비자로 아무 일이나 할 수 있나요?",
+        "answer": "결혼이민(F-6) 비자로는 아무 일이나 할 수 없습니다.  \n결혼이민(F-6) 비자는 취업활동을 제한받는 체류자격에 해당하며, 법 제18조제1항에 따른 취업활동을 할 수 있는 체류자격은 별표 1 및 별표 1의2의 특정 체류자격에 한해 적용됩니다.  \n결혼이민(F-6) 비자 소지자는 제1항의 취업활동 제한을 받지 않는다고 명시된 사례가 있지만, 이는 그 비자 소지자가 취업 활동을 할 수 있다는 의미가 아니라, 그 비자 소지자가 취업 활동을 할 수 있는 체류자격에 해당하는 것으로 간주되지 않는다는 점에서 제한이 있습니다.  \n따라서 F-6 비자는 취업 활동을 허용하지 않으며, 체류자격에 따른 활동 제한이 적용됩니다.  \n[1]",
+        "sources": [
+          "immigration_decree:23",
+          "immigration_rules:table08#22",
+          "immigration_rules:table08#21",
+          "immigration_rules:table07#19"
+        ],
+        "top_score": 0.4244,
+        "cited": [
+          "immigration_decree:23"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 22.43
+      },
+      {
+        "id": "g10",
+        "type": "guide",
+        "lang": "ko",
+        "question": "하이코리아 전자민원으로 신청하면 수수료 할인이 있나요?",
+        "answer": "제공된 자료에서는 하이코리아 전자민원으로 신청하는 경우에 대해 수수료 할인 여부에 대한 직접적인 언급이 없습니다. 다만, 전자문서로 증명을 열람하거나 교부하는 경우 수수료를 면제할 수 있다고 명시하고 있으며, 이는 제74조제1항제4호에 해당합니다 [1]. 그러나 이는 '전자민원'과 동일한 개념인지, 또는 하이코리아 전자민원에 적용되는지에 대한 구체적 정보는 없습니다. 따라서 하이코리아 전자민원으로 신청하는 경우 수수료 할인이 있는지 여부는 명확히 알 수 없습니다.  \n\n결론적으로, 자료에 하이코리아 전자민원에 대한 수수료 할인에 관한 정보가 없으므로, 해당 내용을 판단할 수 없습니다.  \n[1]",
+        "sources": [
+          "immigration_rules:74",
+          "immigration_rules:75",
+          "nationality_act:24",
+          "immigration_rules:78#1"
+        ],
+        "top_score": 0.0104,
+        "cited": [
+          "immigration_rules:74"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 30.83
+      },
+      {
+        "id": "g11",
+        "type": "guide",
+        "lang": "ko",
+        "question": "외국에 나가 있는 동안 체류기간 연장을 신청할 수 있나요?",
+        "answer": "아니요, 외국에 나가 있는 동안 체류기간 연장을 신청할 수 없습니다.  \n출국을 위한 체류기간 연장은 출국할 수 없는 사유(예: 선박이 없거나 부득이한 사유)나 국내여행을 목적으로 일시 체류하는 경우에만 가능하며, 이는 외국에 나가 있는 상황과는 다릅니다 [1].  \n또한, 체류기간 연장은 출국을 위한 목적에 한해 적용되며, 외국에 나가 있는 상태에서는 해당 조건에 부합하지 않습니다 [1].  \n\n따라서 외국에 나가 있는 동안 체류기간 연장을 신청할 수 없습니다.",
+        "sources": [
+          "immigration_rules:32",
+          "immigration_act:25-5",
+          "immigration_act:25",
+          "immigration_act:25-2"
+        ],
+        "top_score": 0.9541,
+        "cited": [
+          "immigration_rules:32"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.38
+      },
+      {
+        "id": "g12",
+        "type": "guide",
+        "lang": "ko",
+        "question": "영주권자도 체류기간 연장 신청을 해야 하나요?",
+        "answer": "예, 영주권자도 체류기간을 초과하여 계속 체류하려면 체류기간 연장허가를 받아야 합니다.  \n출입국관리법 제25조에 따르면 외국인이 체류기간을 초과하여 계속 체류하려면 법무부장관의 체류기간 연장허가를 받아야 하며, 이는 체류자격에 관계없이 적용됩니다 [1].  \n영주권자는 체류자격을 가진 외국인에 속하므로 동일한 규정을 따릅니다 [3].  \n체류기간 연장 신청은 체류기간이 끝나기 전에 신청서와 서류를 제출하여 청장 또는 출장소장에게 제출해야 하며, 이는 영주권자도 포함됩니다 [2].  \n\n따라서 영주권자도 체류기간 연장을 위해 신청을 해야 합니다.",
+        "sources": [
+          "immigration_act:25",
+          "immigration_decree:31",
+          "immigration_rules:table08#17",
+          "immigration_rules:32"
+        ],
+        "top_score": 0.8905,
+        "cited": [
+          "immigration_act:25",
+          "immigration_decree:31",
+          "immigration_rules:table08#17"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 20.79
+      },
+      {
+        "id": "g13",
+        "type": "guide",
+        "lang": "ko",
+        "question": "D-10 구직비자로 시간제 취업을 할 수 있나요?",
+        "answer": "D-10 구직비자로는 시간제 취업이 가능합니다. D-10은 구직을 위한 장기체류자격으로, 법무부장관이 인정하는 사람이 특정 분야에 취업하기 위해 연수나 구직활동을 하려는 경우에 해당합니다. 이 자격은 교수(E-1)부터 특정활동(E-7)까지의 체류자격에 해당하는 분야에 취업하기 위한 목적을 가지고 있으며, 시간제 일자리도 포함됩니다. 다만, 구체적인 시간제 일자리에 대한 제한이나 규제는 자료에 명시되어 있지 않습니다. [1]",
+        "sources": [
+          "immigration_decree:table02#8",
+          "immigration_decree:table02#13",
+          "immigration_decree:table02#5",
+          "immigration_decree:table02#7"
+        ],
+        "top_score": 0.1027,
+        "cited": [
+          "immigration_decree:table02#8"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 11.45
+      },
+      {
+        "id": "g14",
+        "type": "guide",
+        "lang": "ko",
+        "question": "회화강사가 학원을 옮기고 신고하지 않으면 어떻게 되나요?",
+        "answer": "회화강사가 학원을 옮기고 신고하지 않으면, 고용계약의 중요내용이 변경된 것으로 간주되며, 외국인을 고용한 자의 장은 고용계약의 중요내용 변경일로부터 15일 이내에 신고를 해야 합니다. 신고를 하지 않으면 법에 위반되며, 출입국관리법 시행령 제24조에 따라 처벌될 수 있습니다. 또한, 학원 설립 및 운영 등록이 필요한 경우, 해당 등록을 신고하지 않으면 법적 문제를 일으킬 수 있습니다. [3]",
+        "sources": [
+          "immigration_rules:table08#8",
+          "immigration_rules:table08#9",
+          "immigration_decree:24",
+          "immigration_decree:24-8"
+        ],
+        "top_score": 0.0336,
+        "cited": [
+          "immigration_decree:24"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 16.34
+      },
+      {
+        "id": "g15",
+        "type": "guide",
+        "lang": "en",
+        "question": "Can a student on a D-2 visa work part-time?",
+        "answer": "No, a student on a D-2 visa cannot work part-time. The D-2 visa is for study purposes only, and it does not allow for employment activities. According to the regulations, only specific statuses such as C-4 (short-term employment) or H-2 (visit for work) permit employment activities, and D-2 students are not included in these categories. Therefore, they are restricted from engaging in any employment activities, including part-time work [4].",
+        "sources": [
+          "immigration_decree:table02#18",
+          "immigration_rules:37",
+          "immigration_decree:table02#15",
+          "immigration_decree:23"
+        ],
+        "top_score": 0.0336,
+        "cited": [
+          "immigration_decree:23"
+        ],
+        "cites_expected": false,
+        "retrieved_expected": false,
+        "refused": false,
+        "language_ok": true,
+        "seconds": 13.06
+      }
+    ]
+  }
+}

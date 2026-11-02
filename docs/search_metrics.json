@@ -3,24 +3,24 @@
     "Keyword (BM25)": {
       "all": {
         "questions": 80,
-        "hit@1": 0.45,
-        "hit@4": 0.738,
-        "hit@10": 0.838,
-        "mrr@10": 0.58
+        "hit@1": 0.3,
+        "hit@4": 0.625,
+        "hit@10": 0.762,
+        "mrr@10": 0.443
       },
       "korean": {
         "questions": 72,
-        "hit@1": 0.458,
-        "hit@4": 0.764,
-        "hit@10": 0.861,
-        "mrr@10": 0.593
+        "hit@1": 0.292,
+        "hit@4": 0.639,
+        "hit@10": 0.778,
+        "mrr@10": 0.442
       },
       "english": {
         "questions": 8,
         "hit@1": 0.375,
         "hit@4": 0.5,
         "hit@10": 0.625,
-        "mrr@10": 0.458
+        "mrr@10": 0.455
       },
       "seconds_per_question": 0.001,
       "misses_top4": [
@@ -31,9 +31,9 @@
             "immigration_act:46"
           ],
           "got": [
-            "immigration_act:59",
-            "immigration_rules:9-5#2",
-            "immigration_decree:78"
+            "guide:visa_navigator:p53#1",
+            "guide:visa_navigator:p49#1",
+            "immigration_act:59"
           ]
         },
         {
@@ -44,9 +44,9 @@
             "immigration_decree:23"
           ],
           "got": [
-            "immigration_rules:53-5",
-            "immigration_decree:table02#10",
-            "immigration_rules:53-2"
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p53#1",
+            "guide:visa_navigator:p54#1"
           ]
         },
         {
@@ -57,9 +57,9 @@
             "immigration_decree:25"
           ],
           "got": [
-            "immigration_act:19-4",
-            "immigration_decree:24-8",
-            "immigration_rules:table08#22"
+            "guide:visa_navigator:p13#1",
+            "guide:visa_navigator:p57#1",
+            "guide:visa_navigator:p11#1"
           ]
         },
         {
@@ -71,9 +71,9 @@
             "immigration_decree:26-2"
           ],
           "got": [
-            "immigration_act:24",
-            "immigration_rules:19",
-            "immigration_act:79"
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p49#1",
+            "immigration_act:24"
           ]
         },
         {
@@ -84,9 +84,22 @@
             "immigration_decree:30"
           ],
           "got": [
-            "immigration_rules:68-6",
-            "foreign_workers_act:14",
-            "foreign_workers_act:18-2"
+            "guide:visa_navigator:p14#1",
+            "guide:visa_navigator:p22#1",
+            "immigration_rules:68-6"
+          ]
+        },
+        {
+          "id": "ko07",
+          "question": "한국에서 태어난 외국인 아기는 체류자격을 어떻게 받나요?",
+          "expected": [
+            "immigration_act:23",
+            "immigration_decree:29"
+          ],
+          "got": [
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p50#1"
           ]
         },
         {
@@ -97,9 +110,49 @@
             "immigration_decree:40"
           ],
           "got": [
-            "immigration_act:37",
-            "immigration_rules:48",
-            "immigration_rules:48-2"
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p48#1",
+            "immigration_act:37"
+          ]
+        },
+        {
+          "id": "ko09",
+          "question": "이사를 하면 체류지 변경 신고는 언제까지 해야 하나요?",
+          "expected": [
+            "immigration_act:36",
+            "immigration_decree:45"
+          ],
+          "got": [
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p48#1",
+            "guide:visa_navigator:p56#1"
+          ]
+        },
+        {
+          "id": "ko13",
+          "question": "영주권(F-5)을 받으려면 어떤 요건이 필요한가요?",
+          "expected": [
+            "immigration_act:10-3",
+            "immigration_decree:12-2",
+            "immigration_decree:table03"
+          ],
+          "got": [
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p53#1",
+            "guide:visa_navigator:p54#1"
+          ]
+        },
+        {
+          "id": "ko14",
+          "question": "사회통합프로그램을 이수하면 어떤 혜택이 있나요?",
+          "expected": [
+            "immigration_act:40",
+            "immigration_act:39"
+          ],
+          "got": [
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p12#1",
+            "guide:visa_navigator:p15#1"
           ]
         },
         {
@@ -110,9 +163,9 @@
             "immigration_act:63"
           ],
           "got": [
-            "immigration_decree:78",
-            "immigration_decree:80-7",
-            "immigration_decree:80-5"
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p48#1",
+            "guide:visa_navigator:p50#1"
           ]
         },
         {
@@ -124,8 +177,8 @@
           ],
           "got": [
             "foreign_workers_act:20",
-            "immigration_act:90-2",
-            "immigration_act:19"
+            "guide:visa_navigator:p57#1",
+            "immigration_act:106"
           ]
         },
         {
@@ -136,9 +189,46 @@
             "immigration_decree:24"
           ],
           "got": [
-            "immigration_decree:24-4",
-            "nationality_decree:table02#2",
-            "immigration_decree:table02#5"
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p48#1",
+            "guide:visa_navigator:p49#1"
+          ]
+        },
+        {
+          "id": "ko21",
+          "question": "비자 수수료를 면제받을 수 있는 경우가 있나요?",
+          "expected": [
+            "immigration_rules:74"
+          ],
+          "got": [
+            "nationality_act:24",
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p50#1"
+          ]
+        },
+        {
+          "id": "ko25",
+          "question": "어떤 외국인이 입국을 금지당하나요?",
+          "expected": [
+            "immigration_act:11"
+          ],
+          "got": [
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p52#1",
+            "immigration_act:29"
+          ]
+        },
+        {
+          "id": "ko32",
+          "question": "유학(D-2) 비자는 최대 몇 년까지 체류기간을 받을 수 있나요?",
+          "expected": [
+            "immigration_rules:table01",
+            "immigration_rules:18-3"
+          ],
+          "got": [
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p48#1"
           ]
         },
         {
@@ -149,8 +239,8 @@
           ],
           "got": [
             "immigration_rules:37",
-            "immigration_rules:9",
-            "immigration_rules:table08#22"
+            "guide:visa_navigator:p50#1",
+            "immigration_rules:9"
           ]
         },
         {
@@ -160,9 +250,9 @@
             "immigration_decree:table02=H-2"
           ],
           "got": [
-            "immigration_decree:table02#15",
-            "immigration_decree:table02#22",
-            "immigration_rules:17"
+            "guide:visa_navigator:p31#1",
+            "guide:visa_navigator:p7#1",
+            "immigration_decree:table02#15"
           ]
         },
         {
@@ -173,8 +263,32 @@
           ],
           "got": [
             "immigration_rules:39-4",
-            "immigration_rules:39-6",
-            "immigration_rules:44-2"
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p52#1"
+          ]
+        },
+        {
+          "id": "ko41",
+          "question": "난민 신청은 어떻게 하나요?",
+          "expected": [
+            "refugee_act:5"
+          ],
+          "got": [
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p48#1"
+          ]
+        },
+        {
+          "id": "ko47",
+          "question": "공항에서 바로 난민 신청을 할 수 있나요?",
+          "expected": [
+            "refugee_act:6"
+          ],
+          "got": [
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p48#1"
           ]
         },
         {
@@ -184,9 +298,9 @@
             "nationality_act:5"
           ],
           "got": [
-            "nationality_decree:4",
-            "immigration_act:10-3",
-            "foreign_workers_act:7"
+            "guide:visa_navigator:p53#1",
+            "guide:visa_navigator:p54#1",
+            "guide:visa_navigator:p50#1"
           ]
         },
         {
@@ -196,9 +310,9 @@
             "nationality_act:6"
           ],
           "got": [
-            "immigration_rules:table08#19",
-            "immigration_rules:44-2",
-            "immigration_rules:table07#18"
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p48#1",
+            "guide:visa_navigator:p49#1"
           ]
         },
         {
@@ -208,9 +322,9 @@
             "nationality_act:14"
           ],
           "got": [
+            "guide:visa_navigator:p52#1",
             "nationality_decree:table02#3",
-            "nationality_decree:18-4",
-            "immigration_rules:table08#17"
+            "nationality_decree:18-4"
           ]
         },
         {
@@ -220,9 +334,9 @@
             "nationality_act:2"
           ],
           "got": [
-            "immigration_rules:table08#22",
-            "nationality_act:19",
-            "immigration_rules:table03#5"
+            "guide:visa_navigator:p54#1",
+            "guide:visa_navigator:p39#1",
+            "guide:visa_navigator:p58#1"
           ]
         },
         {
@@ -232,9 +346,9 @@
             "nationality_decree:3"
           ],
           "got": [
-            "nationality_decree:4-3",
-            "nationality_decree:4",
-            "nationality_decree:4-4"
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p49#1",
+            "nationality_decree:4-3"
           ]
         },
         {
@@ -293,17 +407,17 @@
     "Meaning (bge-m3)": {
       "all": {
         "questions": 80,
-        "hit@1": 0.85,
-        "hit@4": 0.95,
-        "hit@10": 0.975,
-        "mrr@10": 0.903
+        "hit@1": 0.8,
+        "hit@4": 0.912,
+        "hit@10": 0.95,
+        "mrr@10": 0.856
       },
       "korean": {
         "questions": 72,
-        "hit@1": 0.847,
-        "hit@4": 0.958,
-        "hit@10": 0.986,
-        "mrr@10": 0.906
+        "hit@1": 0.792,
+        "hit@4": 0.917,
+        "hit@10": 0.958,
+        "mrr@10": 0.853
       },
       "english": {
         "questions": 8,
@@ -322,9 +436,22 @@
             "immigration_decree:25"
           ],
           "got": [
-            "immigration_act:18",
-            "foreign_workers_act:12",
-            "immigration_decree:table02#18"
+            "guide:visa_navigator:p13#1",
+            "guide:visa_navigator:p7#1",
+            "guide:visa_navigator:p31#1"
+          ]
+        },
+        {
+          "id": "ko06",
+          "question": "지금 비자에서 다른 종류의 비자로 바꾸고 싶어요.",
+          "expected": [
+            "immigration_act:24",
+            "immigration_decree:30"
+          ],
+          "got": [
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p3#1",
+            "guide:visa_navigator:p43#1"
           ]
         },
         {
@@ -338,6 +465,31 @@
             "foreign_workers_act:12",
             "immigration_decree:24-4",
             "foreign_workers_act:29"
+          ]
+        },
+        {
+          "id": "ko32",
+          "question": "유학(D-2) 비자는 최대 몇 년까지 체류기간을 받을 수 있나요?",
+          "expected": [
+            "immigration_rules:table01",
+            "immigration_rules:18-3"
+          ],
+          "got": [
+            "guide:visa_navigator:p35#1",
+            "guide:visa_navigator:p6#1",
+            "guide:visa_navigator:p13#2"
+          ]
+        },
+        {
+          "id": "ko33",
+          "question": "유학(D-2) 체류자격은 어떤 사람에게 주나요?",
+          "expected": [
+            "immigration_decree:table02=D-2"
+          ],
+          "got": [
+            "guide:visa_navigator:p9#1",
+            "guide:visa_navigator:p37#1",
+            "guide:visa_navigator:p13#2"
           ]
         },
         {
@@ -360,9 +512,9 @@
             "immigration_decree:25"
           ],
           "got": [
+            "guide:visa_navigator:p13#1",
             "foreign_workers_act:18",
-            "foreign_workers_act:18-2",
-            "immigration_act:18"
+            "foreign_workers_act:18-2"
           ]
         }
       ]
@@ -370,17 +522,17 @@
     "Hybrid (keyword + meaning)": {
       "all": {
         "questions": 80,
-        "hit@1": 0.575,
-        "hit@4": 0.95,
-        "hit@10": 0.975,
-        "mrr@10": 0.745
+        "hit@1": 0.55,
+        "hit@4": 0.887,
+        "hit@10": 0.95,
+        "mrr@10": 0.71
       },
       "korean": {
         "questions": 72,
-        "hit@1": 0.583,
-        "hit@4": 0.958,
-        "hit@10": 0.986,
-        "mrr@10": 0.753
+        "hit@1": 0.556,
+        "hit@4": 0.889,
+        "hit@10": 0.958,
+        "mrr@10": 0.715
       },
       "english": {
         "questions": 8,
@@ -389,7 +541,7 @@
         "hit@10": 0.875,
         "mrr@10": 0.667
       },
-      "seconds_per_question": 0.024,
+      "seconds_per_question": 0.025,
       "misses_top4": [
         {
           "id": "ko04",
@@ -399,9 +551,36 @@
             "immigration_decree:25"
           ],
           "got": [
-            "immigration_act:19-4",
-            "immigration_act:18",
-            "immigration_decree:24-8"
+            "guide:visa_navigator:p13#1",
+            "guide:visa_navigator:p11#1",
+            "guide:visa_navigator:p57#1"
+          ]
+        },
+        {
+          "id": "ko06",
+          "question": "지금 비자에서 다른 종류의 비자로 바꾸고 싶어요.",
+          "expected": [
+            "immigration_act:24",
+            "immigration_decree:30"
+          ],
+          "got": [
+            "guide:visa_navigator:p14#1",
+            "guide:visa_navigator:p28#1",
+            "guide:visa_navigator:p32#1"
+          ]
+        },
+        {
+          "id": "ko13",
+          "question": "영주권(F-5)을 받으려면 어떤 요건이 필요한가요?",
+          "expected": [
+            "immigration_act:10-3",
+            "immigration_decree:12-2",
+            "immigration_decree:table03"
+          ],
+          "got": [
+            "guide:visa_navigator:p40#1",
+            "guide:visa_navigator:p33#1",
+            "guide:visa_navigator:p49#1"
           ]
         },
         {
@@ -412,9 +591,34 @@
             "immigration_act:18"
           ],
           "got": [
-            "immigration_act:90-2",
             "foreign_workers_act:20",
-            "foreign_workers_act:12"
+            "foreign_workers_act:12",
+            "immigration_act:90-2"
+          ]
+        },
+        {
+          "id": "ko32",
+          "question": "유학(D-2) 비자는 최대 몇 년까지 체류기간을 받을 수 있나요?",
+          "expected": [
+            "immigration_rules:table01",
+            "immigration_rules:18-3"
+          ],
+          "got": [
+            "guide:visa_navigator:p13#2",
+            "guide:visa_navigator:p54#1",
+            "guide:visa_navigator:p13#1"
+          ]
+        },
+        {
+          "id": "ko33",
+          "question": "유학(D-2) 체류자격은 어떤 사람에게 주나요?",
+          "expected": [
+            "immigration_decree:table02=D-2"
+          ],
+          "got": [
+            "guide:visa_navigator:p9#1",
+            "guide:visa_navigator:p13#2",
+            "immigration_rules:37"
           ]
         },
         {
@@ -424,9 +628,21 @@
             "immigration_decree:table02=H-2"
           ],
           "got": [
-            "immigration_decree:table02#15",
-            "immigration_decree:table03#5",
-            "immigration_decree:23"
+            "guide:visa_navigator:p31#1",
+            "guide:visa_navigator:p7#1",
+            "immigration_decree:table02#15"
+          ]
+        },
+        {
+          "id": "ko39",
+          "question": "어떤 경우에 외국인의 출국이 정지되나요?",
+          "expected": [
+            "immigration_act:29"
+          ],
+          "got": [
+            "immigration_act:29-2",
+            "immigration_rules:39-4",
+            "immigration_rules:39-5"
           ]
         },
         {
@@ -438,7 +654,7 @@
           ],
           "got": [
             "foreigners_framework_act:22",
-            "foreign_workers_act:18",
+            "guide:visa_navigator:p13#1",
             "foreigners_framework_act:21"
           ]
         }
@@ -447,17 +663,17 @@
     "Meaning + reranker": {
       "all": {
         "questions": 80,
-        "hit@1": 0.8,
-        "hit@4": 0.95,
-        "hit@10": 0.988,
-        "mrr@10": 0.878
+        "hit@1": 0.762,
+        "hit@4": 0.912,
+        "hit@10": 0.95,
+        "mrr@10": 0.837
       },
       "korean": {
         "questions": 72,
-        "hit@1": 0.792,
-        "hit@4": 0.958,
-        "hit@10": 1.0,
-        "mrr@10": 0.879
+        "hit@1": 0.75,
+        "hit@4": 0.917,
+        "hit@10": 0.958,
+        "mrr@10": 0.832
       },
       "english": {
         "questions": 8,
@@ -466,7 +682,7 @@
         "hit@10": 0.875,
         "mrr@10": 0.875
       },
-      "seconds_per_question": 0.653,
+      "seconds_per_question": 0.629,
       "misses_top4": [
         {
           "id": "ko04",
@@ -476,9 +692,36 @@
             "immigration_decree:25"
           ],
           "got": [
-            "immigration_act:18",
-            "immigration_act:79-2",
-            "foreign_workers_act:18"
+            "guide:visa_navigator:p13#1",
+            "guide:visa_navigator:p57#1",
+            "guide:visa_navigator:p31#1"
+          ]
+        },
+        {
+          "id": "ko06",
+          "question": "지금 비자에서 다른 종류의 비자로 바꾸고 싶어요.",
+          "expected": [
+            "immigration_act:24",
+            "immigration_decree:30"
+          ],
+          "got": [
+            "guide:visa_navigator:p37#1",
+            "guide:visa_navigator:p32#1",
+            "guide:visa_navigator:p36#1"
+          ]
+        },
+        {
+          "id": "ko13",
+          "question": "영주권(F-5)을 받으려면 어떤 요건이 필요한가요?",
+          "expected": [
+            "immigration_act:10-3",
+            "immigration_decree:12-2",
+            "immigration_decree:table03"
+          ],
+          "got": [
+            "guide:visa_navigator:p29#1",
+            "guide:visa_navigator:p33#1",
+            "guide:visa_navigator:p34#1"
           ]
         },
         {
@@ -495,6 +738,19 @@
           ]
         },
         {
+          "id": "ko32",
+          "question": "유학(D-2) 비자는 최대 몇 년까지 체류기간을 받을 수 있나요?",
+          "expected": [
+            "immigration_rules:table01",
+            "immigration_rules:18-3"
+          ],
+          "got": [
+            "immigration_rules:37",
+            "guide:visa_navigator:p13#2",
+            "guide:visa_navigator:p54#1"
+          ]
+        },
+        {
           "id": "ko33",
           "question": "유학(D-2) 체류자격은 어떤 사람에게 주나요?",
           "expected": [
@@ -514,8 +770,8 @@
             "immigration_decree:25"
           ],
           "got": [
+            "guide:visa_navigator:p13#1",
             "immigration_act:79-2",
-            "immigration_decree:23",
             "immigration_act:19-5"
           ]
         }
@@ -524,17 +780,17 @@
     "Hybrid + reranker": {
       "all": {
         "questions": 80,
-        "hit@1": 0.8,
-        "hit@4": 0.963,
-        "hit@10": 0.975,
-        "mrr@10": 0.879
+        "hit@1": 0.738,
+        "hit@4": 0.912,
+        "hit@10": 0.938,
+        "mrr@10": 0.818
       },
       "korean": {
         "questions": 72,
-        "hit@1": 0.792,
-        "hit@4": 0.972,
-        "hit@10": 0.986,
-        "mrr@10": 0.879
+        "hit@1": 0.722,
+        "hit@4": 0.917,
+        "hit@10": 0.944,
+        "mrr@10": 0.812
       },
       "english": {
         "questions": 8,
@@ -543,8 +799,20 @@
         "hit@10": 0.875,
         "mrr@10": 0.875
       },
-      "seconds_per_question": 0.653,
+      "seconds_per_question": 0.615,
       "misses_top4": [
+        {
+          "id": "ko02",
+          "question": "체류기간이 지났는데 계속 있으면 강제퇴거 되나요?",
+          "expected": [
+            "immigration_act:46"
+          ],
+          "got": [
+            "immigration_decree:table02#14",
+            "immigration_act:63",
+            "immigration_act:25"
+          ]
+        },
         {
           "id": "ko04",
           "question": "유학생 비자로 아르바이트를 해도 되나요?",
@@ -553,9 +821,49 @@
             "immigration_decree:25"
           ],
           "got": [
-            "immigration_act:18",
-            "immigration_act:79-2",
-            "immigration_decree:24-8"
+            "guide:visa_navigator:p13#1",
+            "guide:visa_navigator:p57#1",
+            "guide:visa_navigator:p31#1"
+          ]
+        },
+        {
+          "id": "ko06",
+          "question": "지금 비자에서 다른 종류의 비자로 바꾸고 싶어요.",
+          "expected": [
+            "immigration_act:24",
+            "immigration_decree:30"
+          ],
+          "got": [
+            "guide:visa_navigator:p38#1",
+            "guide:visa_navigator:p9#1",
+            "guide:visa_navigator:p37#1"
+          ]
+        },
+        {
+          "id": "ko13",
+          "question": "영주권(F-5)을 받으려면 어떤 요건이 필요한가요?",
+          "expected": [
+            "immigration_act:10-3",
+            "immigration_decree:12-2",
+            "immigration_decree:table03"
+          ],
+          "got": [
+            "guide:visa_navigator:p29#1",
+            "guide:visa_navigator:p33#1",
+            "guide:visa_navigator:p34#1"
+          ]
+        },
+        {
+          "id": "ko32",
+          "question": "유학(D-2) 비자는 최대 몇 년까지 체류기간을 받을 수 있나요?",
+          "expected": [
+            "immigration_rules:table01",
+            "immigration_rules:18-3"
+          ],
+          "got": [
+            "immigration_rules:37",
+            "guide:visa_navigator:p13#2",
+            "guide:visa_navigator:p54#1"
           ]
         },
         {
@@ -578,29 +886,32 @@
             "immigration_decree:25"
           ],
           "got": [
+            "guide:visa_navigator:p13#1",
             "immigration_decree:24-8",
-            "immigration_act:79-2",
-            "nationality_decree:4-2"
+            "immigration_act:79-2"
           ]
         }
       ]
+    },
+    "App context (4 law + 1 guide pieces)": {
+      "in_context": 0.95
     }
   },
   "held-out": {
     "Keyword (BM25)": {
       "all": {
         "questions": 30,
-        "hit@1": 0.167,
-        "hit@4": 0.333,
-        "hit@10": 0.467,
-        "mrr@10": 0.241
+        "hit@1": 0.133,
+        "hit@4": 0.233,
+        "hit@10": 0.4,
+        "mrr@10": 0.189
       },
       "korean": {
         "questions": 22,
-        "hit@1": 0.182,
-        "hit@4": 0.318,
-        "hit@10": 0.5,
-        "mrr@10": 0.249
+        "hit@1": 0.136,
+        "hit@4": 0.182,
+        "hit@10": 0.409,
+        "mrr@10": 0.178
       },
       "english": {
         "questions": 8,
@@ -619,9 +930,9 @@
             "immigration_decree:25"
           ],
           "got": [
-            "immigration_decree:table02#5",
-            "immigration_rules:table07#4",
-            "immigration_rules:6"
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p57#1",
+            "immigration_decree:table02#5"
           ]
         },
         {
@@ -632,9 +943,9 @@
             "immigration_decree:31"
           ],
           "got": [
-            "immigration_rules:48-2",
-            "immigration_rules:table08#12",
-            "immigration_rules:25"
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p46#1",
+            "guide:visa_navigator:p50#1"
           ]
         },
         {
@@ -647,9 +958,9 @@
             "immigration_act:100"
           ],
           "got": [
-            "immigration_decree:46",
-            "immigration_rules:45",
-            "immigration_act:37"
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p48#1"
           ]
         },
         {
@@ -661,9 +972,9 @@
             "immigration_decree:table03"
           ],
           "got": [
-            "immigration_decree:17",
-            "immigration_decree:94",
-            "immigration_rules:table08#18"
+            "guide:visa_navigator:p48#1",
+            "guide:visa_navigator:p3#1",
+            "guide:visa_navigator:p40#1"
           ]
         },
         {
@@ -673,9 +984,21 @@
             "nationality_act:6"
           ],
           "got": [
+            "guide:visa_navigator:p58#1",
             "nationality_act:10",
-            "nationality_act:15",
-            "immigration_rules:9-5#2"
+            "nationality_act:15"
+          ]
+        },
+        {
+          "id": "h07",
+          "question": "E-9 근로자가 직장을 바꾸려면 어떻게 해야 하나요?",
+          "expected": [
+            "foreign_workers_act:25"
+          ],
+          "got": [
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p49#1",
+            "foreign_workers_act:14"
           ]
         },
         {
@@ -686,9 +1009,9 @@
             "foreign_workers_act:18-2"
           ],
           "got": [
-            "immigration_rules:table11#4",
-            "immigration_rules:12",
-            "immigration_rules:84-2"
+            "guide:visa_navigator:p21#2",
+            "guide:visa_navigator:p57#1",
+            "immigration_rules:table11#4"
           ]
         },
         {
@@ -698,9 +1021,9 @@
             "immigration_act:37"
           ],
           "got": [
-            "immigration_act:33-3",
-            "immigration_rules:48-2",
-            "immigration_decree:42"
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p48#1",
+            "immigration_act:33-3"
           ]
         },
         {
@@ -723,9 +1046,9 @@
             "immigration_act:18"
           ],
           "got": [
-            "foreign_workers_act:20",
-            "foreign_workers_act:12",
-            "immigration_act:19"
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p49#1",
+            "foreign_workers_act:20"
           ]
         },
         {
@@ -736,9 +1059,9 @@
             "immigration_decree:30"
           ],
           "got": [
-            "immigration_rules:76",
-            "immigration_rules:table08#2",
-            "immigration_rules:table08#17"
+            "guide:visa_navigator:p48#1",
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p53#1"
           ]
         },
         {
@@ -786,9 +1109,9 @@
             "immigration_decree:table02=D-10"
           ],
           "got": [
-            "immigration_rules:table03#1",
-            "immigration_rules:table07#4",
-            "immigration_rules:table08#8"
+            "guide:visa_navigator:p11#1",
+            "guide:visa_navigator:p21#1",
+            "guide:visa_navigator:p50#1"
           ]
         },
         {
@@ -799,9 +1122,9 @@
             "immigration_decree:24"
           ],
           "got": [
-            "immigration_act:59",
-            "immigration_act:84",
-            "immigration_decree:table02#5"
+            "guide:visa_navigator:p48#1",
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p49#1"
           ]
         },
         {
@@ -811,9 +1134,22 @@
             "immigration_decree:table02=F-1"
           ],
           "got": [
-            "immigration_rules:table08#22",
-            "immigration_decree:table03#1",
-            "immigration_decree:table02#10"
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p54#1",
+            "guide:visa_navigator:p49#1"
+          ]
+        },
+        {
+          "id": "h20",
+          "question": "여권 유효기간이 끝나서 새 여권을 받았어요. 따로 신고해야 하나요?",
+          "expected": [
+            "immigration_act:35",
+            "immigration_decree:44"
+          ],
+          "got": [
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p49#1",
+            "immigration_act:7"
           ]
         },
         {
@@ -826,8 +1162,8 @@
           ],
           "got": [
             "immigration_act:106",
-            "overseas_koreans_act:10",
-            "nationality_act:10"
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p50#1"
           ]
         },
         {
@@ -838,9 +1174,22 @@
             "immigration_decree:29"
           ],
           "got": [
-            "immigration_rules:table08#1",
-            "immigration_rules:14",
-            "immigration_rules:75-2"
+            "guide:visa_navigator:p48#1",
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p50#1"
+          ]
+        },
+        {
+          "id": "h24",
+          "question": "영주권자인데 1년 동안 외국에 있다가 돌아와도 재입국허가가 필요한가요?",
+          "expected": [
+            "immigration_rules:44-2",
+            "immigration_act:30"
+          ],
+          "got": [
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p53#1",
+            "foreigners_framework_act:13"
           ]
         },
         {
@@ -851,8 +1200,8 @@
           ],
           "got": [
             "nationality_act:15",
-            "immigration_act:54",
-            "immigration_decree:9"
+            "immigration_decree:9",
+            "immigration_act:54"
           ]
         },
         {
@@ -862,8 +1211,8 @@
             "overseas_koreans_act:10"
           ],
           "got": [
-            "immigration_decree:23",
             "immigration_act:10-2",
+            "immigration_decree:23",
             "immigration_decree:15#2"
           ]
         }
@@ -872,17 +1221,17 @@
     "Meaning (bge-m3)": {
       "all": {
         "questions": 30,
-        "hit@1": 0.4,
-        "hit@4": 0.733,
-        "hit@10": 0.867,
-        "mrr@10": 0.549
+        "hit@1": 0.333,
+        "hit@4": 0.567,
+        "hit@10": 0.8,
+        "mrr@10": 0.476
       },
       "korean": {
         "questions": 22,
-        "hit@1": 0.409,
-        "hit@4": 0.773,
-        "hit@10": 0.909,
-        "mrr@10": 0.569
+        "hit@1": 0.318,
+        "hit@4": 0.545,
+        "hit@10": 0.818,
+        "mrr@10": 0.469
       },
       "english": {
         "questions": 8,
@@ -901,9 +1250,61 @@
             "immigration_decree:25"
           ],
           "got": [
+            "guide:visa_navigator:p13#1",
             "immigration_decree:table02#21",
-            "immigration_rules:27-2",
-            "immigration_decree:table02#18"
+            "guide:visa_navigator:p58#1"
+          ]
+        },
+        {
+          "id": "h02",
+          "question": "비자 만료일이 다음 주인데 한국에 더 있고 싶어요.",
+          "expected": [
+            "immigration_act:25",
+            "immigration_decree:31"
+          ],
+          "got": [
+            "guide:visa_navigator:p48#1",
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p50#1"
+          ]
+        },
+        {
+          "id": "h05",
+          "question": "F-5 비자 조건 알려주세요.",
+          "expected": [
+            "immigration_act:10-3",
+            "immigration_decree:12-2",
+            "immigration_decree:table03"
+          ],
+          "got": [
+            "guide:visa_navigator:p41#1",
+            "guide:visa_navigator:p40#1",
+            "guide:visa_navigator:p30#1"
+          ]
+        },
+        {
+          "id": "h08",
+          "question": "E-9으로 최대 몇 년 일할 수 있어요?",
+          "expected": [
+            "foreign_workers_act:18",
+            "foreign_workers_act:18-2"
+          ],
+          "got": [
+            "guide:visa_navigator:p7#1",
+            "guide:visa_navigator:p27#1",
+            "guide:visa_navigator:p6#1"
+          ]
+        },
+        {
+          "id": "h09",
+          "question": "한국을 떠날 때 등록증을 내고 가야 하나요?",
+          "expected": [
+            "immigration_act:37"
+          ],
+          "got": [
+            "guide:visa_navigator:p49#1",
+            "immigration_act:3",
+            "immigration_act:88"
           ]
         },
         {
@@ -938,9 +1339,9 @@
             "immigration_decree:table02=D-10"
           ],
           "got": [
-            "immigration_rules:table08#8",
-            "immigration_decree:table03#4",
-            "immigration_rules:table08#14"
+            "guide:visa_navigator:p11#1",
+            "guide:visa_navigator:p21#1",
+            "guide:visa_navigator:p10#1"
           ]
         },
         {
@@ -956,6 +1357,19 @@
           ]
         },
         {
+          "id": "h20",
+          "question": "여권 유효기간이 끝나서 새 여권을 받았어요. 따로 신고해야 하나요?",
+          "expected": [
+            "immigration_act:35",
+            "immigration_decree:44"
+          ],
+          "got": [
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p57#1"
+          ]
+        },
+        {
           "id": "h22",
           "question": "취업비자 없이 일하다가 걸리면 처벌받나요?",
           "expected": [
@@ -964,9 +1378,9 @@
             "immigration_act:46"
           ],
           "got": [
+            "guide:visa_navigator:p7#1",
             "immigration_act:97",
-            "immigration_rules:table11#4",
-            "immigration_act:95"
+            "guide:visa_navigator:p58#1"
           ]
         },
         {
@@ -998,17 +1412,17 @@
     "Hybrid (keyword + meaning)": {
       "all": {
         "questions": 30,
-        "hit@1": 0.333,
-        "hit@4": 0.6,
-        "hit@10": 0.8,
-        "mrr@10": 0.476
+        "hit@1": 0.2,
+        "hit@4": 0.533,
+        "hit@10": 0.667,
+        "mrr@10": 0.369
       },
       "korean": {
         "questions": 22,
-        "hit@1": 0.409,
-        "hit@4": 0.636,
-        "hit@10": 0.818,
-        "mrr@10": 0.528
+        "hit@1": 0.227,
+        "hit@4": 0.545,
+        "hit@10": 0.636,
+        "mrr@10": 0.382
       },
       "english": {
         "questions": 8,
@@ -1017,7 +1431,7 @@
         "hit@10": 0.75,
         "mrr@10": 0.332
       },
-      "seconds_per_question": 0.024,
+      "seconds_per_question": 0.026,
       "misses_top4": [
         {
           "id": "h01",
@@ -1027,9 +1441,9 @@
             "immigration_decree:25"
           ],
           "got": [
-            "immigration_decree:table02#5",
-            "immigration_decree:table02#21",
-            "immigration_rules:table07#4"
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p13#1",
+            "guide:visa_navigator:p57#1"
           ]
         },
         {
@@ -1040,9 +1454,23 @@
             "immigration_decree:31"
           ],
           "got": [
-            "immigration_rules:39-8",
-            "immigration_rules:48-2",
-            "immigration_act:31"
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p48#1"
+          ]
+        },
+        {
+          "id": "h05",
+          "question": "F-5 비자 조건 알려주세요.",
+          "expected": [
+            "immigration_act:10-3",
+            "immigration_decree:12-2",
+            "immigration_decree:table03"
+          ],
+          "got": [
+            "guide:visa_navigator:p40#1",
+            "guide:visa_navigator:p41#1",
+            "guide:visa_navigator:p33#1"
           ]
         },
         {
@@ -1054,7 +1482,7 @@
           "got": [
             "nationality_act:10",
             "nationality_act:15",
-            "foreigners_framework_act:15"
+            "nationality_decree:15"
           ]
         },
         {
@@ -1065,9 +1493,9 @@
             "foreign_workers_act:18-2"
           ],
           "got": [
-            "immigration_rules:17-3#2",
-            "immigration_rules:table11#4",
-            "immigration_rules:12"
+            "guide:visa_navigator:p21#2",
+            "guide:visa_navigator:p7#1",
+            "guide:visa_navigator:p57#1"
           ]
         },
         {
@@ -1116,9 +1544,9 @@
             "immigration_decree:table02=D-10"
           ],
           "got": [
-            "immigration_rules:table08#8",
-            "immigration_rules:table03#1",
-            "immigration_rules:table07#4"
+            "guide:visa_navigator:p11#1",
+            "guide:visa_navigator:p21#1",
+            "guide:visa_navigator:p6#1"
           ]
         },
         {
@@ -1128,9 +1556,22 @@
             "immigration_decree:table02=F-1"
           ],
           "got": [
-            "immigration_decree:table02#18",
-            "immigration_act:10",
-            "immigration_rules:table08#22"
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p13#2",
+            "immigration_decree:table02#18"
+          ]
+        },
+        {
+          "id": "h20",
+          "question": "여권 유효기간이 끝나서 새 여권을 받았어요. 따로 신고해야 하나요?",
+          "expected": [
+            "immigration_act:35",
+            "immigration_decree:44"
+          ],
+          "got": [
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p56#1"
           ]
         },
         {
@@ -1142,9 +1583,9 @@
             "immigration_act:46"
           ],
           "got": [
+            "guide:visa_navigator:p49#1",
             "immigration_act:106",
-            "immigration_act:97",
-            "overseas_koreans_act:10"
+            "guide:visa_navigator:p7#1"
           ]
         },
         {
@@ -1176,17 +1617,17 @@
     "Meaning + reranker": {
       "all": {
         "questions": 30,
-        "hit@1": 0.6,
-        "hit@4": 0.8,
-        "hit@10": 0.867,
-        "mrr@10": 0.695
+        "hit@1": 0.467,
+        "hit@4": 0.7,
+        "hit@10": 0.8,
+        "mrr@10": 0.582
       },
       "korean": {
         "questions": 22,
-        "hit@1": 0.636,
-        "hit@4": 0.818,
-        "hit@10": 0.909,
-        "mrr@10": 0.728
+        "hit@1": 0.455,
+        "hit@4": 0.682,
+        "hit@10": 0.818,
+        "mrr@10": 0.574
       },
       "english": {
         "questions": 8,
@@ -1195,7 +1636,7 @@
         "hit@10": 0.75,
         "mrr@10": 0.604
       },
-      "seconds_per_question": 0.689,
+      "seconds_per_question": 0.643,
       "misses_top4": [
         {
           "id": "h01",
@@ -1205,9 +1646,35 @@
             "immigration_decree:25"
           ],
           "got": [
-            "immigration_decree:23",
+            "guide:visa_navigator:p13#1",
             "immigration_decree:table02#18",
-            "immigration_rules:table08#14"
+            "immigration_decree:table02#19"
+          ]
+        },
+        {
+          "id": "h05",
+          "question": "F-5 비자 조건 알려주세요.",
+          "expected": [
+            "immigration_act:10-3",
+            "immigration_decree:12-2",
+            "immigration_decree:table03"
+          ],
+          "got": [
+            "guide:visa_navigator:p40#1",
+            "guide:visa_navigator:p33#1",
+            "guide:visa_navigator:p29#1"
+          ]
+        },
+        {
+          "id": "h07",
+          "question": "E-9 근로자가 직장을 바꾸려면 어떻게 해야 하나요?",
+          "expected": [
+            "foreign_workers_act:25"
+          ],
+          "got": [
+            "guide:visa_navigator:p7#1",
+            "guide:visa_navigator:p27#1",
+            "immigration_decree:table02#12"
           ]
         },
         {
@@ -1218,9 +1685,9 @@
             "foreign_workers_act:18-2"
           ],
           "got": [
-            "immigration_rules:table01#1",
-            "immigration_rules:17-3#2",
-            "immigration_decree:table02#12"
+            "guide:visa_navigator:p7#1",
+            "guide:visa_navigator:p27#1",
+            "immigration_rules:table01#1"
           ]
         },
         {
@@ -1243,9 +1710,22 @@
             "immigration_decree:table02=D-10"
           ],
           "got": [
-            "immigration_decree:table03#5",
-            "immigration_rules:table08#14",
-            "immigration_decree:table02#10"
+            "guide:visa_navigator:p11#1",
+            "guide:visa_navigator:p9#1",
+            "guide:visa_navigator:p3#1"
+          ]
+        },
+        {
+          "id": "h20",
+          "question": "여권 유효기간이 끝나서 새 여권을 받았어요. 따로 신고해야 하나요?",
+          "expected": [
+            "immigration_act:35",
+            "immigration_decree:44"
+          ],
+          "got": [
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p57#1"
           ]
         },
         {
@@ -1269,7 +1749,7 @@
           "got": [
             "immigration_decree:table03#3",
             "immigration_act:10-2",
-            "immigration_decree:15#2"
+            "immigration_decree:23"
           ]
         }
       ]
@@ -1277,17 +1757,17 @@
     "Hybrid + reranker": {
       "all": {
         "questions": 30,
-        "hit@1": 0.467,
-        "hit@4": 0.7,
-        "hit@10": 0.8,
-        "mrr@10": 0.589
+        "hit@1": 0.4,
+        "hit@4": 0.6,
+        "hit@10": 0.7,
+        "mrr@10": 0.5
       },
       "korean": {
         "questions": 22,
-        "hit@1": 0.455,
-        "hit@4": 0.682,
-        "hit@10": 0.818,
-        "mrr@10": 0.591
+        "hit@1": 0.364,
+        "hit@4": 0.545,
+        "hit@10": 0.682,
+        "mrr@10": 0.469
       },
       "english": {
         "questions": 8,
@@ -1296,7 +1776,7 @@
         "hit@10": 0.75,
         "mrr@10": 0.583
       },
-      "seconds_per_question": 0.682,
+      "seconds_per_question": 0.64,
       "misses_top4": [
         {
           "id": "h01",
@@ -1306,9 +1786,23 @@
             "immigration_decree:25"
           ],
           "got": [
-            "immigration_act:79-2",
-            "immigration_decree:24-8",
+            "guide:visa_navigator:p57#1",
+            "guide:visa_navigator:p13#1",
             "immigration_decree:table02#18"
+          ]
+        },
+        {
+          "id": "h05",
+          "question": "F-5 비자 조건 알려주세요.",
+          "expected": [
+            "immigration_act:10-3",
+            "immigration_decree:12-2",
+            "immigration_decree:table03"
+          ],
+          "got": [
+            "guide:visa_navigator:p40#1",
+            "guide:visa_navigator:p33#1",
+            "guide:visa_navigator:p29#1"
           ]
         },
         {
@@ -1331,7 +1825,7 @@
           ],
           "got": [
             "immigration_rules:table08#14",
-            "immigration_rules:table10#1",
+            "guide:visa_navigator:p7#1",
             "immigration_decree:table02#12"
           ]
         },
@@ -1343,9 +1837,9 @@
             "foreign_workers_act:18-2"
           ],
           "got": [
-            "immigration_rules:table01#1",
-            "immigration_rules:17-3#2",
-            "immigration_rules:9"
+            "guide:visa_navigator:p7#1",
+            "guide:visa_navigator:p27#1",
+            "immigration_rules:table01#1"
           ]
         },
         {
@@ -1357,7 +1851,7 @@
           ],
           "got": [
             "immigration_act:97",
-            "foreign_workers_act:31",
+            "guide:visa_navigator:p57#1",
             "foreign_workers_act:20"
           ]
         },
@@ -1368,9 +1862,34 @@
             "immigration_decree:table02=D-10"
           ],
           "got": [
-            "immigration_rules:table08#14",
-            "immigration_act:10-3",
-            "immigration_rules:table03#1"
+            "guide:visa_navigator:p11#1",
+            "guide:visa_navigator:p9#1",
+            "guide:visa_navigator:p22#1"
+          ]
+        },
+        {
+          "id": "h19",
+          "question": "부모님을 한국에 모셔서 같이 살고 싶은데 어떤 체류자격이 있나요?",
+          "expected": [
+            "immigration_decree:table02=F-1"
+          ],
+          "got": [
+            "guide:visa_navigator:p37#1",
+            "guide:visa_navigator:p13#2",
+            "guide:visa_navigator:p25#1"
+          ]
+        },
+        {
+          "id": "h20",
+          "question": "여권 유효기간이 끝나서 새 여권을 받았어요. 따로 신고해야 하나요?",
+          "expected": [
+            "immigration_act:35",
+            "immigration_decree:44"
+          ],
+          "got": [
+            "guide:visa_navigator:p52#1",
+            "guide:visa_navigator:p49#1",
+            "guide:visa_navigator:p57#1"
           ]
         },
         {
@@ -1382,9 +1901,9 @@
             "immigration_act:46"
           ],
           "got": [
+            "guide:visa_navigator:p57#1",
             "immigration_act:97",
-            "immigration_act:95",
-            "immigration_decree:23"
+            "guide:visa_navigator:p56#1"
           ]
         },
         {
@@ -1412,10 +1931,223 @@
           ]
         }
       ]
+    },
+    "App context (4 law + 1 guide pieces)": {
+      "in_context": 0.8
+    }
+  },
+  "guide": {
+    "Keyword (BM25)": {
+      "all": {
+        "questions": 15,
+        "hit@1": 0.533,
+        "hit@4": 0.867,
+        "hit@10": 0.933,
+        "mrr@10": 0.669
+      },
+      "korean": {
+        "questions": 14,
+        "hit@1": 0.571,
+        "hit@4": 0.929,
+        "hit@10": 1.0,
+        "mrr@10": 0.717
+      },
+      "english": {
+        "questions": 1,
+        "hit@1": 0.0,
+        "hit@4": 0.0,
+        "hit@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "seconds_per_question": 0.001,
+      "misses_top4": [
+        {
+          "id": "g08",
+          "question": "출입국 민원을 행정사에게 맡겨서 대신 신청할 수 있나요?",
+          "expected": [
+            "guide:visa_navigator:p43",
+            "guide:visa_navigator:p44",
+            "immigration_act:79-2"
+          ],
+          "got": [
+            "guide:visa_navigator:p48#1",
+            "guide:visa_navigator:p50#1",
+            "guide:visa_navigator:p49#1"
+          ]
+        },
+        {
+          "id": "g15",
+          "question": "Can a student on a D-2 visa work part-time?",
+          "expected": [
+            "guide:visa_navigator:p13",
+            "immigration_act:20",
+            "immigration_decree:25"
+          ],
+          "got": [
+            "foreigners_framework_act:21",
+            "immigration_decree:24-8",
+            "immigration_act:19-4"
+          ]
+        }
+      ]
+    },
+    "Meaning (bge-m3)": {
+      "all": {
+        "questions": 15,
+        "hit@1": 0.733,
+        "hit@4": 0.867,
+        "hit@10": 1.0,
+        "mrr@10": 0.805
+      },
+      "korean": {
+        "questions": 14,
+        "hit@1": 0.714,
+        "hit@4": 0.857,
+        "hit@10": 1.0,
+        "mrr@10": 0.791
+      },
+      "english": {
+        "questions": 1,
+        "hit@1": 1.0,
+        "hit@4": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "seconds_per_question": 0.025,
+      "misses_top4": [
+        {
+          "id": "g07",
+          "question": "외국인 유학생이 허가 없이 식당에서 일하면 어떻게 되나요?",
+          "expected": [
+            "guide:visa_navigator:p57"
+          ],
+          "got": [
+            "immigration_act:18",
+            "guide:visa_navigator:p13#1",
+            "guide:visa_navigator:p58#1"
+          ]
+        },
+        {
+          "id": "g12",
+          "question": "영주권자도 체류기간 연장 신청을 해야 하나요?",
+          "expected": [
+            "guide:visa_navigator:p49"
+          ],
+          "got": [
+            "guide:visa_navigator:p48#1",
+            "immigration_act:25",
+            "guide:visa_navigator:p50#1"
+          ]
+        }
+      ]
+    },
+    "Hybrid (keyword + meaning)": {
+      "all": {
+        "questions": 15,
+        "hit@1": 0.667,
+        "hit@4": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 0.822
+      },
+      "korean": {
+        "questions": 14,
+        "hit@1": 0.714,
+        "hit@4": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 0.845
+      },
+      "english": {
+        "questions": 1,
+        "hit@1": 0.0,
+        "hit@4": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 0.5
+      },
+      "seconds_per_question": 0.025,
+      "misses_top4": []
+    },
+    "Meaning + reranker": {
+      "all": {
+        "questions": 15,
+        "hit@1": 0.867,
+        "hit@4": 0.933,
+        "hit@10": 1.0,
+        "mrr@10": 0.91
+      },
+      "korean": {
+        "questions": 14,
+        "hit@1": 0.857,
+        "hit@4": 0.929,
+        "hit@10": 1.0,
+        "mrr@10": 0.903
+      },
+      "english": {
+        "questions": 1,
+        "hit@1": 1.0,
+        "hit@4": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "seconds_per_question": 0.606,
+      "misses_top4": [
+        {
+          "id": "g11",
+          "question": "외국에 나가 있는 동안 체류기간 연장을 신청할 수 있나요?",
+          "expected": [
+            "guide:visa_navigator:p50"
+          ],
+          "got": [
+            "immigration_rules:32",
+            "guide:visa_navigator:p48#1",
+            "immigration_act:25-5"
+          ]
+        }
+      ]
+    },
+    "Hybrid + reranker": {
+      "all": {
+        "questions": 15,
+        "hit@1": 0.8,
+        "hit@4": 0.933,
+        "hit@10": 1.0,
+        "mrr@10": 0.876
+      },
+      "korean": {
+        "questions": 14,
+        "hit@1": 0.786,
+        "hit@4": 0.929,
+        "hit@10": 1.0,
+        "mrr@10": 0.867
+      },
+      "english": {
+        "questions": 1,
+        "hit@1": 1.0,
+        "hit@4": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "seconds_per_question": 0.622,
+      "misses_top4": [
+        {
+          "id": "g11",
+          "question": "외국에 나가 있는 동안 체류기간 연장을 신청할 수 있나요?",
+          "expected": [
+            "guide:visa_navigator:p50"
+          ],
+          "got": [
+            "immigration_rules:32",
+            "guide:visa_navigator:p48#1",
+            "immigration_act:25-5"
+          ]
+        }
+      ]
+    },
+    "App context (4 law + 1 guide pieces)": {
+      "in_context": 0.933
     }
   },
   "_setup": {
-    "pieces": 870,
+    "pieces": 923,
     "pieces_with_english": 481
   }
 }

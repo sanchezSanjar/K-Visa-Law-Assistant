@@ -10,7 +10,7 @@ import json
 import sys
 import time
 
-from kvisa.config import ARTICLES, DOCS, EVAL
+from kvisa.config import ARTICLES, DOCS, EVAL, GUIDES
 
 METHODS = [
     ("Keyword (BM25)", "keyword", False),
@@ -22,8 +22,11 @@ METHODS = [
 
 
 # "main": 84 questions written while reading the laws (80 + 4 the laws cannot answer).
-# "held-out": 30 harder, more indirect questions written later and never used to tune anything.
+# "held-out": 30 harder, more indirect questions written after the search method was chosen.
+# "guide": 15 practical questions answered by the Ministry of Justice guide (only when it was downloaded).
 QUESTION_SETS = {"main": "questions.jsonl", "held-out": "questions_holdout.jsonl"}
+if (GUIDES / "guides.jsonl").exists():
+    QUESTION_SETS["guide"] = "questions_guide.jsonl"
 
 
 def load_questions(name: str = "main") -> list[dict]:
@@ -36,7 +39,7 @@ _DEFINES: dict[str, set] = {}
 def visa_rows(piece_id: str) -> set:
     """Visa codes whose definition row is in this table piece."""
     if not _DEFINES:
-        for line in ARTICLES.open(encoding="utf-8"):
+        for line in ARTICLES.read_text(encoding="utf-8").splitlines():
             record = json.loads(line)
             _DEFINES[record["id"]] = set(record.get("defines", []))
     return _DEFINES.get(piece_id, set())
@@ -78,7 +81,7 @@ def evaluate_search() -> dict:
     searcher = Searcher(dense=True, rerank=True)
     results = {}
     for set_name in QUESTION_SETS:
-        questions = [q for q in load_questions(set_name) if q["type"] == "law"]
+        questions = [q for q in load_questions(set_name) if q["type"] != "out_of_scope"]
         results[set_name] = {}
         print(f"{set_name} questions ({len(questions)})")
         for name, mode, rerank in METHODS:
@@ -103,6 +106,11 @@ def evaluate_search() -> dict:
             line = result["all"]
             print(f"  {name:28s} hit@1 {line['hit@1']:.2f}  hit@4 {line['hit@4']:.2f}  MRR {line['mrr@10']:.2f}  "
                   f"({seconds:.2f}s per question)")
+        # What the app really gives the model: 4 law pieces + 1 guide piece, ranked in separate pools.
+        ranks = [first_hit_rank([p["id"] for p in searcher.context(q["question"])], q["expected"]) for q in questions]
+        in_context = round(sum(1 for r in ranks if r) / len(ranks), 3)
+        results[set_name]["App context (4 law + 1 guide pieces)"] = {"in_context": in_context}
+        print(f"  {'App context (4 law + 1 guide)':28s} in context {in_context:.2f}")
     searcher.close()
     english = sum(1 for r in searcher.records if r.get("text_en"))
     results["_setup"] = {"pieces": len(searcher.records), "pieces_with_english": english}
