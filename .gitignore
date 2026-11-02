@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Downloaded models and rebuilt index
+models/
+index/
+
+# KLRI English translations: personal use only, never redistributed
+data/laws/en/
+
+# App runtime
+*.log
+kvisa.port
+
+# Editor
+.vscode/
+.idea/
