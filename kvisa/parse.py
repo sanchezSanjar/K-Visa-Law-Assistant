@@ -14,19 +14,21 @@ import pymupdf
 from kvisa.config import ARTICLES, LAWS_EN, LAWS_KO
 
 MAX_CHARS = 1800          # longer articles are split at paragraph marks (①, ②, ...)
-TABLE_CHUNK_CHARS = 1000  # attached tables are packed into pieces of about this size
+TABLE_CHUNK_CHARS = 1000  # longer table rows are split by line at about this size
+TABLE_MIN_CHARS = 200     # shorter table rows are merged with the next row
 
 KO_ARTICLE = re.compile(r"^제(\d+)조(?:의(\d+))?\s*\(([^)]*)\)\s*(.*)$")
 KO_DELETED = re.compile(r"^제\d+조(?:의\d+)?\s*삭제")
-KO_CHAPTER = re.compile(r"^제\d+장(?:의\d+)?\s+\S")
+KO_CHAPTER = re.compile(r"^제\d+(?:장|절|관)(?:의\d+)?\s+\S")
 KO_ADDENDA = re.compile(r"^부\s*칙\s*(<|$)")
 EN_ARTICLE = re.compile(r"^Article\s+(\d+)(?:-(\d+))?\s*\(([^)]*)\)\s*(.*)$")
 EN_DELETED = re.compile(r"^Article\s+\d+(?:-\d+)?\s+Deleted")
-EN_CHAPTER = re.compile(r"^CHAPTER\s+[IVXLC]+(?:-\d+)?\b")
+EN_CHAPTER = re.compile(r"^(?:CHAPTER\s+[IVXLC]+|SECTION\s+\d+)(?:-\d+)?\b")
 EN_ADDENDA = re.compile(r"^ADDENDA\b")
 AMENDMENT_NOTES = re.compile(r"<(?:개정|신설|Amended|Newly inserted)[^>]*>|\[(?:전문개정|본조신설|제목개정|"
                              r"종전|This Article|Moved from|Previous)[^\]]*\]")
 VISA_CODE = re.compile(r"\b([A-H]-\d{1,2}(?:-\d{1,2})?)\b")
+VISA_ROW = re.compile(r"(?:^|\n)\d+(?:의\d+)?\.\s*[^\n(]{1,20}\(([A-H]-\d{1,2}(?:-\d{1,2})?)\)")  # row that defines a visa
 PARAGRAPH = re.compile(r"(?=[①-⑳])")
 
 
@@ -121,7 +123,7 @@ def parse_articles(path: Path, lang: str) -> list[dict]:
 
 
 def table_pieces(path: Path, title: str) -> list[dict]:
-    """Group table rows (lines that start a numbered item) into pieces of about TABLE_CHUNK_CHARS."""
+    """Split a table into rows (lines that start a numbered item)."""
     rows, current = [], []
     for page, line in pdf_lines(path, skip_margins=False):
         if re.match(r"^\d+(?:의\d+)?\.\s", line.strip()) and current:
@@ -141,13 +143,14 @@ def table_pieces(path: Path, title: str) -> list[dict]:
             chunk.append(item)
         split_rows.append(chunk)
     rows = split_rows
+    # One piece per row (e.g. one visa type), so a question about one visa finds that row;
+    # short rows are merged with the next one.
     pieces, piece = [], []
     for row in rows:
-        size = sum(len(text) for _, text in piece)
-        if piece and size + sum(len(text) for _, text in row) > TABLE_CHUNK_CHARS:
+        piece.extend(row)
+        if sum(len(text) for _, text in piece) >= TABLE_MIN_CHARS:
             pieces.append(piece)
             piece = []
-        piece.extend(row)
     if piece:
         pieces.append(piece)
     return [{"page": lines[0][0], "text": clean(join_lines([text for _, text in lines]))} for lines in pieces]
@@ -186,6 +189,7 @@ def build_korean() -> list[dict]:
                     "id": f"{law['key']}:table{table_no:02d}#{index}", "kind": "table", **common,
                     "label": label, "title": table_title, "chapter": "", "file": table["file"],
                     "page": piece["page"], "codes": sorted(set(VISA_CODE.findall(piece["text"]))),
+                    "defines": sorted(set(VISA_ROW.findall(piece["text"]))),
                     "text": f"[{label}] {table_title}\n{piece['text']}",
                 })
     return records
