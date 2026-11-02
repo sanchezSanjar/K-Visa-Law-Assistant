@@ -1,0 +1,176 @@
+[
+  {
+    "key": "immigration_act",
+    "name_ko": "출입국관리법",
+    "name_en": "Immigration Act",
+    "file": "immigration_act.pdf",
+    "source_file": "출입국관리법(법률)(제21857호)(20261002).pdf",
+    "effective": "20261002",
+    "lsiSeq": "290729",
+    "url": "https://www.law.go.kr/법령/출입국관리법",
+    "tables": []
+  },
+  {
+    "key": "immigration_decree",
+    "name_ko": "출입국관리법 시행령",
+    "name_en": "Enforcement Decree of the Immigration Act",
+    "file": "immigration_decree.pdf",
+    "source_file": "출입국관리법 시행령(대통령령)(제36728호)(20261002).pdf",
+    "effective": "20261002",
+    "lsiSeq": "290501",
+    "url": "https://www.law.go.kr/법령/출입국관리법 시행령",
+    "tables": [
+      {
+        "title": "[별표 1] 단기체류자격(제12조 관련)",
+        "file": "immigration_decree__table01.pdf"
+      },
+      {
+        "title": "[별표 1의2] 장기체류자격(제12조 관련)",
+        "file": "immigration_decree__table02.pdf"
+      },
+      {
+        "title": "[별표 1의3] 영주자격에 부합하는 사람(제12조의2제1항 관련)",
+        "file": "immigration_decree__table03.pdf"
+      },
+      {
+        "title": "[별표 2] 과태료의 부과기준(제102조 관련)",
+        "file": "immigration_decree__table04.pdf"
+      }
+    ]
+  },
+  {
+    "key": "immigration_rules",
+    "name_ko": "출입국관리법 시행규칙",
+    "name_en": "Enforcement Rules of the Immigration Act",
+    "file": "immigration_rules.pdf",
+    "source_file": "출입국관리법 시행규칙(법무부령)(제01172호)(20261023).pdf",
+    "effective": "20261023",
+    "lsiSeq": "291289",
+    "url": "https://www.law.go.kr/법령/출입국관리법 시행규칙",
+    "tables": [
+      {
+        "title": "[별표 1] 체류자격별 체류기간의 상한(제18조의3 관련)",
+        "file": "immigration_rules__table01.pdf"
+      },
+      {
+        "title": "[별표 1의2] 계절근로 전문기관의 지정취소 및 업무정지의 세부기준(제28조의4 관련)",
+        "file": "immigration_rules__table02.pdf"
+      },
+      {
+        "title": "[별표 2] 다문화사회 전문가 인정 요건 및 이수 과목(제53조의2제2항제2호가목 관련)",
+        "file": "immigration_rules__table03.pdf"
+      },
+      {
+        "title": "[별표 3] 운영기관에 대한 처분기준(제53조의3 관련)",
+        "file": "immigration_rules__table04.pdf"
+      },
+      {
+        "title": "[별표 4] 대행업무처리 표준절차(제68조의4제1항 관련)",
+        "file": "immigration_rules__table05.pdf"
+      },
+      {
+        "title": "[별표 4의2] 대행기관 행정처분 기준(제68조의5제2항 관련)",
+        "file": "immigration_rules__table06.pdf"
+      },
+      {
+        "title": "[별표 5] 사증발급 신청 등 첨부서류(제76조제1항 관련)",
+        "file": "immigration_rules__table07.pdf"
+      },
+      {
+        "title": "[별표 5의2] 체류자격 외 활동허가 신청 등 첨부서류(제76조제2항 관련)",
+        "file": "immigration_rules__table08.pdf"
+      },
+      {
+        "title": "[별표 5의3] 외국인체류확인서 열람ㆍ교부 신청 자격에 관한 입증서류의 범위(제75조의2제2항 전단 관련)",
+        "file": "immigration_rules__table09.pdf"
+      },
+      {
+        "title": "[별표 6] 체류자격 외 활동허가 등 권한의 위임 범위(제78조제6항 관련)",
+        "file": "immigration_rules__table10.pdf"
+      },
+      {
+        "title": "[별표 7] 범칙금의 양정기준(제86조제1항 관련)",
+        "file": "immigration_rules__table11.pdf"
+      },
+      {
+        "title": "[별표 8] 범칙금의 양정기준 (제86조제1항 관련)",
+        "file": "immigration_rules__table12.pdf"
+      }
+    ]
+  },
+  {
+    "key": "nationality_act",
+    "name_ko": "국적법",
+    "name_en": "Nationality Act",
+    "file": "nationality_act.pdf",
+    "source_file": "국적법(법률)(제18978호)(20221001).pdf",
+    "effective": "20221001",
+    "lsiSeq": "244609",
+    "url": "https://www.law.go.kr/법령/국적법",
+    "tables": []
+  },
+  {
+    "key": "nationality_decree",
+    "name_ko": "국적법 시행령",
+    "name_en": "Enforcement Decree of the Nationality Act",
+    "file": "nationality_decree.pdf",
+    "source_file": "국적법 시행령(대통령령)(제33082호)(20221220).pdf",
+    "effective": "20221220",
+    "lsiSeq": "246165",
+    "url": "https://www.law.go.kr/법령/국적법 시행령",
+    "tables": [
+      {
+        "title": "[별표 1] 대한민국 국적의 이탈 허가 신청의 세부 자격기준(제18조의2제1항 관련)",
+        "file": "nationality_decree__table01.pdf"
+      },
+      {
+        "title": "[별표 2] 대한민국 국적 이탈 허가 시 구체적 고려사항(제18조의2제2항 관련)",
+        "file": "nationality_decree__table02.pdf"
+      }
+    ]
+  },
+  {
+    "key": "foreign_workers_act",
+    "name_ko": "외국인근로자의 고용 등에 관한 법률",
+    "name_en": "Act on the Employment of Foreign Workers",
+    "file": "foreign_workers_act.pdf",
+    "source_file": "외국인근로자의 고용 등에 관한 법률(법률)(제21065호)(20251001).pdf",
+    "effective": "20251001",
+    "lsiSeq": "276857",
+    "url": "https://www.law.go.kr/법령/외국인근로자의 고용 등에 관한 법률",
+    "tables": []
+  },
+  {
+    "key": "foreigners_framework_act",
+    "name_ko": "재한외국인 처우 기본법",
+    "name_en": "Framework Act on Treatment of Foreigners Residing in Korea",
+    "file": "foreigners_framework_act.pdf",
+    "source_file": "재한외국인 처우 기본법(법률)(제20734호)(20250131).pdf",
+    "effective": "20250131",
+    "lsiSeq": "268701",
+    "url": "https://www.law.go.kr/법령/재한외국인 처우 기본법",
+    "tables": []
+  },
+  {
+    "key": "overseas_koreans_act",
+    "name_ko": "재외동포의 출입국과 법적 지위에 관한 법률",
+    "name_en": "Act on the Immigration and Legal Status of Overseas Koreans",
+    "file": "overseas_koreans_act.pdf",
+    "source_file": "재외동포의 출입국과 법적 지위에 관한 법률(법률)(제20677호)(20250722).pdf",
+    "effective": "20250722",
+    "lsiSeq": "268553",
+    "url": "https://www.law.go.kr/법령/재외동포의 출입국과 법적 지위에 관한 법률",
+    "tables": []
+  },
+  {
+    "key": "refugee_act",
+    "name_ko": "난민법",
+    "name_en": "Refugee Act",
+    "file": "refugee_act.pdf",
+    "source_file": "난민법(법률)(제14408호)(20161220).pdf",
+    "effective": "20161220",
+    "lsiSeq": "188376",
+    "url": "https://www.law.go.kr/법령/난민법",
+    "tables": []
+  }
+]
