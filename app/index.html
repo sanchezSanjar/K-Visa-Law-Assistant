@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>K-Visa Law Assistant</title>
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="/static/icon.svg" alt="" class="logo">
+      <div>
+        <h1>K-Visa Law Assistant</h1>
+        <p>출입국 · 체류 · 국적 법령 안내 <span class="sep">|</span> Korean immigration law, with sources</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span id="status" class="status loading"><span class="dot"></span><span id="status-text">모델 불러오는 중…</span></span>
+      <button id="quit" class="ghost" title="Stop the app">종료</button>
+    </div>
+  </header>
+
+  <main id="chat" class="chat">
+    <section id="welcome" class="welcome">
+      <h2>무엇이 궁금하세요?</h2>
+      <p>질문하면 관련 법령 조문을 찾아 쉽게 설명하고, 근거 조문을 함께 보여드립니다.<br>
+        <span class="muted">Ask in Korean or English. Answers cite the exact law article.</span></p>
+      <div class="examples">
+        <button class="example">외국인등록은 입국 후 언제까지 해야 하나요?</button>
+        <button class="example">이사하면 체류지 변경 신고는 언제까지 해야 하나요?</button>
+        <button class="example">체류기간을 연장하려면 어떻게 해야 하나요?</button>
+        <button class="example">영주권(F-5)을 받으려면 어떤 요건이 필요한가요?</button>
+        <button class="example">한국인과 결혼한 외국인은 몇 년 살면 귀화할 수 있나요?</button>
+        <button class="example">How many days after entry must I register as a foreigner?</button>
+      </div>
+      <div class="laws">
+        <span>9개 법령 · 18개 별표</span> 출입국관리법(시행령·시행규칙) · 국적법(시행령) · 외국인근로자고용법 ·
+        재한외국인처우기본법 · 재외동포법 · 난민법
+      </div>
+    </section>
+  </main>
+
+  <footer class="composer">
+    <form id="form">
+      <textarea id="input" rows="1" maxlength="500" placeholder="질문을 입력하세요 (Enter 전송, Shift+Enter 줄바꿈)" disabled></textarea>
+      <button id="send" type="submit" disabled aria-label="Send">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M3 11.5 21 3l-8.5 18-2.2-7.3L3 11.5Z" fill="currentColor"/></svg>
+      </button>
+    </form>
+    <p class="disclaimer">법률 자문이 아닌 정보 안내입니다. 한국어 법령 원문이 기준이며, 정확한 상담은 외국인종합안내센터(☎1345)에 문의하세요.
+      <span class="muted">Information only, not legal advice.</span></p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
