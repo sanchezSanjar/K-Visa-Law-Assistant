@@ -3,24 +3,24 @@
     "Keyword (BM25)": {
       "all": {
         "questions": 80,
-        "hit@1": 0.463,
+        "hit@1": 0.45,
         "hit@4": 0.738,
         "hit@10": 0.838,
-        "mrr@10": 0.586
+        "mrr@10": 0.58
       },
       "korean": {
         "questions": 72,
-        "hit@1": 0.472,
+        "hit@1": 0.458,
         "hit@4": 0.764,
         "hit@10": 0.861,
-        "mrr@10": 0.6
+        "mrr@10": 0.593
       },
       "english": {
         "questions": 8,
         "hit@1": 0.375,
         "hit@4": 0.5,
         "hit@10": 0.625,
-        "mrr@10": 0.463
+        "mrr@10": 0.458
       },
       "seconds_per_question": 0.001,
       "misses_top4": [
@@ -124,7 +124,7 @@
           ],
           "got": [
             "foreign_workers_act:20",
-            "immigration_decree:table02#12",
+            "immigration_act:90-2",
             "immigration_act:19"
           ]
         },
@@ -161,8 +161,8 @@
           ],
           "got": [
             "immigration_decree:table02#15",
-            "immigration_rules:17",
-            "immigration_decree:table02#22"
+            "immigration_decree:table02#22",
+            "immigration_rules:17"
           ]
         },
         {
@@ -270,9 +270,9 @@
             "immigration_act:46"
           ],
           "got": [
-            "foreigners_framework_act:23",
             "immigration_act:52",
-            "foreigners_framework_act:1"
+            "foreigners_framework_act:1",
+            "foreigners_framework_act:23"
           ]
         },
         {
@@ -312,7 +312,7 @@
         "hit@10": 0.875,
         "mrr@10": 0.875
       },
-      "seconds_per_question": 0.032,
+      "seconds_per_question": 0.027,
       "misses_top4": [
         {
           "id": "ko04",
@@ -324,7 +324,7 @@
           "got": [
             "immigration_act:18",
             "foreign_workers_act:12",
-            "immigration_act:79-2"
+            "immigration_decree:table02#18"
           ]
         },
         {
@@ -370,10 +370,10 @@
     "Hybrid (keyword + meaning)": {
       "all": {
         "questions": 80,
-        "hit@1": 0.588,
+        "hit@1": 0.575,
         "hit@4": 0.95,
         "hit@10": 0.975,
-        "mrr@10": 0.751
+        "mrr@10": 0.745
       },
       "korean": {
         "questions": 72,
@@ -384,12 +384,12 @@
       },
       "english": {
         "questions": 8,
-        "hit@1": 0.625,
+        "hit@1": 0.5,
         "hit@4": 0.875,
         "hit@10": 0.875,
-        "mrr@10": 0.729
+        "mrr@10": 0.667
       },
-      "seconds_per_question": 0.029,
+      "seconds_per_question": 0.024,
       "misses_top4": [
         {
           "id": "ko04",
@@ -412,9 +412,9 @@
             "immigration_act:18"
           ],
           "got": [
+            "immigration_act:90-2",
             "foreign_workers_act:20",
-            "foreign_workers_act:12",
-            "immigration_act:90-2"
+            "foreign_workers_act:12"
           ]
         },
         {
@@ -426,7 +426,7 @@
           "got": [
             "immigration_decree:table02#15",
             "immigration_decree:table03#5",
-            "immigration_decree:table02#22"
+            "immigration_decree:23"
           ]
         },
         {
@@ -447,17 +447,17 @@
     "Meaning + reranker": {
       "all": {
         "questions": 80,
-        "hit@1": 0.787,
+        "hit@1": 0.8,
         "hit@4": 0.95,
-        "hit@10": 0.975,
-        "mrr@10": 0.87
+        "hit@10": 0.988,
+        "mrr@10": 0.878
       },
       "korean": {
         "questions": 72,
-        "hit@1": 0.778,
+        "hit@1": 0.792,
         "hit@4": 0.958,
-        "hit@10": 0.986,
-        "mrr@10": 0.869
+        "hit@10": 1.0,
+        "mrr@10": 0.879
       },
       "english": {
         "questions": 8,
@@ -466,7 +466,7 @@
         "hit@10": 0.875,
         "mrr@10": 0.875
       },
-      "seconds_per_question": 0.661,
+      "seconds_per_question": 0.653,
       "misses_top4": [
         {
           "id": "ko04",
@@ -490,8 +490,8 @@
           ],
           "got": [
             "immigration_act:97",
-            "foreign_workers_act:20",
-            "immigration_decree:24"
+            "immigration_act:19",
+            "immigration_act:90-2"
           ]
         },
         {
@@ -515,8 +515,8 @@
           ],
           "got": [
             "immigration_act:79-2",
-            "immigration_act:19-5",
-            "immigration_act:18"
+            "immigration_decree:23",
+            "immigration_act:19-5"
           ]
         }
       ]
@@ -524,17 +524,17 @@
     "Hybrid + reranker": {
       "all": {
         "questions": 80,
-        "hit@1": 0.787,
+        "hit@1": 0.8,
         "hit@4": 0.963,
         "hit@10": 0.975,
-        "mrr@10": 0.874
+        "mrr@10": 0.879
       },
       "korean": {
         "questions": 72,
-        "hit@1": 0.778,
+        "hit@1": 0.792,
         "hit@4": 0.972,
         "hit@10": 0.986,
-        "mrr@10": 0.874
+        "mrr@10": 0.879
       },
       "english": {
         "questions": 8,
@@ -543,7 +543,7 @@
         "hit@10": 0.875,
         "mrr@10": 0.875
       },
-      "seconds_per_question": 0.654,
+      "seconds_per_question": 0.653,
       "misses_top4": [
         {
           "id": "ko04",
@@ -579,8 +579,8 @@
           ],
           "got": [
             "immigration_decree:24-8",
-            "immigration_act:19-4",
-            "immigration_act:79-2"
+            "immigration_act:79-2",
+            "nationality_decree:4-2"
           ]
         }
       ]
@@ -674,8 +674,8 @@
           ],
           "got": [
             "nationality_act:10",
-            "immigration_rules:9-5#2",
-            "nationality_act:15"
+            "nationality_act:15",
+            "immigration_rules:9-5#2"
           ]
         },
         {
@@ -688,7 +688,7 @@
           "got": [
             "immigration_rules:table11#4",
             "immigration_rules:12",
-            "immigration_rules:53-7"
+            "immigration_rules:84-2"
           ]
         },
         {
@@ -725,7 +725,7 @@
           "got": [
             "foreign_workers_act:20",
             "foreign_workers_act:12",
-            "foreign_workers_act:3"
+            "immigration_act:19"
           ]
         },
         {
@@ -873,25 +873,25 @@
       "all": {
         "questions": 30,
         "hit@1": 0.4,
-        "hit@4": 0.7,
+        "hit@4": 0.733,
         "hit@10": 0.867,
-        "mrr@10": 0.538
+        "mrr@10": 0.549
       },
       "korean": {
         "questions": 22,
         "hit@1": 0.409,
-        "hit@4": 0.727,
+        "hit@4": 0.773,
         "hit@10": 0.909,
-        "mrr@10": 0.554
+        "mrr@10": 0.569
       },
       "english": {
         "questions": 8,
         "hit@1": 0.375,
         "hit@4": 0.625,
         "hit@10": 0.75,
-        "mrr@10": 0.495
+        "mrr@10": 0.497
       },
-      "seconds_per_question": 0.026,
+      "seconds_per_question": 0.023,
       "misses_top4": [
         {
           "id": "h01",
@@ -904,21 +904,6 @@
             "immigration_decree:table02#21",
             "immigration_rules:27-2",
             "immigration_decree:table02#18"
-          ]
-        },
-        {
-          "id": "h04",
-          "question": "외국인등록을 안 하면 어떻게 되나요?",
-          "expected": [
-            "immigration_act:31",
-            "immigration_act:95",
-            "immigration_decree:table04",
-            "immigration_act:100"
-          ],
-          "got": [
-            "immigration_rules:45",
-            "immigration_decree:47",
-            "immigration_rules:47"
           ]
         },
         {
@@ -1016,14 +1001,14 @@
         "hit@1": 0.333,
         "hit@4": 0.6,
         "hit@10": 0.8,
-        "mrr@10": 0.47
+        "mrr@10": 0.476
       },
       "korean": {
         "questions": 22,
         "hit@1": 0.409,
         "hit@4": 0.636,
         "hit@10": 0.818,
-        "mrr@10": 0.52
+        "mrr@10": 0.528
       },
       "english": {
         "questions": 8,
@@ -1032,7 +1017,7 @@
         "hit@10": 0.75,
         "mrr@10": 0.332
       },
-      "seconds_per_question": 0.031,
+      "seconds_per_question": 0.024,
       "misses_top4": [
         {
           "id": "h01",
@@ -1144,8 +1129,8 @@
           ],
           "got": [
             "immigration_decree:table02#18",
-            "immigration_rules:table08#22",
-            "immigration_decree:table03#1"
+            "immigration_act:10",
+            "immigration_rules:table08#22"
           ]
         },
         {
@@ -1194,14 +1179,14 @@
         "hit@1": 0.6,
         "hit@4": 0.8,
         "hit@10": 0.867,
-        "mrr@10": 0.698
+        "mrr@10": 0.695
       },
       "korean": {
         "questions": 22,
         "hit@1": 0.636,
         "hit@4": 0.818,
         "hit@10": 0.909,
-        "mrr@10": 0.732
+        "mrr@10": 0.728
       },
       "english": {
         "questions": 8,
@@ -1210,7 +1195,7 @@
         "hit@10": 0.75,
         "mrr@10": 0.604
       },
-      "seconds_per_question": 0.683,
+      "seconds_per_question": 0.689,
       "misses_top4": [
         {
           "id": "h01",
@@ -1221,8 +1206,8 @@
           ],
           "got": [
             "immigration_decree:23",
-            "immigration_decree:24-4",
-            "immigration_decree:table02#18"
+            "immigration_decree:table02#18",
+            "immigration_rules:table08#14"
           ]
         },
         {
@@ -1284,7 +1269,7 @@
           "got": [
             "immigration_decree:table03#3",
             "immigration_act:10-2",
-            "immigration_decree:10"
+            "immigration_decree:15#2"
           ]
         }
       ]
@@ -1311,7 +1296,7 @@
         "hit@10": 0.75,
         "mrr@10": 0.583
       },
-      "seconds_per_question": 0.69,
+      "seconds_per_question": 0.682,
       "misses_top4": [
         {
           "id": "h01",
@@ -1321,8 +1306,8 @@
             "immigration_decree:25"
           ],
           "got": [
-            "immigration_decree:24-8",
             "immigration_act:79-2",
+            "immigration_decree:24-8",
             "immigration_decree:table02#18"
           ]
         },
@@ -1383,8 +1368,8 @@
             "immigration_decree:table02=D-10"
           ],
           "got": [
-            "immigration_act:10-3",
             "immigration_rules:table08#14",
+            "immigration_act:10-3",
             "immigration_rules:table03#1"
           ]
         },
@@ -1411,7 +1396,7 @@
           "got": [
             "nationality_act:6",
             "nationality_act:15",
-            "immigration_decree:46"
+            "immigration_decree:15#2"
           ]
         },
         {
@@ -1422,7 +1407,7 @@
           ],
           "got": [
             "immigration_act:10-2",
-            "immigration_decree:10",
+            "immigration_decree:15#2",
             "immigration_decree:23"
           ]
         }

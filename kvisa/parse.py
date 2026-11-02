@@ -25,8 +25,10 @@ EN_ARTICLE = re.compile(r"^Article\s+(\d+)(?:-(\d+))?\s*\(([^)]*)\)\s*(.*)$")
 EN_DELETED = re.compile(r"^Article\s+\d+(?:-\d+)?\s+Deleted")
 EN_CHAPTER = re.compile(r"^(?:CHAPTER\s+[IVXLC]+|SECTION\s+\d+)(?:-\d+)?\b")
 EN_ADDENDA = re.compile(r"^ADDENDA\b")
-AMENDMENT_NOTES = re.compile(r"<(?:개정|신설|Amended|Newly inserted)[^>]*>|\[(?:전문개정|본조신설|제목개정|"
+AMENDMENT_NOTES = re.compile(r"<(?:개정|신설|Amended|Added|Newly inserted)[^>]*>|\[(?:전문개정|본조신설|제목개정|"
                              r"종전|This Article|Moved from|Previous)[^\]]*\]")
+# Running header and footer of law.go.kr PDFs: "법제처 12 국가법령정보센터" and the law name.
+PAGE_FURNITURE = re.compile(r"^(?:법제처\s+\d+(?:\s+국가법령정보센터)?|국가법령정보센터|「[^」]+」)$")
 VISA_CODE = re.compile(r"\b([A-H]-\d{1,2}(?:-\d{1,2})?)\b")
 VISA_ROW = re.compile(r"(?:^|\n)\d+(?:의\d+)?\.\s*[^\n(]{1,20}\(([A-H]-\d{1,2}(?:-\d{1,2})?)\)")  # row that defines a visa
 PARAGRAPH = re.compile(r"(?=[①-⑳])")
@@ -54,6 +56,8 @@ def pdf_lines(path: Path, skip_margins: bool) -> list[tuple[int, str]]:
                             text += char["c"]
                             previous = char
                     text = re.sub(r"\s+", " ", text).rstrip()
+                    if skip_margins and PAGE_FURNITURE.match(text.strip()):
+                        continue
                     if text.strip():
                         lines.append((page_no, text))
     return lines
@@ -77,6 +81,7 @@ def join_lines(lines: list[str]) -> str:
 
 def clean(text: str) -> str:
     text = AMENDMENT_NOTES.sub("", text)
+    text = re.sub(r"\s*법제처\s+\d+\s+국가법령정보센터\s*(?:「[^」]+」)?\s*", " ", text)  # footer merged into a line
     text = re.sub(r"[ \t]+", " ", text)
     return re.sub(r"\n\s*\n+", "\n", text).strip()
 
