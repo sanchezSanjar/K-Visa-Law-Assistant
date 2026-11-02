@@ -1,0 +1,84 @@
+{"id": "ko01", "lang": "ko", "type": "law", "question": "비자 기간이 끝나기 전에 체류기간을 연장하려면 어떻게 해야 하나요?", "expected": ["immigration_act:25", "immigration_decree:31"]}
+{"id": "ko02", "lang": "ko", "type": "law", "question": "체류기간이 지났는데 계속 있으면 강제퇴거 되나요?", "expected": ["immigration_act:46"]}
+{"id": "ko03", "lang": "ko", "type": "law", "question": "한국에서 일하려면 어떤 체류자격이 필요한가요?", "expected": ["immigration_act:18", "immigration_decree:23"]}
+{"id": "ko04", "lang": "ko", "type": "law", "question": "유학생 비자로 아르바이트를 해도 되나요?", "expected": ["immigration_act:20", "immigration_decree:25"]}
+{"id": "ko05", "lang": "ko", "type": "law", "question": "다니던 회사를 그만두고 다른 회사로 옮기면 허가를 받아야 하나요?", "expected": ["immigration_act:21", "immigration_decree:26", "immigration_decree:26-2"]}
+{"id": "ko06", "lang": "ko", "type": "law", "question": "지금 비자에서 다른 종류의 비자로 바꾸고 싶어요.", "expected": ["immigration_act:24", "immigration_decree:30"]}
+{"id": "ko07", "lang": "ko", "type": "law", "question": "한국에서 태어난 외국인 아기는 체류자격을 어떻게 받나요?", "expected": ["immigration_act:23", "immigration_decree:29"]}
+{"id": "ko08", "lang": "ko", "type": "law", "question": "입국하고 나서 외국인등록은 며칠 안에 해야 하나요?", "expected": ["immigration_act:31", "immigration_decree:40"]}
+{"id": "ko09", "lang": "ko", "type": "law", "question": "이사를 하면 체류지 변경 신고는 언제까지 해야 하나요?", "expected": ["immigration_act:36", "immigration_decree:45"]}
+{"id": "ko10", "lang": "ko", "type": "law", "question": "외국인등록증을 잃어버렸는데 재발급 받을 수 있나요?", "expected": ["immigration_decree:42", "immigration_rules:48"]}
+{"id": "ko11", "lang": "ko", "type": "law", "question": "외국인은 여권을 항상 가지고 다녀야 하나요?", "expected": ["immigration_act:27"]}
+{"id": "ko12", "lang": "ko", "type": "law", "question": "잠깐 고향에 다녀오려면 재입국허가를 받아야 하나요?", "expected": ["immigration_act:30", "immigration_rules:39-7", "immigration_rules:44-2"]}
+{"id": "ko13", "lang": "ko", "type": "law", "question": "영주권(F-5)을 받으려면 어떤 요건이 필요한가요?", "expected": ["immigration_act:10-3", "immigration_decree:12-2", "immigration_decree:table03"]}
+{"id": "ko14", "lang": "ko", "type": "law", "question": "사회통합프로그램을 이수하면 어떤 혜택이 있나요?", "expected": ["immigration_act:40", "immigration_act:39"]}
+{"id": "ko15", "lang": "ko", "type": "law", "question": "출국명령을 받으면 어떻게 되나요?", "expected": ["immigration_act:68"]}
+{"id": "ko16", "lang": "ko", "type": "law", "question": "강제퇴거명령에 대해 이의신청을 할 수 있나요?", "expected": ["immigration_act:60"]}
+{"id": "ko17", "lang": "ko", "type": "law", "question": "외국인보호소에 얼마나 오래 보호될 수 있나요?", "expected": ["immigration_act:52", "immigration_act:63"]}
+{"id": "ko18", "lang": "ko", "type": "law", "question": "취업 자격이 없는 외국인을 고용한 사장도 처벌받나요?", "expected": ["immigration_act:94", "immigration_act:18"]}
+{"id": "ko19", "lang": "ko", "type": "law", "question": "외국인 직원이 퇴사하면 회사가 출입국에 신고해야 하나요?", "expected": ["immigration_act:19", "immigration_decree:24"]}
+{"id": "ko20", "lang": "ko", "type": "law", "question": "체류기간 연장 신청 수수료는 얼마인가요?", "expected": ["immigration_rules:72", "immigration_act:87"]}
+{"id": "ko21", "lang": "ko", "type": "law", "question": "비자 수수료를 면제받을 수 있는 경우가 있나요?", "expected": ["immigration_rules:74"]}
+{"id": "ko22", "lang": "ko", "type": "law", "question": "외국인등록을 늦게 하면 과태료가 얼마인가요?", "expected": ["immigration_decree:table04", "immigration_act:100", "immigration_decree:102", "immigration_act:95"]}
+{"id": "ko23", "lang": "ko", "type": "law", "question": "결혼이민자인데 가정폭력 재판 중이면 체류기간을 연장할 수 있나요?", "expected": ["immigration_act:25-2"]}
+{"id": "ko24", "lang": "ko", "type": "law", "question": "사증발급인정서는 무엇이고 누가 신청하나요?", "expected": ["immigration_act:9", "immigration_rules:17"]}
+{"id": "ko25", "lang": "ko", "type": "law", "question": "어떤 외국인이 입국을 금지당하나요?", "expected": ["immigration_act:11"]}
+{"id": "ko26", "lang": "ko", "type": "law", "question": "입국할 때 지문과 얼굴 정보를 꼭 제공해야 하나요?", "expected": ["immigration_act:12-2", "immigration_rules:19-3"]}
+{"id": "ko27", "lang": "ko", "type": "law", "question": "외국인 유학생을 받은 대학이 출입국에 알려야 하는 것이 있나요?", "expected": ["immigration_act:19-4", "immigration_decree:24-8"]}
+{"id": "ko28", "lang": "ko", "type": "law", "question": "계절근로 프로그램은 무엇인가요?", "expected": ["immigration_act:19-5"]}
+{"id": "ko29", "lang": "ko", "type": "law", "question": "출국할 때 외국인등록증을 반납해야 하나요?", "expected": ["immigration_act:37"]}
+{"id": "ko30", "lang": "ko", "type": "law", "question": "체류자격 외 활동허가를 신청할 때 어떤 서류가 필요한가요?", "expected": ["immigration_rules:table08", "immigration_rules:76"]}
+{"id": "ko31", "lang": "ko", "type": "law", "question": "비자 발급을 신청할 때 첨부해야 하는 서류는 무엇인가요?", "expected": ["immigration_rules:table07", "immigration_rules:76"]}
+{"id": "ko32", "lang": "ko", "type": "law", "question": "유학(D-2) 비자는 최대 몇 년까지 체류기간을 받을 수 있나요?", "expected": ["immigration_rules:table01", "immigration_rules:18-3"]}
+{"id": "ko33", "lang": "ko", "type": "law", "question": "유학(D-2) 체류자격은 어떤 사람에게 주나요?", "expected": ["immigration_decree:table02=D-2"]}
+{"id": "ko34", "lang": "ko", "type": "law", "question": "단기방문(C-3) 비자는 어떤 사람이 받을 수 있나요?", "expected": ["immigration_decree:table01=C-3"]}
+{"id": "ko35", "lang": "ko", "type": "law", "question": "방문취업(H-2) 비자 대상자는 누구인가요?", "expected": ["immigration_decree:table02=H-2"]}
+{"id": "ko36", "lang": "ko", "type": "law", "question": "여권을 새로 발급받으면 외국인등록사항 변경신고를 해야 하나요?", "expected": ["immigration_act:35", "immigration_decree:44"]}
+{"id": "ko37", "lang": "ko", "type": "law", "question": "외국인의 신원보증인은 어떤 책임을 지나요?", "expected": ["immigration_act:90"]}
+{"id": "ko38", "lang": "ko", "type": "law", "question": "영주자격이 취소될 수 있나요?", "expected": ["immigration_act:89-2", "immigration_act:89"]}
+{"id": "ko39", "lang": "ko", "type": "law", "question": "어떤 경우에 외국인의 출국이 정지되나요?", "expected": ["immigration_act:29"]}
+{"id": "ko40", "lang": "ko", "type": "law", "question": "결혼비자(결혼동거 목적 사증)를 받으려면 어떤 기준이 있나요?", "expected": ["immigration_rules:9-5", "immigration_rules:9-4"]}
+{"id": "ko41", "lang": "ko", "type": "law", "question": "난민 신청은 어떻게 하나요?", "expected": ["refugee_act:5"]}
+{"id": "ko42", "lang": "ko", "type": "law", "question": "난민으로 인정되면 어떤 처우를 받나요?", "expected": ["refugee_act:30", "refugee_act:31"]}
+{"id": "ko43", "lang": "ko", "type": "law", "question": "인도적체류자는 일을 할 수 있나요?", "expected": ["refugee_act:39"]}
+{"id": "ko44", "lang": "ko", "type": "law", "question": "난민 불인정 결정에 이의신청할 수 있나요?", "expected": ["refugee_act:21"]}
+{"id": "ko45", "lang": "ko", "type": "law", "question": "난민신청자는 생계비 지원이나 취업 허가를 받을 수 있나요?", "expected": ["refugee_act:40"]}
+{"id": "ko46", "lang": "ko", "type": "law", "question": "난민을 박해받을 나라로 강제로 돌려보낼 수 있나요?", "expected": ["refugee_act:3"]}
+{"id": "ko47", "lang": "ko", "type": "law", "question": "공항에서 바로 난민 신청을 할 수 있나요?", "expected": ["refugee_act:6"]}
+{"id": "ko48", "lang": "ko", "type": "law", "question": "한국 국적으로 귀화하려면 어떤 요건이 필요한가요?", "expected": ["nationality_act:5"]}
+{"id": "ko49", "lang": "ko", "type": "law", "question": "한국인과 결혼한 외국인은 몇 년 살면 귀화할 수 있나요?", "expected": ["nationality_act:6"]}
+{"id": "ko50", "lang": "ko", "type": "law", "question": "특별귀화는 어떤 사람이 할 수 있나요?", "expected": ["nationality_act:7", "nationality_decree:6"]}
+{"id": "ko51", "lang": "ko", "type": "law", "question": "귀화하면 원래 국적을 포기해야 하나요?", "expected": ["nationality_act:10"]}
+{"id": "ko52", "lang": "ko", "type": "law", "question": "복수국적자는 언제까지 국적을 선택해야 하나요?", "expected": ["nationality_act:12"]}
+{"id": "ko53", "lang": "ko", "type": "law", "question": "한국 국적을 이탈하려면 어떻게 하나요?", "expected": ["nationality_act:14"]}
+{"id": "ko54", "lang": "ko", "type": "law", "question": "부모 중 한 명이 한국인이면 아이가 한국 국적을 갖나요?", "expected": ["nationality_act:2"]}
+{"id": "ko55", "lang": "ko", "type": "law", "question": "귀화허가는 어떻게 신청하나요?", "expected": ["nationality_decree:3"]}
+{"id": "ko56", "lang": "ko", "type": "law", "question": "귀화 시험(종합평가)과 면접심사가 있나요?", "expected": ["nationality_decree:4-2"]}
+{"id": "ko57", "lang": "ko", "type": "law", "question": "귀화허가를 받으면 국민선서를 해야 하나요?", "expected": ["nationality_decree:4-4", "nationality_decree:4-5", "nationality_act:4"]}
+{"id": "ko58", "lang": "ko", "type": "law", "question": "한국 국적을 잃었던 사람이 다시 국적을 회복할 수 있나요?", "expected": ["nationality_act:9"]}
+{"id": "ko59", "lang": "ko", "type": "law", "question": "고용허가제로 온 외국인근로자는 몇 년 동안 일할 수 있나요?", "expected": ["foreign_workers_act:18", "foreign_workers_act:18-2"]}
+{"id": "ko60", "lang": "ko", "type": "law", "question": "외국인근로자가 사업장을 바꿀 수 있는 경우는?", "expected": ["foreign_workers_act:25"]}
+{"id": "ko61", "lang": "ko", "type": "law", "question": "외국인근로자 출국만기보험은 무엇인가요?", "expected": ["foreign_workers_act:13"]}
+{"id": "ko62", "lang": "ko", "type": "law", "question": "외국인근로자라는 이유로 차별해도 되나요?", "expected": ["foreign_workers_act:22"]}
+{"id": "ko63", "lang": "ko", "type": "law", "question": "회사가 외국인근로자에게 기숙사를 제공할 때 지켜야 할 것은?", "expected": ["foreign_workers_act:22-2"]}
+{"id": "ko64", "lang": "ko", "type": "law", "question": "성실하게 일한 외국인근로자는 출국 후 다시 들어와서 일할 수 있나요?", "expected": ["foreign_workers_act:18-4"]}
+{"id": "ko65", "lang": "ko", "type": "law", "question": "외국인근로자도 건강보험에 가입해야 하나요?", "expected": ["foreign_workers_act:14"]}
+{"id": "ko66", "lang": "ko", "type": "law", "question": "외국인근로자 귀국비용보험이 무엇인가요?", "expected": ["foreign_workers_act:15"]}
+{"id": "ko67", "lang": "ko", "type": "law", "question": "사업주가 외국인근로자를 고용하려면 고용허가를 어떻게 받나요?", "expected": ["foreign_workers_act:8"]}
+{"id": "ko68", "lang": "ko", "type": "law", "question": "재외동포(F-4) 체류자격은 누구에게 주나요?", "expected": ["overseas_koreans_act:5"]}
+{"id": "ko69", "lang": "ko", "type": "law", "question": "외국국적동포의 국내거소신고는 무엇인가요?", "expected": ["overseas_koreans_act:6"]}
+{"id": "ko70", "lang": "ko", "type": "law", "question": "재외동포 체류기간은 최장 몇 년인가요?", "expected": ["overseas_koreans_act:10"]}
+{"id": "ko71", "lang": "ko", "type": "law", "question": "결혼이민자와 자녀에게 국가가 어떤 지원을 하나요?", "expected": ["foreigners_framework_act:12"]}
+{"id": "ko72", "lang": "ko", "type": "law", "question": "세계인의 날은 언제인가요?", "expected": ["foreigners_framework_act:19"]}
+{"id": "en01", "lang": "en", "type": "law", "question": "How do I extend my period of stay before it expires?", "expected": ["immigration_act:25", "immigration_decree:31"]}
+{"id": "en02", "lang": "en", "type": "law", "question": "What are the requirements for general naturalization in Korea?", "expected": ["nationality_act:5"]}
+{"id": "en03", "lang": "en", "type": "law", "question": "Can an international student work part-time?", "expected": ["immigration_act:20", "immigration_decree:25"]}
+{"id": "en04", "lang": "en", "type": "law", "question": "When do I have to report a change of my address?", "expected": ["immigration_act:36", "immigration_decree:45"]}
+{"id": "en05", "lang": "en", "type": "law", "question": "Which foreigners can be deported from Korea?", "expected": ["immigration_act:46"]}
+{"id": "en06", "lang": "en", "type": "law", "question": "How do I apply for refugee status?", "expected": ["refugee_act:5"]}
+{"id": "en07", "lang": "en", "type": "law", "question": "Do I have to carry my passport at all times?", "expected": ["immigration_act:27"]}
+{"id": "en08", "lang": "en", "type": "law", "question": "How many days after entry must I register as a foreigner?", "expected": ["immigration_act:31", "immigration_decree:40"]}
+{"id": "out01", "lang": "ko", "type": "out_of_scope", "question": "서울출입국·외국인청 주소와 운영시간을 알려주세요.", "expected": []}
+{"id": "out02", "lang": "ko", "type": "out_of_scope", "question": "하이코리아에서 방문 예약은 어떻게 하나요?", "expected": []}
+{"id": "out03", "lang": "ko", "type": "out_of_scope", "question": "D-2 유학생은 학기 중에 주당 몇 시간까지 아르바이트할 수 있나요?", "expected": []}
+{"id": "out04", "lang": "ko", "type": "out_of_scope", "question": "외국인등록증 발급까지 보통 며칠 걸리나요?", "expected": []}

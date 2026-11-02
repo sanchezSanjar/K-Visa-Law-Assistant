@@ -1,0 +1,30 @@
+{"id": "h01", "lang": "ko", "type": "law", "question": "학생 신분으로 편의점에서 일해도 문제 없나요?", "expected": ["immigration_act:20", "immigration_decree:25"]}
+{"id": "h02", "lang": "ko", "type": "law", "question": "비자 만료일이 다음 주인데 한국에 더 있고 싶어요.", "expected": ["immigration_act:25", "immigration_decree:31"]}
+{"id": "h03", "lang": "ko", "type": "law", "question": "외국인도 전입신고를 해야 하나요?", "expected": ["immigration_act:36", "immigration_decree:45"]}
+{"id": "h04", "lang": "ko", "type": "law", "question": "외국인등록을 안 하면 어떻게 되나요?", "expected": ["immigration_act:31", "immigration_act:95", "immigration_decree:table04", "immigration_act:100"]}
+{"id": "h05", "lang": "ko", "type": "law", "question": "F-5 비자 조건 알려주세요.", "expected": ["immigration_act:10-3", "immigration_decree:12-2", "immigration_decree:table03"]}
+{"id": "h06", "lang": "ko", "type": "law", "question": "한국 사람과 결혼했는데 국적을 취득하려면 몇 년이 필요해요?", "expected": ["nationality_act:6"]}
+{"id": "h07", "lang": "ko", "type": "law", "question": "E-9 근로자가 직장을 바꾸려면 어떻게 해야 하나요?", "expected": ["foreign_workers_act:25"]}
+{"id": "h08", "lang": "ko", "type": "law", "question": "E-9으로 최대 몇 년 일할 수 있어요?", "expected": ["foreign_workers_act:18", "foreign_workers_act:18-2"]}
+{"id": "h09", "lang": "ko", "type": "law", "question": "한국을 떠날 때 등록증을 내고 가야 하나요?", "expected": ["immigration_act:37"]}
+{"id": "h10", "lang": "ko", "type": "law", "question": "난민 신청하고 몇 달 지나면 일할 수 있어요?", "expected": ["refugee_act:40"]}
+{"id": "h11", "lang": "ko", "type": "law", "question": "외국인을 몰래 고용하면 처벌이 어떻게 되나요?", "expected": ["immigration_act:94", "immigration_act:18"]}
+{"id": "h12", "lang": "ko", "type": "law", "question": "체류자격 변경은 어디에 신청하나요?", "expected": ["immigration_act:24", "immigration_decree:30"]}
+{"id": "h13", "lang": "en", "type": "law", "question": "How long can a foreign worker under the employment permit system work in Korea?", "expected": ["foreign_workers_act:18", "foreign_workers_act:18-2"]}
+{"id": "h14", "lang": "en", "type": "law", "question": "Can a recognized refugee bring their spouse to Korea?", "expected": ["refugee_act:37"]}
+{"id": "h15", "lang": "en", "type": "law", "question": "What should I do if I lose my alien registration card?", "expected": ["immigration_decree:42", "immigration_rules:48"]}
+{"id": "h16", "lang": "en", "type": "law", "question": "Is there a fee waiver for visa applications?", "expected": ["immigration_rules:74"]}
+{"id": "h17", "lang": "ko", "type": "law", "question": "대학원을 졸업하고 한국에서 일자리를 찾으려면 어떤 비자가 필요해요?", "expected": ["immigration_decree:table02=D-10"]}
+{"id": "h18", "lang": "ko", "type": "law", "question": "회사에서 해고당했는데 회사가 출입국에 알려야 하나요?", "expected": ["immigration_act:19", "immigration_decree:24"]}
+{"id": "h19", "lang": "ko", "type": "law", "question": "부모님을 한국에 모셔서 같이 살고 싶은데 어떤 체류자격이 있나요?", "expected": ["immigration_decree:table02=F-1"]}
+{"id": "h20", "lang": "ko", "type": "law", "question": "여권 유효기간이 끝나서 새 여권을 받았어요. 따로 신고해야 하나요?", "expected": ["immigration_act:35", "immigration_decree:44"]}
+{"id": "h21", "lang": "ko", "type": "law", "question": "외국인등록증을 휴대폰으로 발급받을 수 있나요?", "expected": ["immigration_rules:48-2"]}
+{"id": "h22", "lang": "ko", "type": "law", "question": "취업비자 없이 일하다가 걸리면 처벌받나요?", "expected": ["immigration_act:94", "immigration_act:18", "immigration_act:46"]}
+{"id": "h23", "lang": "ko", "type": "law", "question": "한국에서 아이를 낳았는데 아이 체류자격은 언제까지 신청해야 해요?", "expected": ["immigration_act:23", "immigration_decree:29"]}
+{"id": "h24", "lang": "ko", "type": "law", "question": "영주권자인데 1년 동안 외국에 있다가 돌아와도 재입국허가가 필요한가요?", "expected": ["immigration_rules:44-2", "immigration_act:30"]}
+{"id": "h25", "lang": "ko", "type": "law", "question": "사장님이 퇴직금 때문에 보험을 들어야 한다고 하던데 무슨 보험이에요?", "expected": ["foreign_workers_act:13"]}
+{"id": "h26", "lang": "ko", "type": "law", "question": "남편의 폭력 때문에 이혼 소송 중인데 비자가 곧 끝나요.", "expected": ["immigration_act:25-2"]}
+{"id": "h27", "lang": "en", "type": "law", "question": "What visa does the foreign spouse of a Korean citizen get?", "expected": ["immigration_decree:table02=F-6"]}
+{"id": "h28", "lang": "en", "type": "law", "question": "What is the maximum period of stay for an overseas Korean (F-4)?", "expected": ["overseas_koreans_act:10"]}
+{"id": "h29", "lang": "en", "type": "law", "question": "I received a departure order. What does that mean?", "expected": ["immigration_act:68"]}
+{"id": "h30", "lang": "en", "type": "law", "question": "Can immigration officers detain me, and for how long?", "expected": ["immigration_act:51", "immigration_act:52", "immigration_act:63"]}
