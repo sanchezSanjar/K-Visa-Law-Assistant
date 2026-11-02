@@ -16,12 +16,12 @@ from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from kvisa.config import LAWS_KO, ROOT
+from kvisa.config import GUIDES, LAWS_KO, ROOT
 
 STATIC = ROOT / "app"
 app = FastAPI(title="K-Visa Law Assistant")
 state = {"assistant": None, "error": None}
-PDF_FILES = {path.name for path in LAWS_KO.glob("*.pdf")}
+PDF_FILES = {path.name: path for folder in (LAWS_KO, GUIDES) for path in folder.glob("*.pdf")}
 
 
 class Question(BaseModel):
@@ -71,9 +71,9 @@ def ask(body: Question):
 
 @app.get("/pdf/{name}")
 def pdf(name: str):
-    if name not in PDF_FILES:  # only the downloaded law PDFs, never other paths
+    if name not in PDF_FILES:  # only the downloaded law and guide PDFs, never other paths
         raise HTTPException(404)
-    return FileResponse(LAWS_KO / name, media_type="application/pdf")
+    return FileResponse(PDF_FILES[name], media_type="application/pdf")
 
 
 @app.post("/api/quit")

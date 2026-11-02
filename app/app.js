@@ -64,10 +64,16 @@ function sourceCard(source, n, korean) {
   const el = document.createElement("div");
   el.className = "source";
   el.dataset.n = n;
-  const name = korean ? `${source.law_ko} ${source.label}(${source.title})`
-                      : `${source.law_en} · ${source.law_ko} ${source.label}(${source.title})`;
-  const tag = source.kind === "table" ? '<span class="source-tag">별표</span>' : "";
-  const date = source.effective ? `${source.effective.slice(0, 4)}.${source.effective.slice(4, 6)}.${source.effective.slice(6)} 시행` : "";
+  const guide = source.kind === "guide";
+  const name = guide ? `${korean ? source.law_ko : source.law_en} ${source.label} · ${source.title}`
+             : korean ? `${source.law_ko} ${source.label}(${source.title})`
+             : `${source.law_en} · ${source.law_ko} ${source.label}(${source.title})`;
+  const tag = source.kind === "table" ? '<span class="source-tag">별표</span>'
+            : guide ? `<span class="source-tag guide">${korean ? "안내서" : "Guide"}</span>` : "";
+  const day = source.effective ? `${source.effective.slice(0, 4)}.${source.effective.slice(4, 6)}.${source.effective.slice(6)}` : "";
+  const date = !day ? "" : guide ? (korean ? `${day} 기준 · 최신 지침과 다를 수 있음` : `as of ${day}, may be outdated`) : `${day} 시행`;
+  const sourceLink = source.url
+    ? `<a href="${encodeURI(source.url)}" target="_blank" rel="noopener">${guide ? (korean ? "출처" : "Source") : "law.go.kr"}</a>` : "";
   const english = source.text_en ? `<span class="en">English (KLRI translation, for reference): ${escapeHtml(source.text_en)}</span>` : "";
   el.innerHTML = `
     <div class="source-head">
@@ -75,7 +81,7 @@ function sourceCard(source, n, korean) {
       <div class="source-links">
         <button type="button" class="toggle">${korean ? "조문 보기" : "Show text"}</button>
         <a href="/pdf/${encodeURIComponent(source.file)}#page=${source.page}" target="_blank" rel="noopener">PDF p.${source.page}</a>
-        <a href="${encodeURI(source.url)}" target="_blank" rel="noopener">law.go.kr</a>
+        ${sourceLink}
       </div>
     </div>
     <div class="meta">${date}</div>

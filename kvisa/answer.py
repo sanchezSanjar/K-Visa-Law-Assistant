@@ -15,7 +15,6 @@ from typing import Iterator
 from kvisa.config import DOCS, LLM_MODEL
 from kvisa.models import local_path
 
-TOP_K = 4                 # law pieces given to the model
 PIECE_CHARS = 1500        # each piece is cut to this length in the prompt
 NOT_FOUND = {
     "ko": "제공된 법령에서 이 질문에 대한 내용을 찾을 수 없습니다.",
@@ -24,11 +23,13 @@ NOT_FOUND = {
 
 SYSTEM = """당신은 대한민국 출입국·체류·국적 법령을 안내하는 도우미입니다.
 규칙:
-1. 아래 [자료]에 있는 법령 내용만 근거로 답하세요. 자료에 없는 내용(수수료 금액, 기간, 서류 등)을 지어내지 마세요.
+1. 아래 [자료]에 있는 내용만 근거로 답하세요. 자료에 없는 내용(수수료 금액, 기간, 서류 등)을 지어내지 마세요.
 2. 근거로 쓴 자료 번호를 문장 끝에 [1], [2]처럼 표시하세요.
 3. 자료에 답이 없으면 "{not_found}"라고만 답하세요.
-4. 질문과 같은 언어로 답하세요. 질문이 영어면 영어로, 한국어면 한국어로 답하세요.
-5. 3~6문장으로 짧고 쉽게 설명하세요. 법률 자문이 아니라 정보 안내입니다."""
+4. 자료에 금지한다는 내용이 없다고 해서 허용된다고 추론하지 마세요. 허가가 필요한지 자료에 나오지 않으면 그렇다고 말하세요.
+5. [자료]에는 법령과 법무부 안내서가 있을 수 있습니다. 법령이 우선이며, 안내서 내용은 "안내서에 따르면"처럼 밝히세요.
+6. 질문과 같은 언어로 답하세요. 질문이 영어면 영어로, 한국어면 한국어로 답하세요.
+7. 3~6문장으로 짧고 쉽게 설명하세요. 법률 자문이 아니라 정보 안내입니다."""
 
 
 def question_language(text: str) -> str:
@@ -38,6 +39,8 @@ def question_language(text: str) -> str:
 
 
 def source_title(piece: dict) -> str:
+    if piece.get("kind") == "guide":
+        return f"[안내서] {piece['law_ko']} {piece['label']} · {piece['title']}"
     return f"{piece['law_ko']} {piece['label']}({piece['title']})"
 
 
@@ -78,7 +81,7 @@ class Assistant:
         self.lock = threading.Lock()  # one generation at a time on the GPU
 
     def retrieve(self, question: str) -> list[dict]:
-        return self.searcher.search(question, top_k=TOP_K)
+        return self.searcher.context(question)  # 4 law pieces + the best guide piece, if guides exist
 
     def prompt(self, question: str, pieces: list[dict], lang: str) -> str:
         messages = [
@@ -122,10 +125,10 @@ def is_refusal(answer: str) -> bool:
 
 
 def summarize_answers(rows: list[dict]) -> dict:
-    law = [r for r in rows if r["type"] == "law"]
+    law = [r for r in rows if r["type"] != "out_of_scope"]
     out = [r for r in rows if r["type"] == "out_of_scope"]
     summary = {
-        "law_questions": len(law),
+        "answerable_questions": len(law),
         "expected_article_in_context": round(sum(r["retrieved_expected"] for r in law) / len(law), 3),
         "answer_cites_expected_article": round(sum(r["cites_expected"] for r in law) / len(law), 3),
         "answered_with_a_citation": round(sum(bool(r["cited"]) for r in law) / len(law), 3),

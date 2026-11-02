@@ -15,7 +15,7 @@ import re
 import sys
 from collections import Counter, defaultdict
 
-from kvisa.config import ARTICLES, COLLECTION, EMBED_MODEL, INDEX, LAWS_EN, RERANK_MODEL
+from kvisa.config import ARTICLES, COLLECTION, EMBED_MODEL, GUIDES, INDEX, LAWS_EN, RERANK_MODEL
 from kvisa.models import local_path
 
 RRF_K = 60
@@ -32,6 +32,9 @@ def load_records() -> list[dict]:
             match = english.get(record["id"].split("#")[0])
             if match:
                 record["text_en"] = match["text"]
+    guides_path = GUIDES / "guides.jsonl"
+    if guides_path.exists():  # practical guides downloaded to this PC (python -m kvisa.download_guides)
+        records += [json.loads(line) for line in guides_path.open(encoding="utf-8")]
     return records
 
 
@@ -164,13 +167,29 @@ class Searcher:
             return self.dense(query, k)
         return rrf(self.keyword(query, k), self.dense(query, k), k=k)
 
+    def rerank(self, query: str, pool: list[int]) -> list[tuple[int, float]]:
+        scores = self.reranker.predict([(query, doc_text(self.records[i])) for i in pool], batch_size=8)
+        return sorted(zip(pool, (float(s) for s in scores)), key=lambda item: -item[1])
+
     def search(self, query: str, top_k: int = 5, mode: str = "dense", rerank_depth: int = 20) -> list[dict]:
         ranked = self.candidates(query, mode)
         if self.reranker is not None and rerank_depth:
-            pool = [index for index, _ in ranked[:rerank_depth]]
-            scores = self.reranker.predict([(query, doc_text(self.records[i])) for i in pool], batch_size=8)
-            ranked = sorted(zip(pool, (float(s) for s in scores)), key=lambda item: -item[1])
+            ranked = self.rerank(query, [index for index, _ in ranked[:rerank_depth]])
         return [{**self.records[index], "score": round(score, 4)} for index, score in ranked[:top_k]]
+
+    def context(self, query: str, laws: int = 4, guides: int = 1, depth: int = 20) -> list[dict]:
+        """The pieces the answer model reads: the best law pieces plus the best guide piece.
+
+        Laws and guides are ranked in separate pools, so the guide adds practical detail without
+        pushing law articles out (measured: law results stay as they were without the guide).
+        """
+        ranked = self.candidates(query, "dense", k=100)
+        law_pool = [i for i, _ in ranked if self.records[i]["kind"] != "guide"][:depth]
+        guide_pool = [i for i, _ in ranked if self.records[i]["kind"] == "guide"][:5]
+        law_hits = self.rerank(query, law_pool)[:laws]
+        guide_hits = self.rerank(query, guide_pool)[:guides] if guide_pool else []
+        chosen = sorted(law_hits + guide_hits, key=lambda item: -item[1])
+        return [{**self.records[index], "score": round(score, 4)} for index, score in chosen]
 
     def close(self) -> None:
         if self.client is not None:
