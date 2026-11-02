@@ -33,6 +33,10 @@ echo Optional: English translations of the laws (KLRI, for your personal use onl
 "%PY%" -X utf8 -m kvisa.download_english
 
 echo.
+echo Ministry of Justice guide "Visa Navigator" (KOGL Type 4, kept on this PC only).
+"%PY%" -X utf8 -m kvisa.download_guides
+
+echo.
 echo Reading the law PDFs and building the search index...
 "%PY%" -X utf8 -m kvisa.parse || goto failed
 "%PY%" -X utf8 -m kvisa.search build || goto failed

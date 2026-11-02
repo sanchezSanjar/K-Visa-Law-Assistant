@@ -10,6 +10,9 @@ index/
 # KLRI English translations: personal use only, never redistributed
 data/laws/en/
 
+# Ministry of Justice guides: KOGL Type 4 (no changes), downloaded to this PC only
+data/guides/
+
 # App runtime
 *.log
 kvisa.port

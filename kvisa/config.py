@@ -5,6 +5,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 LAWS_KO = DATA / "laws" / "ko"          # official Korean PDFs (public domain, committed)
 LAWS_EN = DATA / "laws" / "en"          # KLRI English PDFs (personal use only, git-ignored)
+GUIDES = DATA / "guides"                # Ministry of Justice guides (KOGL Type 4, git-ignored)
 ARTICLES = DATA / "articles.jsonl"      # one searchable piece per article / attached table
 INDEX = ROOT / "index"                  # Qdrant collection + keyword index (rebuilt by script)
 MODELS = ROOT / "models"                # downloaded model weights (git-ignored)
