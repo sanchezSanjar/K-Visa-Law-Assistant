@@ -2,7 +2,7 @@ import json
 import unittest
 
 from kvisa.config import ARTICLES
-from kvisa.parse import KO_ARTICLE, article_label, clean, join_lines, split_long
+from kvisa.parse import KO_ARTICLE, article_label, clean, guide_page_text, join_lines, split_long
 
 
 class ParseTests(unittest.TestCase):
@@ -30,12 +30,21 @@ class ParseTests(unittest.TestCase):
         self.assertTrue(parts[1].startswith("제1조(목적) ②"))
 
     def test_parsed_data(self):
-        records = [json.loads(line) for line in ARTICLES.open(encoding="utf-8")]
+        records = [json.loads(line) for line in ARTICLES.read_text(encoding="utf-8").splitlines()]
         ids = {record["id"] for record in records}
         self.assertEqual(len(ids), len(records))
         self.assertIn("immigration_act:25", ids)
         self.assertTrue(any("D-2" in record.get("codes", []) for record in records))
         self.assertLessEqual(max(len(record["text"]) for record in records), 2000)
+
+    def test_guide_page_text(self):
+        class Page:
+            def get_text(self):
+                return ("13\nPART 02. 길잡이\n22 비자 내비게이터 \n●유학생의 취업 활동은 원칙적으로 \n"
+                        "금지되나 허가를 받은 경\n우 허용\n- (대상자) D-4")
+
+        self.assertEqual(guide_page_text(Page()),
+                         "●유학생의 취업 활동은 원칙적으로 금지되나 허가를 받은 경우 허용\n- (대상자) D-4")
 
 
 if __name__ == "__main__":

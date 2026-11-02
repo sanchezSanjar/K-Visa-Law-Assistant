@@ -2,8 +2,9 @@
 
     python -m kvisa.parse
 
-Writes data/articles.jsonl (Korean, committed) and, when the English PDFs were downloaded,
-data/laws/en/articles_en.jsonl (git-ignored) with the matching English article text.
+Writes data/articles.jsonl (Korean, committed) and, when they were downloaded,
+data/laws/en/articles_en.jsonl (English article text) and data/guides/guides.jsonl (pieces of the
+Ministry of Justice guides); both are git-ignored.
 """
 import json
 import re
@@ -11,7 +12,7 @@ from pathlib import Path
 
 import pymupdf
 
-from kvisa.config import ARTICLES, LAWS_EN, LAWS_KO
+from kvisa.config import ARTICLES, GUIDES, LAWS_EN, LAWS_KO
 
 MAX_CHARS = 1800          # longer articles are split at paragraph marks (①, ②, ...)
 TABLE_CHUNK_CHARS = 1000  # longer table rows are split by line at about this size
@@ -215,6 +216,77 @@ def build_english() -> list[dict]:
     return records
 
 
+GUIDE_CHUNK_CHARS = 900
+GUIDE_NOISE = re.compile(r"^(?:\d{1,3}|PART|PART\s*\d+.*|\d{2}|비자\s*내비게이터.*|Visa|Navigator)$")
+GUIDE_ITEM = re.compile(r"^(?:[●▪❶❷❸❹❺❻❼❽❾❿※*-]|\d+\.\s|Q\d*[.)]?\s)")
+
+
+def guide_page_text(page) -> str:
+    """Join the lines of a guide page; a line ending in a space wrapped at a word boundary."""
+    out, wrapped_at_space = "", False
+    for raw in page.get_text().split("\n"):
+        line = raw.replace("‌", "").replace("\t", " ")
+        stripped = line.strip()
+        if not stripped or GUIDE_NOISE.match(stripped):
+            continue
+        if not out:
+            out = stripped
+        elif GUIDE_ITEM.match(stripped):
+            out += "\n" + stripped
+        else:
+            out += (" " if wrapped_at_space else "") + stripped
+        wrapped_at_space = line.endswith(" ")
+    out = re.sub(r"^\d{1,3}\s*비자\s*내비게이터\s*", "", out)  # running header: page number + guide name
+    return re.sub(r" {2,}", " ", out).strip()
+
+
+def guide_pieces(path: Path, sections: list) -> list[dict]:
+    pieces = []
+    with pymupdf.open(path) as doc:
+        for page_no, page in enumerate(doc, start=1):
+            text = guide_page_text(page)
+            if len(text) < 80:      # cover, divider and empty pages
+                continue
+            section = ""
+            for start, title in sections:
+                if page_no >= start:
+                    section = title
+            # split long pages at items (●, ❶, ...) into pieces of about GUIDE_CHUNK_CHARS
+            chunk = ""
+            for item in re.split(r"\n(?=[●❶❷❸❹❺❻❼❽❾❿])", text):
+                if chunk and len(chunk) + len(item) > GUIDE_CHUNK_CHARS:
+                    pieces.append({"page": page_no, "section": section, "text": chunk.strip()})
+                    chunk = ""
+                chunk += ("\n" if chunk else "") + item
+            if chunk.strip():
+                pieces.append({"page": page_no, "section": section, "text": chunk.strip()})
+    return pieces
+
+
+def build_guides() -> list[dict]:
+    """Pieces of the guides in data/guides/: the downloaded ones (manifest) and any PDF added by hand."""
+    if not GUIDES.exists():
+        return []
+    manifest_path = GUIDES / "manifest.json"
+    known = {g["file"]: g for g in json.loads(manifest_path.read_text(encoding="utf-8"))} if manifest_path.exists() else {}
+    records = []
+    for path in sorted(GUIDES.glob("*.pdf")):
+        guide = known.get(path.name, {"key": re.sub(r"\W+", "_", path.stem).strip("_").lower(),
+                                        "title_ko": path.stem, "title_en": path.stem, "version": "",
+                                        "page_url": "", "sections": []})
+        counts = {}
+        for piece in guide_pieces(path, guide["sections"]):
+            counts[piece["page"]] = counts.get(piece["page"], 0) + 1
+            records.append({
+                "id": f"guide:{guide['key']}:p{piece['page']}#{counts[piece['page']]}", "kind": "guide",
+                "law": guide["key"], "law_ko": guide["title_ko"], "law_en": guide["title_en"],
+                "label": f"p.{piece['page']}", "title": piece["section"] or guide["title_ko"], "chapter": "",
+                "file": path.name, "page": piece["page"], "effective": guide["version"], "url": guide["page_url"],
+                "text": (f"[{piece['section']}] " if piece["section"] else "") + piece["text"],
+            })
+    return records
+
+
 def write_jsonl(path: Path, records: list[dict]) -> None:
     with path.open("w", encoding="utf-8") as handle:
         for record in records:
@@ -230,6 +302,10 @@ def main() -> None:
     if english:
         write_jsonl(LAWS_EN / "articles_en.jsonl", english)
         print(f"English: {len(english)} articles")
+    guides = build_guides()
+    if guides:
+        write_jsonl(GUIDES / "guides.jsonl", guides)
+        print(f"Guides: {len(guides)} pieces from {len({g['file'] for g in guides})} PDF(s)")
 
 
 if __name__ == "__main__":
