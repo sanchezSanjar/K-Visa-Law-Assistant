@@ -81,7 +81,7 @@ class Assistant:
         self.lock = threading.Lock()  # one generation at a time on the GPU
 
     def retrieve(self, question: str) -> list[dict]:
-        return self.searcher.context(question)  # 4 law pieces + the 2 best guide pieces, if guides exist
+        return self.searcher.context(question)  # 4 law pieces + the best relevant guide piece
 
     def prompt(self, question: str, pieces: list[dict], lang: str) -> str:
         messages = [

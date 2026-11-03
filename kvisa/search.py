@@ -179,17 +179,21 @@ class Searcher:
             ranked = self.rerank(query, [index for index, _ in ranked[:rerank_depth]])
         return [{**self.records[index], "score": round(score, 4)} for index, score in ranked[:top_k]]
 
-    def context(self, query: str, laws: int = 4, guides: int = 2, depth: int = 20) -> list[dict]:
-        """The pieces the answer model reads: the best law pieces plus the best guide pieces.
+    def context(self, query: str, laws: int = 4, guides: int = 1, depth: int = 20,
+                min_guide_score: float = 0.1) -> list[dict]:
+        """The pieces the answer model reads: the best law pieces plus the best guide piece.
 
         Laws and guides are ranked in separate pools, so the guide adds practical detail without
         pushing law articles out (measured: law results stay as they were without the guide).
+        A guide piece is only added when the reranker finds it relevant: an unrelated page (score
+        near 0) misled the model more than no guide at all.
         """
-        ranked = self.candidates(query, "dense", k=100)
+        ranked = self.candidates(query, "dense", k=200)
         law_pool = [i for i, _ in ranked if self.records[i]["kind"] != "guide"][:depth]
-        guide_pool = [i for i, _ in ranked if self.records[i]["kind"] == "guide"][:5]
+        guide_pool = [i for i, _ in ranked if self.records[i]["kind"] == "guide"][:depth]
         law_hits = self.rerank(query, law_pool)[:laws]
-        guide_hits = self.rerank(query, guide_pool)[:guides] if guide_pool else []
+        guide_hits = [hit for hit in self.rerank(query, guide_pool)[:guides] if hit[1] >= min_guide_score] \
+            if guide_pool else []
         chosen = sorted(law_hits + guide_hits, key=lambda item: -item[1])
         return [{**self.records[index], "score": round(score, 4)} for index, score in chosen]
 
