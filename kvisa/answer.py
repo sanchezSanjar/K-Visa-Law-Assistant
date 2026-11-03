@@ -56,7 +56,8 @@ def build_context(pieces: list[dict], lang: str) -> str:
 
 
 def cited_numbers(answer: str, count: int) -> list[int]:
-    numbers = {int(n) for n in re.findall(r"\[(\d+)\]", answer)}
+    """Numbers cited as [1], and also as "[자료] 1번" / "자료 1", which the model sometimes writes."""
+    numbers = {int(bracket or written) for bracket, written in re.findall(r"\[(\d+)\]|자료\]?\s*(\d+)", answer)}
     return sorted(n for n in numbers if 1 <= n <= count)
 
 
