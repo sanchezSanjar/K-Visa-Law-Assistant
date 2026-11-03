@@ -16,7 +16,7 @@ from kvisa.config import DOCS, LLM_MODEL
 from kvisa.models import local_path
 
 PIECE_CHARS = 1500        # each piece is cut to this length in the prompt
-GUIDE_PIECE_CHARS = 1000  # manual pages are cut shorter, so the prompt fits a 6 GB GPU
+GUIDE_PIECE_CHARS = 1400  # whole manual pages: a 1000 cut dropped the tables at the bottom of a page
 NOT_FOUND = {
     "ko": "제공된 법령에서 이 질문에 대한 내용을 찾을 수 없습니다.",
     "en": "I could not find this in the provided laws.",
