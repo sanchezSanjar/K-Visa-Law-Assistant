@@ -123,6 +123,31 @@ Out-of-scope questions: with the laws only, all 4 were answered with "not found"
 2 of the 4 are partly answerable (visit booking is explained in the guide; the D-2 weekly hours are
 not, and the answer says so), so the automatic count drops to 2 / 4.
 
+### Adding the 2026 HiKorea manuals
+
+With the two HiKorea manuals saved as PDF (1,335 pages, see Setup), the model reads the 4 best law
+pieces plus the best page from the manuals or the guide:
+
+| | Main (80) | Held-out (30) | Guide (15) |
+|---|---|---|---|
+| Answer cites an expected source, laws + Visa Navigator | 90% | 70% | 93% |
+| Answer cites an expected source, **+ 2026 manuals** | **95%** | **77%** | 73% |
+| Median time per answer | 16 s | 28 s | 30 s |
+
+- The manuals help the law questions (more visa-specific detail) and answer things nothing else
+  covers: required documents per visa, the D-2 part-time hour limits by TOPIK level.
+- The lower guide score is partly the scoring (those questions expect Visa Navigator pages): by
+  hand, the online-application fee discount is answered correctly from a manual page. But some
+  answers got worse: "do permanent residents need an extension?" is now answered wrongly, and the
+  D-2 hours answer simplifies a complicated table to "30 hours".
+- Printing HWP to PDF splits numbers from their words ("발급일로부터 개월 … 3"); lines are rebuilt
+  from character positions to put them back.
+- Only the best page above a minimum relevance is used: an unrelated page (score near 0) misled the
+  model more than no page. Two pages per answer did not fit a 6 GB GPU (answers took minutes), so
+  questions are now embedded on the CPU and manual pages cut to 1,000 characters (peak 4.2 GB).
+- Tested and dropped: letting the model rewrite the question into official terms before searching.
+  On the held-out set it found the right article less often (19 vs 24 of 30).
+
 In the app the first words appear after 1 to 2 seconds (streaming). A first version refused to
 answer when the reranker score of the best piece was below 0.05; it blocked 8 real questions and
 only 2 out-of-scope ones, while the model refused every out-of-scope question by itself, so the
@@ -142,8 +167,10 @@ threshold was removed. All answers are saved in `docs/answer_metrics.json` (laws
 **Adding the HiKorea manuals (optional).** The most detailed guides, *사증민원 / 체류민원 자격별 안내
 매뉴얼* on [HiKorea](https://www.hikorea.go.kr/board/BoardNtcDetailR.pt?BBS_SEQ=1&BBS_GB_CD=BS10&NTCCTT_SEQ=1062&page=1),
 are published as copy-protected HWP files (배포용 문서), which this project does not try to unlock.
-If you open them in the free Hancom viewer and save or print them as PDF into `data/guides/`, they are
-picked up by `python -m kvisa.parse` and `python -m kvisa.search build` like the Visa Navigator.
+Open them in the free Hancom viewer, print them with **Microsoft Print to PDF**, and save them as
+`data/guides/visa_manual_2026.pdf` and `data/guides/stay_manual_2026.pdf`; then run
+`python -m kvisa.parse` and `python -m kvisa.search build`. They are KOGL Type 4 like the Visa
+Navigator and stay on your PC.
 
 Windows SmartScreen may warn once because the exe is not code-signed: **More info → Run anyway**.
 
