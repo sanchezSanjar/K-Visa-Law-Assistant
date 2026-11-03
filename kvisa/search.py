@@ -92,10 +92,12 @@ def device() -> str:
     return "cuda" if torch.cuda.is_available() else "cpu"
 
 
-def load_embedder():
+def load_embedder(dev: str | None = None):
+    """bge-m3 on the GPU for building the index; the app embeds one short question at a time on the
+    CPU (well under a second), which leaves about 1 GB more GPU memory for answering."""
     import torch
     from sentence_transformers import SentenceTransformer
-    dev = device()
+    dev = dev or device()
     kwargs = {"torch_dtype": torch.float16} if dev == "cuda" else {}
     return SentenceTransformer(str(local_path(EMBED_MODEL)), device=dev, model_kwargs=kwargs)
 
@@ -149,7 +151,7 @@ class Searcher:
             stamp = INDEX / "fingerprint.txt"
             if not stamp.exists() or stamp.read_text(encoding="utf-8") != fingerprint(self.records):
                 raise RuntimeError("The search index is missing or out of date: run python -m kvisa.search build")
-            self.embedder = load_embedder()
+            self.embedder = load_embedder("cpu")
             self.client = QdrantClient(path=str(INDEX / "qdrant"))
         if rerank:
             self.reranker = load_reranker()

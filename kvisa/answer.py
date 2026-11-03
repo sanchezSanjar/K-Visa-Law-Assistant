@@ -16,6 +16,7 @@ from kvisa.config import DOCS, LLM_MODEL
 from kvisa.models import local_path
 
 PIECE_CHARS = 1500        # each piece is cut to this length in the prompt
+GUIDE_PIECE_CHARS = 1000  # manual pages are cut shorter, so the prompt fits a 6 GB GPU
 NOT_FOUND = {
     "ko": "제공된 법령에서 이 질문에 대한 내용을 찾을 수 없습니다.",
     "en": "I could not find this in the provided laws.",
@@ -47,7 +48,7 @@ def source_title(piece: dict) -> str:
 def build_context(pieces: list[dict], lang: str) -> str:
     blocks = []
     for number, piece in enumerate(pieces, start=1):
-        text = piece["text"][:PIECE_CHARS]
+        text = piece["text"][:GUIDE_PIECE_CHARS if piece.get("kind") == "guide" else PIECE_CHARS]
         if lang == "en" and piece.get("text_en"):
             text += f"\n(English translation, for reference) {piece['text_en'][:PIECE_CHARS]}"
         blocks.append(f"[{number}] {source_title(piece)}\n{text}")
