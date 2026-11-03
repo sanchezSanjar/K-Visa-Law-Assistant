@@ -12,6 +12,7 @@ import hashlib
 import json
 import math
 import re
+import shutil
 import sys
 from collections import Counter, defaultdict
 
@@ -123,9 +124,10 @@ def build_index() -> None:
     vectors = embedder.encode([doc_text(r) for r in records], batch_size=8, normalize_embeddings=True,
                               show_progress_bar=True)
     INDEX.mkdir(exist_ok=True)
+    # Start from an empty folder: in local mode a deleted and re-created collection kept the old
+    # points beyond the new count when the index got smaller.
+    shutil.rmtree(INDEX / "qdrant", ignore_errors=True)
     client = QdrantClient(path=str(INDEX / "qdrant"))
-    if client.collection_exists(COLLECTION):
-        client.delete_collection(COLLECTION)
     client.create_collection(COLLECTION, vectors_config=VectorParams(size=vectors.shape[1], distance=Distance.COSINE))
     client.upsert(COLLECTION, points=[PointStruct(id=i, vector=v.tolist(), payload={"id": r["id"]})
                                       for i, (r, v) in enumerate(zip(records, vectors))])
@@ -177,8 +179,8 @@ class Searcher:
             ranked = self.rerank(query, [index for index, _ in ranked[:rerank_depth]])
         return [{**self.records[index], "score": round(score, 4)} for index, score in ranked[:top_k]]
 
-    def context(self, query: str, laws: int = 4, guides: int = 1, depth: int = 20) -> list[dict]:
-        """The pieces the answer model reads: the best law pieces plus the best guide piece.
+    def context(self, query: str, laws: int = 4, guides: int = 2, depth: int = 20) -> list[dict]:
+        """The pieces the answer model reads: the best law pieces plus the best guide pieces.
 
         Laws and guides are ranked in separate pools, so the guide adds practical detail without
         pushing law articles out (measured: law results stay as they were without the guide).
