@@ -131,20 +131,28 @@ pieces plus the best page from the manuals or the guide:
 | | Main (80) | Held-out (30) | Guide (15) |
 |---|---|---|---|
 | Answer cites an expected source, laws + Visa Navigator | 90% | 70% | 93% |
-| Answer cites an expected source, **+ 2026 manuals** | **95%** | **77%** | 73% |
-| Median time per answer | 16 s | 28 s | 30 s |
+| Answer cites an expected source, + 2026 manuals (first try) | 95% | 77% | 73% |
+| Answer cites an expected source, **+ 2026 manuals (fixed)** | **94%** | **73%** | **93%** |
+| Median time per answer (fixed) | 16 s | 17 s | 13 s |
 
 - The manuals help the law questions (more visa-specific detail) and answer things nothing else
   covers: required documents per visa, the D-2 part-time hour limits by TOPIK level.
-- The lower guide score is partly the scoring (those questions expect Visa Navigator pages): by
-  hand, the online-application fee discount is answered correctly from a manual page. But some
-  answers got worse: "do permanent residents need an extension?" is now answered wrongly, and the
-  D-2 hours answer simplifies a complicated table to "30 hours".
+- The first try lost guide questions for three reasons, now fixed:
+  - Search reranked only the 20 nearest guide pages. With 1,400 manual pages added, the right
+    Visa Navigator page was 22nd or 29th, so it never reached the reranker. Now 40 are reranked.
+  - Manual pages were cut to 1,000 characters, which dropped the D-2 hours table at the bottom of
+    the page (the answer said a flat "30 hours"). The model now reads whole pages.
+  - One correct answer cited its source as "[자료] 1번" instead of "[1]" and was scored as uncited.
+- The small drops on the law sets are scoring, not worse answers: by hand, the C-3 and E-9
+  workplace-change answers are correct but cite the manual page instead of the law article. The
+  convenience-store question now says the laws have no clear rule but a permit is needed
+  (before: "no problem"), which the scoring counts as a refusal. Still weak: "do permanent
+  residents need an extension?" mixes up the extension with renewing the residence card.
 - Printing HWP to PDF splits numbers from their words ("발급일로부터 개월 … 3"); lines are rebuilt
   from character positions to put them back.
 - Only the best page above a minimum relevance is used: an unrelated page (score near 0) misled the
   model more than no page. Two pages per answer did not fit a 6 GB GPU (answers took minutes), so
-  questions are now embedded on the CPU and manual pages cut to 1,000 characters (peak 4.2 GB).
+  questions are embedded on the CPU, which leaves room for one whole page.
 - Tested and dropped: letting the model rewrite the question into official terms before searching.
   On the held-out set it found the right article less often (19 vs 24 of 30).
 
