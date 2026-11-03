@@ -217,6 +217,7 @@ def build_english() -> list[dict]:
 
 
 GUIDE_CHUNK_CHARS = 900
+MANUAL_CHUNK_CHARS = 1400  # about one manual page per piece, so tables stay whole
 GUIDE_NOISE = re.compile(r"^(?:\d{1,3}|PART|PART\s*\d+.*|\d{2}|비자\s*내비게이터.*|Visa|Navigator)$")
 GUIDE_ITEM = re.compile(r"^(?:[●▪❶❷❸❹❺❻❼❽❾❿※*-]|\d+\.\s|Q\d*[.)]?\s)")
 
@@ -263,19 +264,80 @@ def guide_pieces(path: Path, sections: list) -> list[dict]:
     return pieces
 
 
+MANUAL_HEADING = re.compile(r"^([가-힣·()\s]{1,25})\(([A-H]-\d{1,2}(?:-[0-9A-Z]{1,3})?)\)\s*$")
+MANUAL_NOISE = re.compile(r"^(?:-\s*\d+\s*-|목\s*차|\d{1,6}|[-\U000f0000-\U000fffff\s]+)$")
+
+
+def positioned_lines(page, y_tolerance: float = 2.5) -> list[str]:
+    """Lines rebuilt from character positions (top to bottom, left to right).
+
+    HWP files printed to PDF write numbers and punctuation as separate text runs, so the normal text
+    order puts them in the wrong place ("발급일로부터 개월 이내임 ... 3"); positions put them back.
+    """
+    chars = []
+    for block in page.get_text("rawdict")["blocks"]:
+        for line in block.get("lines", []):
+            for span in line["spans"]:
+                for char in span["chars"]:
+                    x0, y0, x1, y1 = char["bbox"]
+                    chars.append(((y0 + y1) / 2, x0, x1, char["c"], span["size"]))
+    rows: list[list] = []
+    for char in sorted(chars, key=lambda c: c[0]):
+        if rows and abs(rows[-1][0] - char[0]) <= y_tolerance:
+            rows[-1][1].append(char)
+        else:
+            rows.append([char[0], [char]])
+    lines = []
+    for _, row in rows:
+        text, previous = "", None
+        for char in sorted(row, key=lambda c: c[1]):
+            if previous is not None and char[1] - previous[2] > char[4] * 0.25 and not text.endswith(" "):
+                text += " "
+            text += char[3]
+            previous = char
+        text = " ".join(text.split())
+        if text and not MANUAL_NOISE.match(text):
+            lines.append(text)
+    return lines
+
+
+def manual_pieces(path: Path) -> list[dict]:
+    """Pieces of a HiKorea manual: sections start at headings such as "유  학(D-2)" on top of a page."""
+    pieces, section = [], "공통 안내"
+    with pymupdf.open(path) as doc:
+        for page_no, page in enumerate(doc, start=1):
+            lines = positioned_lines(page)
+            for line in lines[:6]:
+                match = MANUAL_HEADING.match(line)
+                if match:
+                    section = re.sub(r"\s+", "", match.group(1)) + f"({match.group(2)})"
+                    break
+            chunk = ""
+            for line in lines:
+                if chunk and len(chunk) + len(line) > MANUAL_CHUNK_CHARS:
+                    pieces.append({"page": page_no, "section": section, "text": chunk})
+                    chunk = ""
+                chunk += ("\n" if chunk else "") + line
+            if len(chunk) >= 80:
+                pieces.append({"page": page_no, "section": section, "text": chunk})
+    return pieces
+
+
 def build_guides() -> list[dict]:
-    """Pieces of the guides in data/guides/: the downloaded ones (manifest) and any PDF added by hand."""
+    """Pieces of the guides in data/guides/: the Visa Navigator, the HiKorea manuals saved as PDF,
+    and any other guide PDF added by hand."""
+    from kvisa.download_guides import GUIDE_INFO
+
     if not GUIDES.exists():
         return []
-    manifest_path = GUIDES / "manifest.json"
-    known = {g["file"]: g for g in json.loads(manifest_path.read_text(encoding="utf-8"))} if manifest_path.exists() else {}
     records = []
     for path in sorted(GUIDES.glob("*.pdf")):
-        guide = known.get(path.name, {"key": re.sub(r"\W+", "_", path.stem).strip("_").lower(),
-                                        "title_ko": path.stem, "title_en": path.stem, "version": "",
-                                        "page_url": "", "sections": []})
+        guide = GUIDE_INFO.get(path.name, {"key": re.sub(r"\W+", "_", path.stem).strip("_").lower(),
+                                           "title_ko": path.stem, "title_en": path.stem, "version": "",
+                                           "page_url": "", "layout": "manual"})
+        pieces = manual_pieces(path) if guide.get("layout") == "manual" else guide_pieces(path, guide["sections"])
         counts = {}
-        for piece in guide_pieces(path, guide["sections"]):
+        for piece in pieces:
             counts[piece["page"]] = counts.get(piece["page"], 0) + 1
             records.append({
                 "id": f"guide:{guide['key']}:p{piece['page']}#{counts[piece['page']]}", "kind": "guide",

@@ -36,6 +36,21 @@ VISA_NAVIGATOR = {
 }
 
 
+# The 2026 HiKorea manuals are copy-protected HWP files; saved as PDF by the user (see README).
+HIKOREA_PAGE = "https://www.hikorea.go.kr/board/BoardNtcDetailR.pt?BBS_SEQ=1&BBS_GB_CD=BS10&NTCCTT_SEQ=1062&page=1"
+HIKOREA_MANUALS = [
+    {"key": "visa_manual", "file": "visa_manual_2026.pdf", "layout": "manual",
+     "title_ko": "사증민원 자격별 안내 매뉴얼 (법무부, 2026.10)",
+     "title_en": "Visa application manual by status of stay (Ministry of Justice, Oct 2026)",
+     "version": "20261019", "page_url": HIKOREA_PAGE, "license": "KOGL Type 4"},
+    {"key": "stay_manual", "file": "stay_manual_2026.pdf", "layout": "manual",
+     "title_ko": "체류민원 자격별 안내 매뉴얼 (법무부, 2026.11)",
+     "title_en": "Stay application manual by status of stay (Ministry of Justice, Nov 2026)",
+     "version": "20261102", "page_url": HIKOREA_PAGE, "license": "KOGL Type 4"},
+]
+GUIDE_INFO = {guide["file"]: guide for guide in [VISA_NAVIGATOR, *HIKOREA_MANUALS]}
+
+
 def main() -> None:
     GUIDES.mkdir(parents=True, exist_ok=True)
     session = requests.Session()
